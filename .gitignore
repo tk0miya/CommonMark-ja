@@ -1,3 +1,9 @@
 *~
 *.bak
 spec.html
+
+.mypy_cache/
+_build/
+bin/
+include/
+lib/

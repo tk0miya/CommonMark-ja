@@ -5,6 +5,9 @@ SPECVERSION=$(shell perl -ne 'print $$1 if /^version: *([0-9.]+)/' spec.txt)
 
 all: spec.html # spec.pdf spec.md
 
+html:
+	sphinx-build -b html -d _build/doctrees . _build/html
+
 spec.md: spec.txt tools/template.commonmark
 	lua tools/make_spec.lua commonmark < $< > $@
 
@@ -26,4 +29,4 @@ npm:
 	       npm publish
 
 clean:
-	-rm spec.tex spec.md spec.html
+	-rm -rf _build/ spec.tex spec.md spec.html
