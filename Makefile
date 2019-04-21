@@ -8,6 +8,10 @@ all: spec.html # spec.pdf spec.md
 html:
 	sphinx-build -b html -d _build/doctrees . _build/html
 
+gettext:
+	sphinx-build -b gettext -d _build/doctrees . _build/locales
+	sphinx-intl update -p _build/locales -l ja
+
 spec.md: spec.txt tools/template.commonmark
 	lua tools/make_spec.lua commonmark < $< > $@
 

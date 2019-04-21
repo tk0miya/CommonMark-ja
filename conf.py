@@ -49,7 +49,17 @@ language = 'ja'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'lib', 'Thumbs.db', '.DS_Store']
+exclude_patterns = [
+    '_build',
+    'lib',
+    'alternative-html-blocks.txt',
+    'changelog.txt',
+    'README.md',
+    'RELEASE_CHECKLIST.md',
+    'requirements.txt',
+    'Thumbs.db',
+    '.DS_Store',
+]
 
 
 # -- Options for HTML output -------------------------------------------------
