@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2019, John MacFarlane
 # This file is distributed under the same license as the CommonMark package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CommonMark \n"
+"Project-Id-Version: CommonMark\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-21 19:45+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-04-21 10:52+0000\n"
+"Language-Team: Japanese (https://www.transifex.com/blockdiag/teams/98354/ja/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../spec.txt:2
 msgid ""
@@ -34,19 +34,19 @@ msgstr ""
 
 #: ../../spec.txt:13
 msgid ""
-"Markdown is a plain text format for writing structured documents, based "
-"on conventions for indicating formatting in email and usenet posts.  It "
-"was developed by John Gruber (with help from Aaron Swartz) and released "
-"in 2004 in the form of a [syntax "
-"description](http://daringfireball.net/projects/markdown/syntax) and a "
-"Perl script (`Markdown.pl`) for converting Markdown to HTML.  In the next"
-" decade, dozens of implementations were developed in many languages.  "
-"Some extended the original Markdown syntax with conventions for "
-"footnotes, tables, and other document elements.  Some allowed Markdown "
-"documents to be rendered in formats other than HTML.  Websites like "
-"Reddit, StackOverflow, and GitHub had millions of people using Markdown. "
-"And Markdown started to be used beyond the web, to author books, "
-"articles, slide shows, letters, and lecture notes."
+"Markdown is a plain text format for writing structured documents, based on "
+"conventions for indicating formatting in email and usenet posts.  It was "
+"developed by John Gruber (with help from Aaron Swartz) and released in 2004 "
+"in the form of a [syntax "
+"description](http://daringfireball.net/projects/markdown/syntax) and a Perl "
+"script (`Markdown.pl`) for converting Markdown to HTML.  In the next decade,"
+" dozens of implementations were developed in many languages.  Some extended "
+"the original Markdown syntax with conventions for footnotes, tables, and "
+"other document elements.  Some allowed Markdown documents to be rendered in "
+"formats other than HTML.  Websites like Reddit, StackOverflow, and GitHub "
+"had millions of people using Markdown. And Markdown started to be used "
+"beyond the web, to author books, articles, slide shows, letters, and lecture"
+" notes."
 msgstr ""
 
 #: ../../spec.txt:28
@@ -57,18 +57,18 @@ msgstr ""
 
 #: ../../spec.txt:32
 msgid ""
-"The overriding design goal for Markdown's formatting syntax is to make it"
-" as readable as possible. The idea is that a Markdown-formatted document "
-"should be publishable as-is, as plain text, without looking like it's "
-"been marked up with tags or formatting instructions. "
+"The overriding design goal for Markdown's formatting syntax is to make it as"
+" readable as possible. The idea is that a Markdown-formatted document should"
+" be publishable as-is, as plain text, without looking like it's been marked "
+"up with tags or formatting instructions. "
 "(<http://daringfireball.net/projects/markdown/>)"
 msgstr ""
 
 #: ../../spec.txt:39
 msgid ""
 "The point can be illustrated by comparing a sample of "
-"[AsciiDoc](http://www.methods.co.nz/asciidoc/) with an equivalent sample "
-"of Markdown.  Here is a sample of AsciiDoc from the AsciiDoc manual:"
+"[AsciiDoc](http://www.methods.co.nz/asciidoc/) with an equivalent sample of "
+"Markdown.  Here is a sample of AsciiDoc from the AsciiDoc manual:"
 msgstr ""
 
 #: ../../spec.txt:73
@@ -77,10 +77,10 @@ msgstr ""
 
 #: ../../spec.txt:98
 msgid ""
-"The AsciiDoc version is, arguably, easier to write. You don't need to "
-"worry about indentation.  But the Markdown version is much easier to "
-"read.  The nesting of list items is apparent to the eye in the source, "
-"not just in the processed document."
+"The AsciiDoc version is, arguably, easier to write. You don't need to worry "
+"about indentation.  But the Markdown version is much easier to read.  The "
+"nesting of list items is apparent to the eye in the source, not just in the "
+"processed document."
 msgstr ""
 
 #: ../../spec.txt:103
@@ -90,31 +90,30 @@ msgstr ""
 #: ../../spec.txt:105
 msgid ""
 "John Gruber's [canonical description of Markdown's "
-"syntax](http://daringfireball.net/projects/markdown/syntax) does not "
-"specify the syntax unambiguously.  Here are some examples of questions it"
-" does not answer:"
+"syntax](http://daringfireball.net/projects/markdown/syntax) does not specify"
+" the syntax unambiguously.  Here are some examples of questions it does not "
+"answer:"
 msgstr ""
 
 #: ../../spec.txt:110
 msgid ""
 "How much indentation is needed for a sublist?  The spec says that "
-"continuation paragraphs need to be indented four spaces, but is not fully"
-" explicit about sublists.  It is natural to think that they, too, must be"
-" indented four spaces, but `Markdown.pl` does not require that.  This is "
-"hardly a \"corner case,\" and divergences between implementations on this"
-" issue often lead to surprises for users in real documents. (See [this "
+"continuation paragraphs need to be indented four spaces, but is not fully "
+"explicit about sublists.  It is natural to think that they, too, must be "
+"indented four spaces, but `Markdown.pl` does not require that.  This is "
+"hardly a \"corner case,\" and divergences between implementations on this "
+"issue often lead to surprises for users in real documents. (See [this "
 "comment by John "
 "Gruber](http://article.gmane.org/gmane.text.markdown.general/1997).)"
 msgstr ""
 
 #: ../../spec.txt:119
 msgid ""
-"Is a blank line needed before a block quote or heading? Most "
-"implementations do not require the blank line.  However, this can lead to"
-" unexpected results in hard-wrapped text, and also to ambiguities in "
-"parsing (note that some implementations put the heading inside the "
-"blockquote, while others do not). (John Gruber has also spoken [in favor "
-"of requiring the blank "
+"Is a blank line needed before a block quote or heading? Most implementations"
+" do not require the blank line.  However, this can lead to unexpected "
+"results in hard-wrapped text, and also to ambiguities in parsing (note that "
+"some implementations put the heading inside the blockquote, while others do "
+"not). (John Gruber has also spoken [in favor of requiring the blank "
 "lines](http://article.gmane.org/gmane.text.markdown.general/2146).)"
 msgstr ""
 
@@ -127,9 +126,9 @@ msgstr ""
 
 #: ../../spec.txt:136
 msgid ""
-"What is the exact rule for determining when list items get wrapped in "
-"`<p>` tags?  Can a list be partially \"loose\" and partially \"tight\"?  "
-"What should we do with a list like this?"
+"What is the exact rule for determining when list items get wrapped in `<p>` "
+"tags?  Can a list be partially \"loose\" and partially \"tight\"?  What "
+"should we do with a list like this?"
 msgstr ""
 
 #: ../../spec.txt:147
@@ -143,7 +142,8 @@ msgid ""
 msgstr ""
 
 #: ../../spec.txt:160
-msgid "Can list markers be indented?  Can ordered list markers be right-aligned?"
+msgid ""
+"Can list markers be indented?  Can ordered list markers be right-aligned?"
 msgstr ""
 
 #: ../../spec.txt:168
@@ -154,9 +154,9 @@ msgstr ""
 
 #: ../../spec.txt:177
 msgid ""
-"When list markers change from numbers to bullets, do we have two lists or"
-" one?  (The Markdown syntax description suggests two, but the perl "
-"scripts and many other implementations produce one.)"
+"When list markers change from numbers to bullets, do we have two lists or "
+"one?  (The Markdown syntax description suggests two, but the perl scripts "
+"and many other implementations produce one.)"
 msgstr ""
 
 #: ../../spec.txt:188
@@ -168,8 +168,8 @@ msgstr ""
 
 #: ../../spec.txt:196
 msgid ""
-"What are the precedence rules for markers of emphasis and strong "
-"emphasis?  For example, how should the following be parsed?"
+"What are the precedence rules for markers of emphasis and strong emphasis?  "
+"For example, how should the following be parsed?"
 msgstr ""
 
 #: ../../spec.txt:203
@@ -211,9 +211,9 @@ msgid ""
 "Because there is no unambiguous spec, implementations have diverged "
 "considerably.  As a result, users are often surprised to find that a "
 "document that renders one way on one system (say, a GitHub wiki) renders "
-"differently on another (say, converting to docbook using pandoc).  To "
-"make matters worse, because nothing in Markdown counts as a \"syntax "
-"error,\" the divergence often isn't discovered right away."
+"differently on another (say, converting to docbook using pandoc).  To make "
+"matters worse, because nothing in Markdown counts as a \"syntax error,\" the"
+" divergence often isn't discovered right away."
 msgstr ""
 
 #: ../../spec.txt:256
@@ -222,27 +222,26 @@ msgstr ""
 
 #: ../../spec.txt:258
 msgid ""
-"This document attempts to specify Markdown syntax unambiguously. It "
-"contains many examples with side-by-side Markdown and HTML.  These are "
-"intended to double as conformance tests.  An accompanying script "
-"`spec_tests.py` can be used to run the tests against any Markdown "
-"program:"
+"This document attempts to specify Markdown syntax unambiguously. It contains"
+" many examples with side-by-side Markdown and HTML.  These are intended to "
+"double as conformance tests.  An accompanying script `spec_tests.py` can be "
+"used to run the tests against any Markdown program:"
 msgstr ""
 
 #: ../../spec.txt:266
 msgid ""
-"Since this document describes how Markdown is to be parsed into an "
-"abstract syntax tree, it would have made sense to use an abstract "
-"representation of the syntax tree instead of HTML.  But HTML is capable "
-"of representing the structural distinctions we need to make, and the "
-"choice of HTML for the tests makes it possible to run the tests against "
-"an implementation without writing an abstract syntax tree renderer."
+"Since this document describes how Markdown is to be parsed into an abstract "
+"syntax tree, it would have made sense to use an abstract representation of "
+"the syntax tree instead of HTML.  But HTML is capable of representing the "
+"structural distinctions we need to make, and the choice of HTML for the "
+"tests makes it possible to run the tests against an implementation without "
+"writing an abstract syntax tree renderer."
 msgstr ""
 
 #: ../../spec.txt:273
 msgid ""
-"This document is generated from a text file, `spec.txt`, written in "
-"Markdown with a small extension for the side-by-side tests. The script "
+"This document is generated from a text file, `spec.txt`, written in Markdown"
+" with a small extension for the side-by-side tests. The script "
 "`tools/makespec.py` can be used to convert `spec.txt` into HTML or "
 "CommonMark (which can then be converted into other formats)."
 msgstr ""
@@ -265,47 +264,47 @@ msgstr ""
 
 #: ../../spec.txt:287
 msgid ""
-"A [character](@) is a Unicode code point.  Although some code points (for"
-" example, combining accents) do not correspond to characters in an "
-"intuitive sense, all code points count as characters for purposes of this"
-" spec."
+"A [character](@) is a Unicode code point.  Although some code points (for "
+"example, combining accents) do not correspond to characters in an intuitive "
+"sense, all code points count as characters for purposes of this spec."
 msgstr ""
 
 #: ../../spec.txt:292
 msgid ""
-"This spec does not specify an encoding; it thinks of lines as composed of"
-" [characters] rather than bytes.  A conforming parser may be limited to a"
-" certain encoding."
+"This spec does not specify an encoding; it thinks of lines as composed of "
+"[characters] rather than bytes.  A conforming parser may be limited to a "
+"certain encoding."
 msgstr ""
 
 #: ../../spec.txt:296
 msgid ""
-"A [line](@) is a sequence of zero or more [characters] other than newline"
-" (`U+000A`) or carriage return (`U+000D`), followed by a [line ending] or"
-" by the end of file."
+"A [line](@) is a sequence of zero or more [characters] other than newline "
+"(`U+000A`) or carriage return (`U+000D`), followed by a [line ending] or by "
+"the end of file."
 msgstr ""
 
 #: ../../spec.txt:300
 msgid ""
-"A [line ending](@) is a newline (`U+000A`), a carriage return (`U+000D`) "
-"not followed by a newline, or a carriage return and a following newline."
+"A [line ending](@) is a newline (`U+000A`), a carriage return (`U+000D`) not"
+" followed by a newline, or a carriage return and a following newline."
 msgstr ""
 
 #: ../../spec.txt:304
 msgid ""
-"A line containing no characters, or a line containing only spaces "
-"(`U+0020`) or tabs (`U+0009`), is called a [blank line](@)."
+"A line containing no characters, or a line containing only spaces (`U+0020`)"
+" or tabs (`U+0009`), is called a [blank line](@)."
 msgstr ""
 
 #: ../../spec.txt:307
-msgid "The following definitions of character classes will be used in this spec:"
+msgid ""
+"The following definitions of character classes will be used in this spec:"
 msgstr ""
 
 #: ../../spec.txt:309
 msgid ""
-"A [whitespace character](@) is a space (`U+0020`), tab (`U+0009`), "
-"newline (`U+000A`), line tabulation (`U+000B`), form feed (`U+000C`), or "
-"carriage return (`U+000D`)."
+"A [whitespace character](@) is a space (`U+0020`), tab (`U+0009`), newline "
+"(`U+000A`), line tabulation (`U+000B`), form feed (`U+000C`), or carriage "
+"return (`U+000D`)."
 msgstr ""
 
 #: ../../spec.txt:313
@@ -314,9 +313,9 @@ msgstr ""
 
 #: ../../spec.txt:316
 msgid ""
-"A [Unicode whitespace character](@) is any code point in the Unicode `Zs`"
-" general category, or a tab (`U+0009`), carriage return (`U+000D`), "
-"newline (`U+000A`), or form feed (`U+000C`)."
+"A [Unicode whitespace character](@) is any code point in the Unicode `Zs` "
+"general category, or a tab (`U+0009`), carriage return (`U+000D`), newline "
+"(`U+000A`), or form feed (`U+000C`)."
 msgstr ""
 
 #: ../../spec.txt:321
@@ -331,23 +330,23 @@ msgstr ""
 
 #: ../../spec.txt:326
 msgid ""
-"A [non-whitespace character](@) is any character that is not a "
-"[whitespace character]."
+"A [non-whitespace character](@) is any character that is not a [whitespace "
+"character]."
 msgstr ""
 
 #: ../../spec.txt:329
 msgid ""
-"An [ASCII punctuation character](@) is `!`, `\"`, `#`, `$`, `%`, `&`, "
-"`'`, `(`, `)`, `*`, `+`, `,`, `-`, `.`, `/` (U+0021–2F),  `:`, `;`, `<`, "
-"`=`, `>`, `?`, `@` (U+003A–0040), `[`, `\\`, `]`, `^`, `_`, `` ` `` "
+"An [ASCII punctuation character](@) is `!`, `\"`, `#`, `$`, `%`, `&`, `'`, "
+"`(`, `)`, `*`, `+`, `,`, `-`, `.`, `/` (U+0021–2F),  `:`, `;`, `<`, `=`, "
+"`>`, `?`, `@` (U+003A–0040), `[`, `\\`, `]`, `^`, `_`, `` ` `` "
 "(U+005B–0060),  `{`, `|`, `}`, or `~` (U+007B–007E)."
 msgstr ""
 
 #: ../../spec.txt:336
 msgid ""
-"A [punctuation character](@) is an [ASCII punctuation character] or "
-"anything in the general Unicode categories  `Pc`, `Pd`, `Pe`, `Pf`, `Pi`,"
-" `Po`, or `Ps`."
+"A [punctuation character](@) is an [ASCII punctuation character] or anything"
+" in the general Unicode categories  `Pc`, `Pd`, `Pe`, `Pf`, `Pi`, `Po`, or "
+"`Ps`."
 msgstr ""
 
 #: ../../spec.txt:340
@@ -363,27 +362,26 @@ msgstr ""
 
 #: ../../spec.txt:347
 msgid ""
-"Thus, for example, a tab can be used instead of four spaces in an "
-"indented code block.  (Note, however, that internal tabs are passed "
-"through as literal tabs, not expanded to spaces.)"
+"Thus, for example, a tab can be used instead of four spaces in an indented "
+"code block.  (Note, however, that internal tabs are passed through as "
+"literal tabs, not expanded to spaces.)"
 msgstr ""
 
 #: ../../spec.txt:375
 msgid ""
 "In the following example, a continuation paragraph of a list item is "
-"indented with a tab; this has exactly the same effect as indentation with"
-" four spaces would:"
+"indented with a tab; this has exactly the same effect as indentation with "
+"four spaces would:"
 msgstr ""
 
 #: ../../spec.txt:406
 msgid ""
-"Normally the `>` that begins a block quote may be followed optionally by "
-"a space, which is not considered part of the content.  In the following "
-"case `>` is followed by a tab, which is treated as if it were expanded "
-"into three spaces. Since one of these spaces is considered part of the "
-"delimiter, `foo` is considered to be indented six spaces inside the block"
-" quote context, so we get an indented code block starting with two "
-"spaces."
+"Normally the `>` that begins a block quote may be followed optionally by a "
+"space, which is not considered part of the content.  In the following case "
+"`>` is followed by a tab, which is treated as if it were expanded into three"
+" spaces. Since one of these spaces is considered part of the delimiter, "
+"`foo` is considered to be indented six spaces inside the block quote "
+"context, so we get an indented code block starting with two spaces."
 msgstr ""
 
 #: ../../spec.txt:476
@@ -392,8 +390,8 @@ msgstr ""
 
 #: ../../spec.txt:478
 msgid ""
-"For security reasons, the Unicode character `U+0000` must be replaced "
-"with the REPLACEMENT CHARACTER (`U+FFFD`)."
+"For security reasons, the Unicode character `U+0000` must be replaced with "
+"the REPLACEMENT CHARACTER (`U+FFFD`)."
 msgstr ""
 
 #: ../../spec.txt:481
@@ -403,10 +401,10 @@ msgstr ""
 #: ../../spec.txt:483
 msgid ""
 "We can think of a document as a sequence of [blocks](@)---structural "
-"elements like paragraphs, block quotations, lists, headings, rules, and "
-"code blocks.  Some blocks (like block quotes and list items) contain "
-"other blocks; others (like headings and paragraphs) contain [inline](@) "
-"content---text, links, emphasized text, images, code spans, and so on."
+"elements like paragraphs, block quotations, lists, headings, rules, and code"
+" blocks.  Some blocks (like block quotes and list items) contain other "
+"blocks; others (like headings and paragraphs) contain [inline](@) content---"
+"text, links, emphasized text, images, code spans, and so on."
 msgstr ""
 
 #: ../../spec.txt:490
@@ -416,20 +414,20 @@ msgstr ""
 #: ../../spec.txt:492
 msgid ""
 "Indicators of block structure always take precedence over indicators of "
-"inline structure.  So, for example, the following is a list with two "
-"items, not a list with one item containing a code span:"
+"inline structure.  So, for example, the following is a list with two items, "
+"not a list with one item containing a code span:"
 msgstr ""
 
 #: ../../spec.txt:507
 msgid ""
 "This means that parsing can proceed in two steps:  first, the block "
 "structure of the document can be discerned; second, text lines inside "
-"paragraphs, headings, and other block constructs can be parsed for inline"
-" structure.  The second step requires information about link reference "
-"definitions that will be available only at the end of the first step.  "
-"Note that the first step requires processing lines in sequence, but the "
-"second can be parallelized, since the inline parsing of one block element"
-" does not affect the inline parsing of any other."
+"paragraphs, headings, and other block constructs can be parsed for inline "
+"structure.  The second step requires information about link reference "
+"definitions that will be available only at the end of the first step.  Note "
+"that the first step requires processing lines in sequence, but the second "
+"can be parallelized, since the inline parsing of one block element does not "
+"affect the inline parsing of any other."
 msgstr ""
 
 #: ../../spec.txt:516
@@ -458,9 +456,9 @@ msgstr ""
 
 #: ../../spec.txt:530
 msgid ""
-"A line consisting of 0-3 spaces of indentation, followed by a sequence of"
-" three or more matching `-`, `_`, or `*` characters, each followed "
-"optionally by any number of spaces or tabs, forms a [thematic break](@)."
+"A line consisting of 0-3 spaces of indentation, followed by a sequence of "
+"three or more matching `-`, `_`, or `*` characters, each followed optionally"
+" by any number of spaces or tabs, forms a [thematic break](@)."
 msgstr ""
 
 #: ../../spec.txt:546
@@ -497,8 +495,8 @@ msgstr ""
 
 #: ../../spec.txt:663
 msgid ""
-"It is required that all of the [non-whitespace characters] be the same. "
-"So, this is not a thematic break:"
+"It is required that all of the [non-whitespace characters] be the same. So, "
+"this is not a thematic break:"
 msgstr ""
 
 #: ../../spec.txt:673
@@ -512,16 +510,15 @@ msgstr ""
 #: ../../spec.txt:703
 msgid ""
 "If a line of dashes that meets the above conditions for being a thematic "
-"break could also be interpreted as the underline of a [setext heading], "
-"the interpretation as a [setext heading] takes precedence. Thus, for "
-"example, this is a setext heading, not a paragraph followed by a thematic"
-" break:"
+"break could also be interpreted as the underline of a [setext heading], the "
+"interpretation as a [setext heading] takes precedence. Thus, for example, "
+"this is a setext heading, not a paragraph followed by a thematic break:"
 msgstr ""
 
 #: ../../spec.txt:719
 msgid ""
-"When both a thematic break and a list item are possible interpretations "
-"of a line, the thematic break takes precedence:"
+"When both a thematic break and a list item are possible interpretations of a"
+" line, the thematic break takes precedence:"
 msgstr ""
 
 #: ../../spec.txt:737
@@ -535,15 +532,15 @@ msgstr ""
 #: ../../spec.txt:754
 msgid ""
 "An [ATX heading](@) consists of a string of characters, parsed as inline "
-"content, between an opening sequence of 1--6 unescaped `#` characters and"
-" an optional closing sequence of any number of unescaped `#` characters. "
-"The opening sequence of `#` characters must be followed by a [space] or "
-"by the end of line. The optional closing sequence of `#`s must be "
-"preceded by a [space] and may be followed by spaces only.  The opening "
-"`#` character may be indented 0-3 spaces.  The raw contents of the "
-"heading are stripped of leading and trailing spaces before being parsed "
-"as inline content.  The heading level is equal to the number of `#` "
-"characters in the opening sequence."
+"content, between an opening sequence of 1--6 unescaped `#` characters and an"
+" optional closing sequence of any number of unescaped `#` characters. The "
+"opening sequence of `#` characters must be followed by a [space] or by the "
+"end of line. The optional closing sequence of `#`s must be preceded by a "
+"[space] and may be followed by spaces only.  The opening `#` character may "
+"be indented 0-3 spaces.  The raw contents of the heading are stripped of "
+"leading and trailing spaces before being parsed as inline content.  The "
+"heading level is equal to the number of `#` characters in the opening "
+"sequence."
 msgstr ""
 
 #: ../../spec.txt:766
@@ -556,12 +553,11 @@ msgstr ""
 
 #: ../../spec.txt:794
 msgid ""
-"At least one space is required between the `#` characters and the "
-"heading's contents, unless the heading is empty.  Note that many "
-"implementations currently do not require the space.  However, the space "
-"was required by the [original ATX "
-"implementation](http://www.aaronsw.com/2002/atx/atx.py), and it helps "
-"prevent things like the following from being parsed as headings:"
+"At least one space is required between the `#` characters and the heading's "
+"contents, unless the heading is empty.  Note that many implementations "
+"currently do not require the space.  However, the space was required by the "
+"[original ATX implementation](http://www.aaronsw.com/2002/atx/atx.py), and "
+"it helps prevent things like the following from being parsed as headings:"
 msgstr ""
 
 #: ../../spec.txt:812
@@ -573,7 +569,8 @@ msgid "Contents are parsed as inlines:"
 msgstr ""
 
 #: ../../spec.txt:830
-msgid "Leading and trailing [whitespace] is ignored in parsing inline content:"
+msgid ""
+"Leading and trailing [whitespace] is ignored in parsing inline content:"
 msgstr ""
 
 #: ../../spec.txt:839
@@ -598,9 +595,8 @@ msgstr ""
 
 #: ../../spec.txt:902
 msgid ""
-"A sequence of `#` characters with anything but [spaces] following it is "
-"not a closing sequence, but counts as part of the contents of the "
-"heading:"
+"A sequence of `#` characters with anything but [spaces] following it is not "
+"a closing sequence, but counts as part of the contents of the heading:"
 msgstr ""
 
 #: ../../spec.txt:913
@@ -615,8 +611,8 @@ msgstr ""
 
 #: ../../spec.txt:936
 msgid ""
-"ATX headings need not be separated from surrounding content by blank "
-"lines, and they can interrupt paragraphs:"
+"ATX headings need not be separated from surrounding content by blank lines, "
+"and they can interrupt paragraphs:"
 msgstr ""
 
 #: ../../spec.txt:961
@@ -629,38 +625,38 @@ msgstr ""
 
 #: ../../spec.txt:976
 msgid ""
-"A [setext heading](@) consists of one or more lines of text, each "
-"containing at least one [non-whitespace character], with no more than 3 "
-"spaces indentation, followed by a [setext heading underline].  The lines "
-"of text must be such that, were they not followed by the setext heading "
-"underline, they would be interpreted as a paragraph:  they cannot be "
-"interpretable as a [code fence], [ATX heading][ATX headings], [block "
-"quote][block quotes], [thematic break][thematic breaks], [list item][list"
-" items], or [HTML block][HTML blocks]."
+"A [setext heading](@) consists of one or more lines of text, each containing"
+" at least one [non-whitespace character], with no more than 3 spaces "
+"indentation, followed by a [setext heading underline].  The lines of text "
+"must be such that, were they not followed by the setext heading underline, "
+"they would be interpreted as a paragraph:  they cannot be interpretable as a"
+" [code fence], [ATX heading][ATX headings], [block quote][block quotes], "
+"[thematic break][thematic breaks], [list item][list items], or [HTML "
+"block][HTML blocks]."
 msgstr ""
 
 #: ../../spec.txt:986
 msgid ""
 "A [setext heading underline](@) is a sequence of `=` characters or a "
-"sequence of `-` characters, with no more than 3 spaces indentation and "
-"any number of trailing spaces.  If a line containing a single `-` can be "
-"interpreted as an empty [list items], it should be interpreted this way "
-"and not as a [setext heading underline]."
+"sequence of `-` characters, with no more than 3 spaces indentation and any "
+"number of trailing spaces.  If a line containing a single `-` can be "
+"interpreted as an empty [list items], it should be interpreted this way and "
+"not as a [setext heading underline]."
 msgstr ""
 
 #: ../../spec.txt:993
 msgid ""
-"The heading is a level 1 heading if `=` characters are used in the "
-"[setext heading underline], and a level 2 heading if `-` characters are "
-"used.  The contents of the heading are the result of parsing the "
-"preceding lines of text as CommonMark inline content."
+"The heading is a level 1 heading if `=` characters are used in the [setext "
+"heading underline], and a level 2 heading if `-` characters are used.  The "
+"contents of the heading are the result of parsing the preceding lines of "
+"text as CommonMark inline content."
 msgstr ""
 
 #: ../../spec.txt:999
 msgid ""
 "In general, a setext heading need not be preceded or followed by a blank "
-"line.  However, it cannot interrupt a paragraph, so when a setext heading"
-" comes after a paragraph, a blank line is needed between them."
+"line.  However, it cannot interrupt a paragraph, so when a setext heading "
+"comes after a paragraph, a blank line is needed between them."
 msgstr ""
 
 #: ../../spec.txt:1004
@@ -674,8 +670,8 @@ msgstr ""
 #: ../../spec.txt:1029
 msgid ""
 "The contents are the result of parsing the headings's raw content as "
-"inlines.  The heading's raw content is formed by concatenating the lines "
-"and removing initial and final [whitespace]."
+"inlines.  The heading's raw content is formed by concatenating the lines and"
+" removing initial and final [whitespace]."
 msgstr ""
 
 #: ../../spec.txt:1044
@@ -684,8 +680,8 @@ msgstr ""
 
 #: ../../spec.txt:1058
 msgid ""
-"The heading content can be indented up to three spaces, and need not line"
-" up with the underlining:"
+"The heading content can be indented up to three spaces, and need not line up"
+" with the underlining:"
 msgstr ""
 
 #: ../../spec.txt:1077
@@ -722,21 +718,19 @@ msgstr ""
 
 #: ../../spec.txt:1172
 msgid ""
-"The setext heading underline cannot be a [lazy continuation line] in a "
-"list item or block quote:"
+"The setext heading underline cannot be a [lazy continuation line] in a list "
+"item or block quote:"
 msgstr ""
 
 #: ../../spec.txt:1210
 msgid ""
-"A blank line is needed between a paragraph and a following setext "
-"heading, since otherwise the paragraph becomes part of the heading's "
-"content:"
+"A blank line is needed between a paragraph and a following setext heading, "
+"since otherwise the paragraph becomes part of the heading's content:"
 msgstr ""
 
 #: ../../spec.txt:1224
 msgid ""
-"But in general a blank line is not required before or after setext "
-"headings:"
+"But in general a blank line is not required before or after setext headings:"
 msgstr ""
 
 #: ../../spec.txt:1242
@@ -758,9 +752,9 @@ msgstr ""
 
 #: ../../spec.txt:1308
 msgid ""
-"**Compatibility note:**  Most existing Markdown implementations do not "
-"allow the text of setext headings to span multiple lines. But there is no"
-" consensus about how to interpret"
+"**Compatibility note:**  Most existing Markdown implementations do not allow"
+" the text of setext headings to span multiple lines. But there is no "
+"consensus about how to interpret"
 msgstr ""
 
 #: ../../spec.txt:1319
@@ -785,22 +779,21 @@ msgstr ""
 
 #: ../../spec.txt:1326
 msgid ""
-"We find interpretation 4 most natural, and interpretation 4 increases the"
-" expressive power of CommonMark, by allowing multiline headings.  Authors"
-" who want interpretation 1 can put a blank line after the first "
-"paragraph:"
+"We find interpretation 4 most natural, and interpretation 4 increases the "
+"expressive power of CommonMark, by allowing multiline headings.  Authors who"
+" want interpretation 1 can put a blank line after the first paragraph:"
 msgstr ""
 
 #: ../../spec.txt:1344
 msgid ""
-"Authors who want interpretation 2 can put blank lines around the thematic"
-" break,"
+"Authors who want interpretation 2 can put blank lines around the thematic "
+"break,"
 msgstr ""
 
 #: ../../spec.txt:1362
 msgid ""
-"or use a thematic break that cannot count as a [setext heading "
-"underline], such as"
+"or use a thematic break that cannot count as a [setext heading underline], "
+"such as"
 msgstr ""
 
 #: ../../spec.txt:1378
@@ -814,26 +807,25 @@ msgstr ""
 #: ../../spec.txt:1395
 msgid ""
 "An [indented code block](@) is composed of one or more [indented chunks] "
-"separated by blank lines. An [indented chunk](@) is a sequence of non-"
-"blank lines, each indented four or more spaces. The contents of the code "
-"block are the literal contents of the lines, including trailing [line "
-"endings], minus four spaces of indentation. An indented code block has no"
-" [info string]."
+"separated by blank lines. An [indented chunk](@) is a sequence of non-blank "
+"lines, each indented four or more spaces. The contents of the code block are"
+" the literal contents of the lines, including trailing [line endings], minus"
+" four spaces of indentation. An indented code block has no [info string]."
 msgstr ""
 
 #: ../../spec.txt:1403
 msgid ""
 "An indented code block cannot interrupt a paragraph, so there must be a "
-"blank line between a paragraph and a following indented code block. (A "
-"blank line is not needed, however, between a code block and a following "
+"blank line between a paragraph and a following indented code block. (A blank"
+" line is not needed, however, between a code block and a following "
 "paragraph.)"
 msgstr ""
 
 #: ../../spec.txt:1418
 msgid ""
-"If there is any ambiguity between an interpretation of indentation as a "
-"code block and as indicating that material belongs to a [list item][list "
-"items], the list item interpretation takes precedence:"
+"If there is any ambiguity between an interpretation of indentation as a code"
+" block and as indicating that material belongs to a [list item][list items],"
+" the list item interpretation takes precedence:"
 msgstr ""
 
 #: ../../spec.txt:1453
@@ -854,15 +846,15 @@ msgstr ""
 
 #: ../../spec.txt:1507
 msgid ""
-"An indented code block cannot interrupt a paragraph.  (This allows "
-"hanging indents and the like.)"
+"An indented code block cannot interrupt a paragraph.  (This allows hanging "
+"indents and the like.)"
 msgstr ""
 
 #: ../../spec.txt:1520
 msgid ""
 "However, any non-blank line with fewer than four leading spaces ends the "
-"code block immediately.  So a paragraph may occur immediately after "
-"indented code:"
+"code block immediately.  So a paragraph may occur immediately after indented"
+" code:"
 msgstr ""
 
 #: ../../spec.txt:1534
@@ -877,8 +869,8 @@ msgstr ""
 
 #: ../../spec.txt:1567
 msgid ""
-"Blank lines preceding or following an indented code block are not "
-"included in it:"
+"Blank lines preceding or following an indented code block are not included "
+"in it:"
 msgstr ""
 
 #: ../../spec.txt:1582
@@ -893,57 +885,56 @@ msgstr ""
 msgid ""
 "A [code fence](@) is a sequence of at least three consecutive backtick "
 "characters (`` ` ``) or tildes (`~`).  (Tildes and backticks cannot be "
-"mixed.) A [fenced code block](@) begins with a code fence, indented no "
-"more than three spaces."
+"mixed.) A [fenced code block](@) begins with a code fence, indented no more "
+"than three spaces."
 msgstr ""
 
 #: ../../spec.txt:1601
 msgid ""
 "The line with the opening code fence may optionally contain some text "
-"following the code fence; this is trimmed of leading and trailing "
-"whitespace and called the [info string](@). If the [info string] comes "
-"after a backtick fence, it may not contain any backtick characters.  (The"
-" reason for this restriction is that otherwise some inline code would be "
-"incorrectly interpreted as the beginning of a fenced code block.)"
+"following the code fence; this is trimmed of leading and trailing whitespace"
+" and called the [info string](@). If the [info string] comes after a "
+"backtick fence, it may not contain any backtick characters.  (The reason for"
+" this restriction is that otherwise some inline code would be incorrectly "
+"interpreted as the beginning of a fenced code block.)"
 msgstr ""
 
 #: ../../spec.txt:1609
 msgid ""
 "The content of the code block consists of all subsequent lines, until a "
 "closing [code fence] of the same type as the code block began with "
-"(backticks or tildes), and with at least as many backticks or tildes as "
-"the opening code fence.  If the leading code fence is indented N spaces, "
-"then up to N spaces of indentation are removed from each line of the "
-"content (if present).  (If a content line is not indented, it is "
-"preserved unchanged.  If it is indented less than N spaces, all of the "
-"indentation is removed.)"
+"(backticks or tildes), and with at least as many backticks or tildes as the "
+"opening code fence.  If the leading code fence is indented N spaces, then up"
+" to N spaces of indentation are removed from each line of the content (if "
+"present).  (If a content line is not indented, it is preserved unchanged.  "
+"If it is indented less than N spaces, all of the indentation is removed.)"
 msgstr ""
 
 #: ../../spec.txt:1618
 msgid ""
 "The closing code fence may be indented up to three spaces, and may be "
-"followed only by spaces, which are ignored.  If the end of the containing"
-" block (or document) is reached and no closing code fence has been found,"
-" the code block contains all of the lines after the opening code fence "
-"until the end of the containing block (or document).  (An alternative "
-"spec would require backtracking in the event that a closing code fence is"
-" not found.  But this makes parsing much less efficient, and there seems "
-"to be no real down side to the behavior described here.)"
+"followed only by spaces, which are ignored.  If the end of the containing "
+"block (or document) is reached and no closing code fence has been found, the"
+" code block contains all of the lines after the opening code fence until the"
+" end of the containing block (or document).  (An alternative spec would "
+"require backtracking in the event that a closing code fence is not found.  "
+"But this makes parsing much less efficient, and there seems to be no real "
+"down side to the behavior described here.)"
 msgstr ""
 
 #: ../../spec.txt:1628
 msgid ""
-"A fenced code block may interrupt a paragraph, and does not require a "
-"blank line either before or after."
+"A fenced code block may interrupt a paragraph, and does not require a blank "
+"line either before or after."
 msgstr ""
 
 #: ../../spec.txt:1631
 msgid ""
 "The content of a code fence is treated as literal text, not parsed as "
-"inlines.  The first word of the [info string] is typically used to "
-"specify the language of the code sample, and rendered in the `class` "
-"attribute of the `code` tag.  However, this spec does not mandate any "
-"particular treatment of the [info string]."
+"inlines.  The first word of the [info string] is typically used to specify "
+"the language of the code sample, and rendered in the `class` attribute of "
+"the `code` tag.  However, this spec does not mandate any particular "
+"treatment of the [info string]."
 msgstr ""
 
 #: ../../spec.txt:1637
@@ -959,7 +950,8 @@ msgid "Fewer than three backticks is not enough:"
 msgstr ""
 
 #: ../../spec.txt:1674
-msgid "The closing code fence must use the same character as the opening fence:"
+msgid ""
+"The closing code fence must use the same character as the opening fence:"
 msgstr ""
 
 #: ../../spec.txt:1701
@@ -968,8 +960,8 @@ msgstr ""
 
 #: ../../spec.txt:1727
 msgid ""
-"Unclosed code blocks are closed by the end of the document (or the "
-"enclosing [block quote][block quotes] or [list item][list items]):"
+"Unclosed code blocks are closed by the end of the document (or the enclosing"
+" [block quote][block quotes] or [list item][list items]):"
 msgstr ""
 
 #: ../../spec.txt:1764
@@ -992,8 +984,8 @@ msgstr ""
 
 #: ../../spec.txt:1846
 msgid ""
-"Closing fences may be indented by 0-3 spaces, and their indentation need "
-"not match that of the opening fence:"
+"Closing fences may be indented by 0-3 spaces, and their indentation need not"
+" match that of the opening fence:"
 msgstr ""
 
 #: ../../spec.txt:1869
@@ -1006,24 +998,23 @@ msgstr ""
 
 #: ../../spec.txt:1905
 msgid ""
-"Fenced code blocks can interrupt paragraphs, and can be followed directly"
-" by paragraphs, without a blank line between:"
+"Fenced code blocks can interrupt paragraphs, and can be followed directly by"
+" paragraphs, without a blank line between:"
 msgstr ""
 
 #: ../../spec.txt:1922
 msgid ""
-"Other blocks can also occur before and after fenced code blocks without "
-"an intervening blank line:"
+"Other blocks can also occur before and after fenced code blocks without an "
+"intervening blank line:"
 msgstr ""
 
 #: ../../spec.txt:1940
 msgid ""
-"An [info string] can be provided after the opening code fence. Although "
-"this spec doesn't mandate any particular treatment of the info string, "
-"the first word is typically used to specify the language of the code "
-"block. In HTML output, the language is normally indicated by adding a "
-"class to the `code` element consisting of `language-` followed by the "
-"language name."
+"An [info string] can be provided after the opening code fence. Although this"
+" spec doesn't mandate any particular treatment of the info string, the first"
+" word is typically used to specify the language of the code block. In HTML "
+"output, the language is normally indicated by adding a class to the `code` "
+"element consisting of `language-` followed by the language name."
 msgstr ""
 
 #: ../../spec.txt:1983
@@ -1044,30 +1035,30 @@ msgstr ""
 
 #: ../../spec.txt:2021
 msgid ""
-"An [HTML block](@) is a group of lines that is treated as raw HTML (and "
-"will not be escaped in HTML output)."
+"An [HTML block](@) is a group of lines that is treated as raw HTML (and will"
+" not be escaped in HTML output)."
 msgstr ""
 
 #: ../../spec.txt:2024
 msgid ""
-"There are seven kinds of [HTML block], which can be defined by their "
-"start and end conditions.  The block begins with a line that meets a "
-"[start condition](@) (after up to three spaces optional indentation). It "
-"ends with the first subsequent line that meets a matching [end "
-"condition](@), or the last line of the document, or the last line of the "
-"[container block](#container-blocks) containing the current HTML block, "
-"if no line is encountered that meets the [end condition].  If the first "
-"line meets both the [start condition] and the [end condition], the block "
-"will contain just that line."
+"There are seven kinds of [HTML block], which can be defined by their start "
+"and end conditions.  The block begins with a line that meets a [start "
+"condition](@) (after up to three spaces optional indentation). It ends with "
+"the first subsequent line that meets a matching [end condition](@), or the "
+"last line of the document, or the last line of the [container block"
+"](#container-blocks) containing the current HTML block, if no line is "
+"encountered that meets the [end condition].  If the first line meets both "
+"the [start condition] and the [end condition], the block will contain just "
+"that line."
 msgstr ""
 
 #: ../../spec.txt:2034
 msgid ""
 "**Start condition:**  line begins with the string `<script`, `<pre`, or "
-"`<style` (case-insensitive), followed by whitespace, the string `>`, or "
-"the end of the line.\\ **End condition:**  line contains an end tag "
-"`</script>`, `</pre>`, or `</style>` (case-insensitive; it need not match"
-" the start tag)."
+"`<style` (case-insensitive), followed by whitespace, the string `>`, or the "
+"end of the line.\\ **End condition:**  line contains an end tag `</script>`,"
+" `</pre>`, or `</style>` (case-insensitive; it need not match the start "
+"tag)."
 msgstr ""
 
 #: ../../spec.txt:2041
@@ -1078,8 +1069,8 @@ msgstr ""
 
 #: ../../spec.txt:2044
 msgid ""
-"**Start condition:** line begins with the string `<?`.\\ **End "
-"condition:** line contains the string `?>`."
+"**Start condition:** line begins with the string `<?`.\\ **End condition:** "
+"line contains the string `?>`."
 msgstr ""
 
 #: ../../spec.txt:2047
@@ -1097,25 +1088,25 @@ msgstr ""
 
 #: ../../spec.txt:2055
 msgid ""
-"**Start condition:** line begins the string `<` or `</` followed by one "
-"of the strings (case-insensitive) `address`, `article`, `aside`, `base`, "
-"`basefont`, `blockquote`, `body`, `caption`, `center`, `col`, `colgroup`,"
-" `dd`, `details`, `dialog`, `dir`, `div`, `dl`, `dt`, `fieldset`, "
-"`figcaption`, `figure`, `footer`, `form`, `frame`, `frameset`, `h1`, "
-"`h2`, `h3`, `h4`, `h5`, `h6`, `head`, `header`, `hr`, `html`, `iframe`, "
-"`legend`, `li`, `link`, `main`, `menu`, `menuitem`, `nav`, `noframes`, "
-"`ol`, `optgroup`, `option`, `p`, `param`, `section`, `source`, `summary`,"
-" `table`, `tbody`, `td`, `tfoot`, `th`, `thead`, `title`, `tr`, `track`, "
-"`ul`, followed by [whitespace], the end of the line, the string `>`, or "
-"the string `/>`.\\ **End condition:** line is followed by a [blank line]."
+"**Start condition:** line begins the string `<` or `</` followed by one of "
+"the strings (case-insensitive) `address`, `article`, `aside`, `base`, "
+"`basefont`, `blockquote`, `body`, `caption`, `center`, `col`, `colgroup`, "
+"`dd`, `details`, `dialog`, `dir`, `div`, `dl`, `dt`, `fieldset`, "
+"`figcaption`, `figure`, `footer`, `form`, `frame`, `frameset`, `h1`, `h2`, "
+"`h3`, `h4`, `h5`, `h6`, `head`, `header`, `hr`, `html`, `iframe`, `legend`, "
+"`li`, `link`, `main`, `menu`, `menuitem`, `nav`, `noframes`, `ol`, "
+"`optgroup`, `option`, `p`, `param`, `section`, `source`, `summary`, `table`,"
+" `tbody`, `td`, `tfoot`, `th`, `thead`, `title`, `tr`, `track`, `ul`, "
+"followed by [whitespace], the end of the line, the string `>`, or the string"
+" `/>`.\\ **End condition:** line is followed by a [blank line]."
 msgstr ""
 
 #: ../../spec.txt:2070
 msgid ""
-"**Start condition:**  line begins with a complete [open tag] (with any "
-"[tag name] other than `script`, `style`, or `pre`) or a complete [closing"
-" tag], followed only by [whitespace] or the end of the line.\\ **End "
-"condition:** line is followed by a [blank line]."
+"**Start condition:**  line begins with a complete [open tag] (with any [tag "
+"name] other than `script`, `style`, or `pre`) or a complete [closing tag], "
+"followed only by [whitespace] or the end of the line.\\ **End condition:** "
+"line is followed by a [blank line]."
 msgstr ""
 
 #: ../../spec.txt:2076
@@ -1123,34 +1114,35 @@ msgid ""
 "HTML blocks continue until they are closed by their appropriate [end "
 "condition], or the last line of the document or other [container block"
 "](#container-blocks).  This means any HTML **within an HTML block** that "
-"might otherwise be recognised as a start condition will be ignored by the"
-" parser and passed through as-is, without changing the parser's state."
+"might otherwise be recognised as a start condition will be ignored by the "
+"parser and passed through as-is, without changing the parser's state."
 msgstr ""
 
 #: ../../spec.txt:2083
 msgid ""
 "For instance, `<pre>` within a HTML block started by `<table>` will not "
-"affect the parser state; as the HTML block was started in by start "
-"condition 6, it will end at any blank line. This can be surprising:"
+"affect the parser state; as the HTML block was started in by start condition"
+" 6, it will end at any blank line. This can be surprising:"
 msgstr ""
 
 #: ../../spec.txt:2104
 msgid ""
-"In this case, the HTML block is terminated by the newline — the "
-"`**Hello**` text remains verbatim — and regular parsing resumes, with a "
-"paragraph, emphasised `world` and inline and block HTML following."
+"In this case, the HTML block is terminated by the newline — the `**Hello**` "
+"text remains verbatim — and regular parsing resumes, with a paragraph, "
+"emphasised `world` and inline and block HTML following."
 msgstr ""
 
 #: ../../spec.txt:2108
 msgid ""
-"All types of [HTML blocks] except type 7 may interrupt a paragraph.  "
-"Blocks of type 7 may not interrupt a paragraph. (This restriction is "
-"intended to prevent unwanted interpretation of long tags inside a wrapped"
-" paragraph as starting HTML blocks.)"
+"All types of [HTML blocks] except type 7 may interrupt a paragraph.  Blocks "
+"of type 7 may not interrupt a paragraph. (This restriction is intended to "
+"prevent unwanted interpretation of long tags inside a wrapped paragraph as "
+"starting HTML blocks.)"
 msgstr ""
 
 #: ../../spec.txt:2113
-msgid "Some simple examples follow.  Here are some basic HTML blocks of type 6:"
+msgid ""
+"Some simple examples follow.  Here are some basic HTML blocks of type 6:"
 msgstr ""
 
 #: ../../spec.txt:2149
@@ -1163,8 +1155,8 @@ msgstr ""
 
 #: ../../spec.txt:2175
 msgid ""
-"The tag on the first line can be partial, as long as it is split where "
-"there would be whitespace:"
+"The tag on the first line can be partial, as long as it is split where there"
+" would be whitespace:"
 msgstr ""
 
 #: ../../spec.txt:2200
@@ -1177,8 +1169,8 @@ msgstr ""
 
 #: ../../spec.txt:2235
 msgid ""
-"The initial tag doesn't even need to be a valid tag, as long as it starts"
-" like one:"
+"The initial tag doesn't even need to be a valid tag, as long as it starts "
+"like one:"
 msgstr ""
 
 #: ../../spec.txt:2247
@@ -1187,17 +1179,17 @@ msgstr ""
 
 #: ../../spec.txt:2268
 msgid ""
-"Everything until the next blank line or end of document gets included in "
-"the HTML block.  So, in the following example, what looks like a Markdown"
-" code block is actually part of the HTML block, which continues until a "
-"blank line or the end of the document is reached:"
+"Everything until the next blank line or end of document gets included in the"
+" HTML block.  So, in the following example, what looks like a Markdown code "
+"block is actually part of the HTML block, which continues until a blank line"
+" or the end of the document is reached:"
 msgstr ""
 
 #: ../../spec.txt:2287
 msgid ""
-"To start an [HTML block] with a tag that is *not* in the list of block-"
-"level tags in (6), you must put the tag by itself on the first line (and "
-"it must be complete):"
+"To start an [HTML block] with a tag that is *not* in the list of block-level"
+" tags in (6), you must put the tag by itself on the first line (and it must "
+"be complete):"
 msgstr ""
 
 #: ../../spec.txt:2302
@@ -1206,11 +1198,11 @@ msgstr ""
 
 #: ../../spec.txt:2335
 msgid ""
-"These rules are designed to allow us to work with tags that can function "
-"as either block-level or inline-level tags. The `<del>` tag is a nice "
-"example.  We can surround content with `<del>` tags in three different "
-"ways.  In this case, we get a raw HTML block, because the `<del>` tag is "
-"on a line by itself:"
+"These rules are designed to allow us to work with tags that can function as "
+"either block-level or inline-level tags. The `<del>` tag is a nice example."
+"  We can surround content with `<del>` tags in three different ways.  In "
+"this case, we get a raw HTML block, because the `<del>` tag is on a line by "
+"itself:"
 msgstr ""
 
 #: ../../spec.txt:2352
@@ -1229,11 +1221,11 @@ msgstr ""
 
 #: ../../spec.txt:2381
 msgid ""
-"HTML tags designed to contain literal content (`script`, `style`, `pre`),"
-" comments, processing instructions, and declarations are treated somewhat"
-" differently. Instead of ending at the first blank line, these blocks end"
-" at the first line containing a corresponding end tag. As a result, these"
-" blocks can contain blank lines:"
+"HTML tags designed to contain literal content (`script`, `style`, `pre`), "
+"comments, processing instructions, and declarations are treated somewhat "
+"differently. Instead of ending at the first blank line, these blocks end at "
+"the first line containing a corresponding end tag. As a result, these blocks"
+" can contain blank lines:"
 msgstr ""
 
 #: ../../spec.txt:2388
@@ -1251,8 +1243,8 @@ msgstr ""
 #: ../../spec.txt:2449
 msgid ""
 "If there is no matching end tag, the block will end at the end of the "
-"document (or the enclosing [block quote][block quotes] or [list "
-"item][list items]):"
+"document (or the enclosing [block quote][block quotes] or [list item][list "
+"items]):"
 msgstr ""
 
 #: ../../spec.txt:2493
@@ -1261,8 +1253,8 @@ msgstr ""
 
 #: ../../spec.txt:2513
 msgid ""
-"Note that anything on the last line after the end tag will be included in"
-" the [HTML block]:"
+"Note that anything on the last line after the end tag will be included in "
+"the [HTML block]:"
 msgstr ""
 
 #: ../../spec.txt:2527
@@ -1293,8 +1285,8 @@ msgstr ""
 
 #: ../../spec.txt:2646
 msgid ""
-"However, a following blank line is needed, except at the end of a "
-"document, and except for blocks of types 1--5, [above][HTML block]:"
+"However, a following blank line is needed, except at the end of a document, "
+"and except for blocks of types 1--5, [above][HTML block]:"
 msgstr ""
 
 #: ../../spec.txt:2663
@@ -1303,20 +1295,21 @@ msgstr ""
 
 #: ../../spec.txt:2676
 msgid ""
-"This rule differs from John Gruber's original Markdown syntax "
-"specification, which says:"
+"This rule differs from John Gruber's original Markdown syntax specification,"
+" which says:"
 msgstr ""
 
 #: ../../spec.txt:2679
 msgid ""
 "The only restrictions are that block-level HTML elements — e.g. `<div>`, "
-"`<table>`, `<pre>`, `<p>`, etc. — must be separated from surrounding "
-"content by blank lines, and the start and end tags of the block should "
-"not be indented with tabs or spaces."
+"`<table>`, `<pre>`, `<p>`, etc. — must be separated from surrounding content"
+" by blank lines, and the start and end tags of the block should not be "
+"indented with tabs or spaces."
 msgstr ""
 
 #: ../../spec.txt:2684
-msgid "In some ways Gruber's rule is more restrictive than the one given here:"
+msgid ""
+"In some ways Gruber's rule is more restrictive than the one given here:"
 msgstr ""
 
 #: ../../spec.txt:2687
@@ -1329,8 +1322,7 @@ msgstr ""
 
 #: ../../spec.txt:2689
 msgid ""
-"It requires a matching end tag, which it also does not allow to be "
-"indented."
+"It requires a matching end tag, which it also does not allow to be indented."
 msgstr ""
 
 #: ../../spec.txt:2692
@@ -1341,14 +1333,14 @@ msgstr ""
 
 #: ../../spec.txt:2695
 msgid ""
-"There is one respect, however, in which Gruber's rule is more liberal "
-"than the one given here, since it allows blank lines to occur inside an "
-"HTML block.  There are two reasons for disallowing them here. First, it "
-"removes the need to parse balanced tags, which is expensive and can "
-"require backtracking from the end of the document if no matching end tag "
-"is found. Second, it provides a very simple and flexible way of including"
-" Markdown content inside HTML tags: simply separate the Markdown from the"
-" HTML using blank lines:"
+"There is one respect, however, in which Gruber's rule is more liberal than "
+"the one given here, since it allows blank lines to occur inside an HTML "
+"block.  There are two reasons for disallowing them here. First, it removes "
+"the need to parse balanced tags, which is expensive and can require "
+"backtracking from the end of the document if no matching end tag is found. "
+"Second, it provides a very simple and flexible way of including Markdown "
+"content inside HTML tags: simply separate the Markdown from the HTML using "
+"blank lines:"
 msgstr ""
 
 #: ../../spec.txt:2704
@@ -1358,33 +1350,30 @@ msgstr ""
 #: ../../spec.txt:2730
 msgid ""
 "Some Markdown implementations have adopted a convention of interpreting "
-"content inside tags as text if the open tag has the attribute "
-"`markdown=1`.  The rule given above seems a simpler and more elegant way "
-"of achieving the same expressive power, which is also much simpler to "
-"parse."
+"content inside tags as text if the open tag has the attribute `markdown=1`."
+"  The rule given above seems a simpler and more elegant way of achieving the"
+" same expressive power, which is also much simpler to parse."
 msgstr ""
 
 #: ../../spec.txt:2736
-#, python-format
 msgid ""
-"The main potential drawback is that one can no longer paste HTML blocks "
-"into Markdown documents with 100% reliability.  However, *in most cases* "
-"this will work fine, because the blank lines in HTML are usually followed"
-" by HTML block tags.  For example:"
+"The main potential drawback is that one can no longer paste HTML blocks into"
+" Markdown documents with 100% reliability.  However, *in most cases* this "
+"will work fine, because the blank lines in HTML are usually followed by HTML"
+" block tags.  For example:"
 msgstr ""
 
 #: ../../spec.txt:2764
 msgid ""
-"There are problems, however, if the inner tags are indented *and* "
-"separated by spaces, as then they will be interpreted as an indented code"
-" block:"
+"There are problems, however, if the inner tags are indented *and* separated "
+"by spaces, as then they will be interpreted as an indented code block:"
 msgstr ""
 
 #: ../../spec.txt:2792
 msgid ""
-"Fortunately, blank lines are usually not necessary and can be deleted.  "
-"The exception is inside `<pre>` tags, but as described [above][HTML "
-"blocks], raw HTML blocks starting with `<pre>` *can* contain blank lines."
+"Fortunately, blank lines are usually not necessary and can be deleted.  The "
+"exception is inside `<pre>` tags, but as described [above][HTML blocks], raw"
+" HTML blocks starting with `<pre>` *can* contain blank lines."
 msgstr ""
 
 #: ../../spec.txt:2797
@@ -1393,22 +1382,21 @@ msgstr ""
 
 #: ../../spec.txt:2799
 msgid ""
-"A [link reference definition](@) consists of a [link label], indented up "
-"to three spaces, followed by a colon (`:`), optional [whitespace] "
-"(including up to one [line ending]), a [link destination], optional "
-"[whitespace] (including up to one [line ending]), and an optional [link "
-"title], which if it is present must be separated from the [link "
-"destination] by [whitespace]. No further [non-whitespace characters] may "
-"occur on the line."
+"A [link reference definition](@) consists of a [link label], indented up to "
+"three spaces, followed by a colon (`:`), optional [whitespace] (including up"
+" to one [line ending]), a [link destination], optional [whitespace] "
+"(including up to one [line ending]), and an optional [link title], which if "
+"it is present must be separated from the [link destination] by [whitespace]."
+" No further [non-whitespace characters] may occur on the line."
 msgstr ""
 
 #: ../../spec.txt:2809
 msgid ""
-"A [link reference definition] does not correspond to a structural element"
-" of a document.  Instead, it defines a label which can be used in "
-"[reference links] and reference-style [images] elsewhere in the document."
-"  [Link reference definitions] can come either before or after the links "
-"that use them."
+"A [link reference definition] does not correspond to a structural element of"
+" a document.  Instead, it defines a label which can be used in [reference "
+"links] and reference-style [images] elsewhere in the document.  [Link "
+"reference definitions] can come either before or after the links that use "
+"them."
 msgstr ""
 
 #: ../../spec.txt:2856
@@ -1428,7 +1416,8 @@ msgid "The link destination may not be omitted:"
 msgstr ""
 
 #: ../../spec.txt:2913
-msgid "However, an empty link destination may be specified using angle brackets:"
+msgid ""
+"However, an empty link destination may be specified using angle brackets:"
 msgstr ""
 
 #: ../../spec.txt:2924
@@ -1446,13 +1435,14 @@ msgid "A link can come before its corresponding definition:"
 msgstr ""
 
 #: ../../spec.txt:2960
-msgid "If there are several matching definitions, the first one takes precedence:"
+msgid ""
+"If there are several matching definitions, the first one takes precedence:"
 msgstr ""
 
 #: ../../spec.txt:2973
 msgid ""
-"As noted in the section on [Links], matching of labels is case-"
-"insensitive (see [matches])."
+"As noted in the section on [Links], matching of labels is case-insensitive "
+"(see [matches])."
 msgstr ""
 
 #: ../../spec.txt:2994
@@ -1467,8 +1457,8 @@ msgstr ""
 
 #: ../../spec.txt:3015
 msgid ""
-"This is not a link reference definition, because there are [non-"
-"whitespace characters] after the title:"
+"This is not a link reference definition, because there are [non-whitespace "
+"characters] after the title:"
 msgstr ""
 
 #: ../../spec.txt:3025
@@ -1477,8 +1467,7 @@ msgstr ""
 
 #: ../../spec.txt:3035
 msgid ""
-"This is not a link reference definition, because it is indented four "
-"spaces:"
+"This is not a link reference definition, because it is indented four spaces:"
 msgstr ""
 
 #: ../../spec.txt:3049
@@ -1493,29 +1482,29 @@ msgstr ""
 
 #: ../../spec.txt:3079
 msgid ""
-"However, it can directly follow other block elements, such as headings "
-"and thematic breaks, and it need not be followed by a blank line."
+"However, it can directly follow other block elements, such as headings and "
+"thematic breaks, and it need not be followed by a blank line."
 msgstr ""
 
 #: ../../spec.txt:3113
 msgid ""
-"Several [link reference definitions] can occur one after another, without"
-" intervening blank lines."
+"Several [link reference definitions] can occur one after another, without "
+"intervening blank lines."
 msgstr ""
 
 #: ../../spec.txt:3132
 msgid ""
-"[Link reference definitions] can occur inside block containers, like "
-"lists and block quotations.  They affect the entire document, not just "
-"the container in which they are defined:"
+"[Link reference definitions] can occur inside block containers, like lists "
+"and block quotations.  They affect the entire document, not just the "
+"container in which they are defined:"
 msgstr ""
 
 #: ../../spec.txt:3148
 msgid ""
-"Whether something is a [link reference definition] is independent of "
-"whether the link reference it defines is used in the document.  Thus, for"
-" example, the following document contains just a link reference "
-"definition, and no visible content:"
+"Whether something is a [link reference definition] is independent of whether"
+" the link reference it defines is used in the document.  Thus, for example, "
+"the following document contains just a link reference definition, and no "
+"visible content:"
 msgstr ""
 
 #: ../../spec.txt:3160
@@ -1524,11 +1513,11 @@ msgstr ""
 
 #: ../../spec.txt:3162
 msgid ""
-"A sequence of non-blank lines that cannot be interpreted as other kinds "
-"of blocks forms a [paragraph](@). The contents of the paragraph are the "
-"result of parsing the paragraph's raw content as inlines.  The "
-"paragraph's raw content is formed by concatenating the lines and removing"
-" initial and final [whitespace]."
+"A sequence of non-blank lines that cannot be interpreted as other kinds of "
+"blocks forms a [paragraph](@). The contents of the paragraph are the result "
+"of parsing the paragraph's raw content as inlines.  The paragraph's raw "
+"content is formed by concatenating the lines and removing initial and final "
+"[whitespace]."
 msgstr ""
 
 #: ../../spec.txt:3169
@@ -1549,20 +1538,20 @@ msgstr ""
 
 #: ../../spec.txt:3221
 msgid ""
-"Lines after the first may be indented any amount, since indented code "
-"blocks cannot interrupt paragraphs."
+"Lines after the first may be indented any amount, since indented code blocks"
+" cannot interrupt paragraphs."
 msgstr ""
 
 #: ../../spec.txt:3235
 msgid ""
-"However, the first line may be indented at most three spaces, or an "
-"indented code block will be triggered:"
+"However, the first line may be indented at most three spaces, or an indented"
+" code block will be triggered:"
 msgstr ""
 
 #: ../../spec.txt:3257
 msgid ""
-"Final spaces are stripped before inline parsing, so a paragraph that ends"
-" with two or more spaces will not end with a [hard line break]:"
+"Final spaces are stripped before inline parsing, so a paragraph that ends "
+"with two or more spaces will not end with a [hard line break]:"
 msgstr ""
 
 #: ../../spec.txt:3270
@@ -1571,8 +1560,8 @@ msgstr ""
 
 #: ../../spec.txt:3272
 msgid ""
-"[Blank lines] between block-level elements are ignored, except for the "
-"role they play in determining whether a [list] is [tight] or [loose]."
+"[Blank lines] between block-level elements are ignored, except for the role "
+"they play in determining whether a [list] is [tight] or [loose]."
 msgstr ""
 
 #: ../../spec.txt:3276
@@ -1585,29 +1574,29 @@ msgstr ""
 
 #: ../../spec.txt:3296
 msgid ""
-"A [container block](#container-blocks) is a block that has other blocks "
-"as its contents.  There are two basic kinds of container blocks: [block "
-"quotes] and [list items]. [Lists] are meta-containers for [list items]."
+"A [container block](#container-blocks) is a block that has other blocks as "
+"its contents.  There are two basic kinds of container blocks: [block quotes]"
+" and [list items]. [Lists] are meta-containers for [list items]."
 msgstr ""
 
 #: ../../spec.txt:3301
 msgid ""
-"We define the syntax for container blocks recursively.  The general form "
-"of the definition is:"
+"We define the syntax for container blocks recursively.  The general form of "
+"the definition is:"
 msgstr ""
 
 #: ../../spec.txt:3304
 msgid ""
-"If X is a sequence of blocks, then the result of transforming X in such-"
-"and-such a way is a container of type Y with these blocks as its content."
+"If X is a sequence of blocks, then the result of transforming X in such-and-"
+"such a way is a container of type Y with these blocks as its content."
 msgstr ""
 
 #: ../../spec.txt:3308
 msgid ""
-"So, we explain what counts as a block quote or list item by explaining "
-"how these can be *generated* from their contents. This should suffice to "
-"define the syntax, although it does not give a recipe for *parsing* these"
-" constructions.  (A recipe is provided below in the section entitled [A "
+"So, we explain what counts as a block quote or list item by explaining how "
+"these can be *generated* from their contents. This should suffice to define "
+"the syntax, although it does not give a recipe for *parsing* these "
+"constructions.  (A recipe is provided below in the section entitled [A "
 "parsing strategy](#appendix-a-parsing-strategy).)"
 msgstr ""
 
@@ -1617,8 +1606,8 @@ msgstr ""
 
 #: ../../spec.txt:3316
 msgid ""
-"A [block quote marker](@) consists of 0-3 spaces of initial indent, plus "
-"(a) the character `>` together with a following space, or (b) a single "
+"A [block quote marker](@) consists of 0-3 spaces of initial indent, plus (a)"
+" the character `>` together with a following space, or (b) a single "
 "character `>` not followed by a space."
 msgstr ""
 
@@ -1628,27 +1617,26 @@ msgstr ""
 
 #: ../../spec.txt:3322
 msgid ""
-"**Basic case.**  If a string of lines *Ls* constitute a sequence of "
-"blocks *Bs*, then the result of prepending a [block quote marker] to the "
-"beginning of each line in *Ls* is a [block quote](#block-quotes) "
-"containing *Bs*."
+"**Basic case.**  If a string of lines *Ls* constitute a sequence of blocks "
+"*Bs*, then the result of prepending a [block quote marker] to the beginning "
+"of each line in *Ls* is a [block quote](#block-quotes) containing *Bs*."
 msgstr ""
 
 #: ../../spec.txt:3327
 msgid ""
-"**Laziness.**  If a string of lines *Ls* constitute a [block quote"
-"](#block-quotes) with contents *Bs*, then the result of deleting the "
-"initial [block quote marker] from one or more lines in which the next "
-"[non-whitespace character] after the [block quote marker] is [paragraph "
-"continuation text] is a block quote with *Bs* as its content. [Paragraph "
-"continuation text](@) is text that will be parsed as part of the content "
-"of a paragraph, but does not occur at the beginning of the paragraph."
+"**Laziness.**  If a string of lines *Ls* constitute a [block quote](#block-"
+"quotes) with contents *Bs*, then the result of deleting the initial [block "
+"quote marker] from one or more lines in which the next [non-whitespace "
+"character] after the [block quote marker] is [paragraph continuation text] "
+"is a block quote with *Bs* as its content. [Paragraph continuation text](@) "
+"is text that will be parsed as part of the content of a paragraph, but does "
+"not occur at the beginning of the paragraph."
 msgstr ""
 
 #: ../../spec.txt:3337
 msgid ""
-"**Consecutiveness.**  A document cannot contain two [block quotes] in a "
-"row unless there is a [blank line] between them."
+"**Consecutiveness.**  A document cannot contain two [block quotes] in a row "
+"unless there is a [blank line] between them."
 msgstr ""
 
 #: ../../spec.txt:3340
@@ -1673,19 +1661,20 @@ msgstr ""
 
 #: ../../spec.txt:3401
 msgid ""
-"The Laziness clause allows us to omit the `>` before [paragraph "
-"continuation text]:"
+"The Laziness clause allows us to omit the `>` before [paragraph continuation"
+" text]:"
 msgstr ""
 
 #: ../../spec.txt:3417
-msgid "A block quote can contain some lazy and some non-lazy continuation lines:"
+msgid ""
+"A block quote can contain some lazy and some non-lazy continuation lines:"
 msgstr ""
 
 #: ../../spec.txt:3433
 msgid ""
 "Laziness only applies to lines that would have been continuations of "
-"paragraphs had they been prepended with [block quote markers]. For "
-"example, the `> ` cannot be omitted in the second line of"
+"paragraphs had they been prepended with [block quote markers]. For example, "
+"the `> ` cannot be omitted in the second line of"
 msgstr ""
 
 #: ../../spec.txt:3442
@@ -1702,8 +1691,8 @@ msgstr ""
 
 #: ../../spec.txt:3479
 msgid ""
-"For the same reason, we can't omit the `> ` in front of subsequent lines "
-"of an indented or fenced code block:"
+"For the same reason, we can't omit the `> ` in front of subsequent lines of "
+"an indented or fenced code block:"
 msgstr ""
 
 #: ../../spec.txt:3508
@@ -1716,9 +1705,9 @@ msgstr ""
 
 #: ../../spec.txt:3529
 msgid ""
-"the `- bar` is indented too far to start a list, and can't be an indented"
-" code block because indented code blocks cannot interrupt paragraphs, so "
-"it is [paragraph continuation text]."
+"the `- bar` is indented too far to start a list, and can't be an indented "
+"code block because indented code blocks cannot interrupt paragraphs, so it "
+"is [paragraph continuation text]."
 msgstr ""
 
 #: ../../spec.txt:3533
@@ -1737,14 +1726,14 @@ msgstr ""
 msgid ""
 "(Most current Markdown implementations, including John Gruber's original "
 "`Markdown.pl`, will parse this example as a single block quote with two "
-"paragraphs.  But it seems better to allow the author to decide whether "
-"two block quotes or one are wanted.)"
+"paragraphs.  But it seems better to allow the author to decide whether two "
+"block quotes or one are wanted.)"
 msgstr ""
 
 #: ../../spec.txt:3587
 msgid ""
-"Consecutiveness means that if we put these block quotes together, we get "
-"a single block quote:"
+"Consecutiveness means that if we put these block quotes together, we get a "
+"single block quote:"
 msgstr ""
 
 #: ../../spec.txt:3601
@@ -1761,21 +1750,21 @@ msgstr ""
 
 #: ../../spec.txt:3646
 msgid ""
-"However, because of laziness, a blank line is needed between a block "
-"quote and a following paragraph:"
+"However, because of laziness, a blank line is needed between a block quote "
+"and a following paragraph:"
 msgstr ""
 
 #: ../../spec.txt:3684
 msgid ""
-"It is a consequence of the Laziness rule that any number of initial `>`s "
-"may be omitted on a continuation line of a nested block quote:"
+"It is a consequence of the Laziness rule that any number of initial `>`s may"
+" be omitted on a continuation line of a nested block quote:"
 msgstr ""
 
 #: ../../spec.txt:3720
 msgid ""
-"When including an indented code block in a block quote, remember that the"
-" [block quote marker] includes both the `>` and a following space.  So "
-"*five spaces* are needed after the `>`:"
+"When including an indented code block in a block quote, remember that the "
+"[block quote marker] includes both the `>` and a following space.  So *five "
+"spaces* are needed after the `>`:"
 msgstr ""
 
 #: ../../spec.txt:3741
@@ -1783,7 +1772,8 @@ msgid "List items"
 msgstr ""
 
 #: ../../spec.txt:3743
-msgid "A [list marker](@) is a [bullet list marker] or an [ordered list marker]."
+msgid ""
+"A [list marker](@) is a [bullet list marker] or an [ordered list marker]."
 msgstr ""
 
 #: ../../spec.txt:3746
@@ -1793,9 +1783,9 @@ msgstr ""
 #: ../../spec.txt:3749
 msgid ""
 "An [ordered list marker](@) is a sequence of 1--9 arabic digits (`0-9`), "
-"followed by either a `.` character or a `)` character.  (The reason for "
-"the length limit is that with 10 digits we start seeing integer overflows"
-" in some browsers.)"
+"followed by either a `.` character or a `)` character.  (The reason for the "
+"length limit is that with 10 digits we start seeing integer overflows in "
+"some browsers.)"
 msgstr ""
 
 #: ../../spec.txt:3755
@@ -1804,15 +1794,14 @@ msgstr ""
 
 #: ../../spec.txt:3757
 msgid ""
-"**Basic case.**  If a sequence of lines *Ls* constitute a sequence of "
-"blocks *Bs* starting with a [non-whitespace character], and *M* is a list"
-" marker of width *W* followed by 1 ≤ *N* ≤ 4 spaces, then the result of "
-"prepending *M* and the following spaces to the first line of *Ls*, and "
-"indenting subsequent lines of *Ls* by *W + N* spaces, is a list item with"
-" *Bs* as its contents.  The type of the list item (bullet or ordered) is "
-"determined by the type of its list marker. If the list item is ordered, "
-"then it is also assigned a start number, based on the ordered list "
-"marker."
+"**Basic case.**  If a sequence of lines *Ls* constitute a sequence of blocks"
+" *Bs* starting with a [non-whitespace character], and *M* is a list marker "
+"of width *W* followed by 1 ≤ *N* ≤ 4 spaces, then the result of prepending "
+"*M* and the following spaces to the first line of *Ls*, and indenting "
+"subsequent lines of *Ls* by *W + N* spaces, is a list item with *Bs* as its "
+"contents.  The type of the list item (bullet or ordered) is determined by "
+"the type of its list marker. If the list item is ordered, then it is also "
+"assigned a start number, based on the ordered list marker."
 msgstr ""
 
 #: ../../spec.txt:3767
@@ -1821,16 +1810,16 @@ msgstr ""
 
 #: ../../spec.txt:3769
 msgid ""
-"When the first list item in a [list] interrupts a paragraph---that is, "
-"when it starts on a line that would otherwise count as [paragraph "
-"continuation text]---then (a) the lines *Ls* must not begin with a blank "
-"line, and (b) if the list item is ordered, the start number must be 1."
+"When the first list item in a [list] interrupts a paragraph---that is, when "
+"it starts on a line that would otherwise count as [paragraph continuation "
+"text]---then (a) the lines *Ls* must not begin with a blank line, and (b) if"
+" the list item is ordered, the start number must be 1."
 msgstr ""
 
 #: ../../spec.txt:3774
 msgid ""
-"If any line is a [thematic break][thematic breaks] then that line is not "
-"a list item."
+"If any line is a [thematic break][thematic breaks] then that line is not a "
+"list item."
 msgstr ""
 
 #: ../../spec.txt:3777
@@ -1840,50 +1829,49 @@ msgstr ""
 #: ../../spec.txt:3797
 msgid ""
 "And let *M* be the marker `1.`, and *N* = 2.  Then rule #1 says that the "
-"following is an ordered list item with start number 1, and the same "
-"contents as *Ls*:"
+"following is an ordered list item with start number 1, and the same contents"
+" as *Ls*:"
 msgstr ""
 
 #: ../../spec.txt:3823
 msgid ""
-"The most important thing to notice is that the position of the text after"
-" the list marker determines how much indentation is needed in subsequent "
-"blocks in the list item.  If the list marker takes up two spaces, and "
-"there are three spaces between the list marker and the next [non-"
-"whitespace character], then blocks must be indented five spaces in order "
-"to fall under the list item."
+"The most important thing to notice is that the position of the text after "
+"the list marker determines how much indentation is needed in subsequent "
+"blocks in the list item.  If the list marker takes up two spaces, and there "
+"are three spaces between the list marker and the next [non-whitespace "
+"character], then blocks must be indented five spaces in order to fall under "
+"the list item."
 msgstr ""
 
 #: ../../spec.txt:3831
 msgid ""
-"Here are some examples showing how far content must be indented to be put"
-" under the list item:"
+"Here are some examples showing how far content must be indented to be put "
+"under the list item:"
 msgstr ""
 
 #: ../../spec.txt:3887
 msgid ""
 "It is tempting to think of this in terms of columns:  the continuation "
-"blocks must be indented at least to the column of the first [non-"
-"whitespace character] after the list marker. However, that is not quite "
-"right. The spaces after the list marker determine how much relative "
-"indentation is needed.  Which column this indentation reaches will depend"
-" on how the list item is embedded in other constructions, as shown by "
-"this example:"
+"blocks must be indented at least to the column of the first [non-whitespace "
+"character] after the list marker. However, that is not quite right. The "
+"spaces after the list marker determine how much relative indentation is "
+"needed.  Which column this indentation reaches will depend on how the list "
+"item is embedded in other constructions, as shown by this example:"
 msgstr ""
 
 #: ../../spec.txt:3913
 msgid ""
 "Here `two` occurs in the same column as the list marker `1.`, but is "
-"actually contained in the list item, because there is sufficient "
-"indentation after the last containing blockquote marker."
+"actually contained in the list item, because there is sufficient indentation"
+" after the last containing blockquote marker."
 msgstr ""
 
 #: ../../spec.txt:3917
 msgid ""
 "The converse is also possible.  In the following example, the word `two` "
-"occurs far to the right of the initial text of the list item, `one`, but "
-"it is not considered part of the list item, because it is not indented "
-"far enough past the blockquote marker:"
+"occurs far to the right of the initial text of the list item, `one`, but it "
+"is not considered part of the list item, because it is not indented far "
+"enough past the blockquote marker:"
 msgstr ""
 
 #: ../../spec.txt:3938
@@ -1904,8 +1892,8 @@ msgstr ""
 
 #: ../../spec.txt:3996
 msgid ""
-"A list item that contains an indented code block will preserve empty "
-"lines within the code block verbatim."
+"A list item that contains an indented code block will preserve empty lines "
+"within the code block verbatim."
 msgstr ""
 
 #: ../../spec.txt:4019
@@ -1923,22 +1911,21 @@ msgstr ""
 #: ../../spec.txt:4067
 msgid ""
 "**Item starting with indented code.**  If a sequence of lines *Ls* "
-"constitute a sequence of blocks *Bs* starting with an indented code "
-"block, and *M* is a list marker of width *W* followed by one space, then "
-"the result of prepending *M* and the following space to the first line of"
-" *Ls*, and indenting subsequent lines of *Ls* by *W + 1* spaces, is a "
-"list item with *Bs* as its contents. If a line is empty, then it need not"
-" be indented.  The type of the list item (bullet or ordered) is "
-"determined by the type of its list marker.  If the list item is ordered, "
-"then it is also assigned a start number, based on the ordered list "
-"marker."
+"constitute a sequence of blocks *Bs* starting with an indented code block, "
+"and *M* is a list marker of width *W* followed by one space, then the result"
+" of prepending *M* and the following space to the first line of *Ls*, and "
+"indenting subsequent lines of *Ls* by *W + 1* spaces, is a list item with "
+"*Bs* as its contents. If a line is empty, then it need not be indented.  The"
+" type of the list item (bullet or ordered) is determined by the type of its "
+"list marker.  If the list item is ordered, then it is also assigned a start "
+"number, based on the ordered list marker."
 msgstr ""
 
 #: ../../spec.txt:4078
 msgid ""
-"An indented code block will have to be indented four spaces beyond the "
-"edge of the region where text will be included in the list item. In the "
-"following case that is 6 spaces:"
+"An indented code block will have to be indented four spaces beyond the edge "
+"of the region where text will be included in the list item. In the following"
+" case that is 6 spaces:"
 msgstr ""
 
 #: ../../spec.txt:4097
@@ -1953,56 +1940,55 @@ msgstr ""
 
 #: ../../spec.txt:4152
 msgid ""
-"Note that an additional space indent is interpreted as space inside the "
-"code block:"
+"Note that an additional space indent is interpreted as space inside the code"
+" block:"
 msgstr ""
 
 #: ../../spec.txt:4174
 msgid ""
-"Note that rules #1 and #2 only apply to two cases:  (a) cases in which "
-"the lines to be included in a list item begin with a [non-whitespace "
-"character], and (b) cases in which they begin with an indented code "
-"block.  In a case like the following, where the first block begins with a"
-" three-space indent, the rules do not allow us to form a list item by "
-"indenting the whole thing and prepending a list marker:"
+"Note that rules #1 and #2 only apply to two cases:  (a) cases in which the "
+"lines to be included in a list item begin with a [non-whitespace character],"
+" and (b) cases in which they begin with an indented code block.  In a case "
+"like the following, where the first block begins with a three-space indent, "
+"the rules do not allow us to form a list item by indenting the whole thing "
+"and prepending a list marker:"
 msgstr ""
 
 #: ../../spec.txt:4204
 msgid ""
-"This is not a significant restriction, because when a block begins with "
-"1-3 spaces indent, the indentation can always be removed without a change"
-" in interpretation, allowing rule #1 to be applied.  So, in the above "
-"case:"
+"This is not a significant restriction, because when a block begins with 1-3 "
+"spaces indent, the indentation can always be removed without a change in "
+"interpretation, allowing rule #1 to be applied.  So, in the above case:"
 msgstr ""
 
 #: ../../spec.txt:4223
 msgid ""
-"**Item starting with a blank line.**  If a sequence of lines *Ls* "
-"starting with a single [blank line] constitute a (possibly empty) "
-"sequence of blocks *Bs*, not separated from each other by more than one "
-"blank line, and *M* is a list marker of width *W*, then the result of "
-"prepending *M* to the first line of *Ls*, and indenting subsequent lines "
-"of *Ls* by *W + 1* spaces, is a list item with *Bs* as its contents. If a"
-" line is empty, then it need not be indented.  The type of the list item "
-"(bullet or ordered) is determined by the type of its list marker.  If the"
-" list item is ordered, then it is also assigned a start number, based on "
-"the ordered list marker."
+"**Item starting with a blank line.**  If a sequence of lines *Ls* starting "
+"with a single [blank line] constitute a (possibly empty) sequence of blocks "
+"*Bs*, not separated from each other by more than one blank line, and *M* is "
+"a list marker of width *W*, then the result of prepending *M* to the first "
+"line of *Ls*, and indenting subsequent lines of *Ls* by *W + 1* spaces, is a"
+" list item with *Bs* as its contents. If a line is empty, then it need not "
+"be indented.  The type of the list item (bullet or ordered) is determined by"
+" the type of its list marker.  If the list item is ordered, then it is also "
+"assigned a start number, based on the ordered list marker."
 msgstr ""
 
 #: ../../spec.txt:4235
-msgid "Here are some list items that start with a blank line but are not empty:"
+msgid ""
+"Here are some list items that start with a blank line but are not empty:"
 msgstr ""
 
 #: ../../spec.txt:4260
 msgid ""
-"When the list item starts with a blank line, the number of spaces "
-"following the list marker doesn't change the required indentation:"
+"When the list item starts with a blank line, the number of spaces following "
+"the list marker doesn't change the required indentation:"
 msgstr ""
 
 #: ../../spec.txt:4273
 msgid ""
-"A list item can begin with at most one blank line. In the following "
-"example, `foo` is not part of the list item:"
+"A list item can begin with at most one blank line. In the following example,"
+" `foo` is not part of the list item:"
 msgstr ""
 
 #: ../../spec.txt:4289
@@ -2010,7 +1996,8 @@ msgid "Here is an empty bullet list item:"
 msgstr ""
 
 #: ../../spec.txt:4304
-msgid "It does not matter whether there are spaces following the [list marker]:"
+msgid ""
+"It does not matter whether there are spaces following the [list marker]:"
 msgstr ""
 
 #: ../../spec.txt:4319
@@ -2028,10 +2015,10 @@ msgstr ""
 #: ../../spec.txt:4360
 msgid ""
 "**Indentation.**  If a sequence of lines *Ls* constitutes a list item "
-"according to rule #1, #2, or #3, then the result of indenting each line "
-"of *Ls* by 1-3 spaces (the same for each line) also constitutes a list "
-"item with the same contents and attributes.  If a line is empty, then it "
-"need not be indented."
+"according to rule #1, #2, or #3, then the result of indenting each line of "
+"*Ls* by 1-3 spaces (the same for each line) also constitutes a list item "
+"with the same contents and attributes.  If a line is empty, then it need not"
+" be indented."
 msgstr ""
 
 #: ../../spec.txt:4366
@@ -2053,11 +2040,11 @@ msgstr ""
 #: ../../spec.txt:4459
 msgid ""
 "**Laziness.**  If a string of lines *Ls* constitute a [list item](#list-"
-"items) with contents *Bs*, then the result of deleting some or all of the"
-" indentation from one or more lines in which the next [non-whitespace "
-"character] after the indentation is [paragraph continuation text] is a "
-"list item with the same contents and attributes.  The unindented lines "
-"are called [lazy continuation line](@)s."
+"items) with contents *Bs*, then the result of deleting some or all of the "
+"indentation from one or more lines in which the next [non-whitespace "
+"character] after the indentation is [paragraph continuation text] is a list "
+"item with the same contents and attributes.  The unindented lines are called"
+" [lazy continuation line](@)s."
 msgstr ""
 
 #: ../../spec.txt:4468
@@ -2074,15 +2061,15 @@ msgstr ""
 
 #: ../../spec.txt:4542
 msgid ""
-"**That's all.** Nothing that is not counted as a list item by rules #1--5"
-" counts as a [list item](#list-items)."
+"**That's all.** Nothing that is not counted as a list item by rules #1--5 "
+"counts as a [list item](#list-items)."
 msgstr ""
 
 #: ../../spec.txt:4545
 msgid ""
-"The rules for sublists follow from the general rules [above][List items]."
-"  A sublist must be indented the same number of spaces a paragraph would "
-"need to be in order to be included in the list item."
+"The rules for sublists follow from the general rules [above][List items].  A"
+" sublist must be indented the same number of spaces a paragraph would need "
+"to be in order to be included in the list item."
 msgstr ""
 
 #: ../../spec.txt:4550
@@ -2119,34 +2106,33 @@ msgstr ""
 
 #: ../../spec.txt:4679
 msgid ""
-"\"List markers typically start at the left margin, but may be indented by"
-" up to three spaces. List markers must be followed by one or more spaces "
-"or a tab.\""
+"\"List markers typically start at the left margin, but may be indented by up"
+" to three spaces. List markers must be followed by one or more spaces or a "
+"tab.\""
 msgstr ""
 
 #: ../../spec.txt:4683
 msgid ""
-"\"To make lists look nice, you can wrap items with hanging indents.... "
-"But if you don't want to, you don't have to.\""
+"\"To make lists look nice, you can wrap items with hanging indents.... But "
+"if you don't want to, you don't have to.\""
 msgstr ""
 
 #: ../../spec.txt:4686
 msgid ""
-"\"List items may consist of multiple paragraphs. Each subsequent "
-"paragraph in a list item must be indented by either 4 spaces or one "
-"tab.\""
+"\"List items may consist of multiple paragraphs. Each subsequent paragraph "
+"in a list item must be indented by either 4 spaces or one tab.\""
 msgstr ""
 
 #: ../../spec.txt:4690
 msgid ""
-"\"It looks nice if you indent every line of the subsequent paragraphs, "
-"but here again, Markdown will allow you to be lazy.\""
+"\"It looks nice if you indent every line of the subsequent paragraphs, but "
+"here again, Markdown will allow you to be lazy.\""
 msgstr ""
 
 #: ../../spec.txt:4693
 msgid ""
-"\"To put a blockquote within a list item, the blockquote's `>` delimiters"
-" need to be indented.\""
+"\"To put a blockquote within a list item, the blockquote's `>` delimiters "
+"need to be indented.\""
 msgstr ""
 
 #: ../../spec.txt:4696
@@ -2157,60 +2143,58 @@ msgstr ""
 
 #: ../../spec.txt:4699
 msgid ""
-"These rules specify that a paragraph under a list item must be indented "
-"four spaces (presumably, from the left margin, rather than the start of "
-"the list marker, but this is not said), and that code under a list item "
-"must be indented eight spaces instead of the usual four.  They also say "
-"that a block quote must be indented, but not by how much; however, the "
-"example given has four spaces indentation.  Although nothing is said "
-"about other kinds of block-level content, it is certainly reasonable to "
-"infer that *all* block elements under a list item, including other lists,"
-" must be indented four spaces.  This principle has been called the *four-"
-"space rule*."
+"These rules specify that a paragraph under a list item must be indented four"
+" spaces (presumably, from the left margin, rather than the start of the list"
+" marker, but this is not said), and that code under a list item must be "
+"indented eight spaces instead of the usual four.  They also say that a block"
+" quote must be indented, but not by how much; however, the example given has"
+" four spaces indentation.  Although nothing is said about other kinds of "
+"block-level content, it is certainly reasonable to infer that *all* block "
+"elements under a list item, including other lists, must be indented four "
+"spaces.  This principle has been called the *four-space rule*."
 msgstr ""
 
 #: ../../spec.txt:4710
 msgid ""
 "The four-space rule is clear and principled, and if the reference "
-"implementation `Markdown.pl` had followed it, it probably would have "
-"become the standard.  However, `Markdown.pl` allowed paragraphs and "
-"sublists to start with only two spaces indentation, at least on the outer"
-" level.  Worse, its behavior was inconsistent: a sublist of an outer-"
-"level list needed two spaces indentation, but a sublist of this sublist "
-"needed three spaces.  It is not surprising, then, that different "
-"implementations of Markdown have developed very different rules for "
-"determining what comes under a list item.  (Pandoc and python-Markdown, "
-"for example, stuck with Gruber's syntax description and the four-space "
-"rule, while discount, redcarpet, marked, PHP Markdown, and others "
-"followed `Markdown.pl`'s behavior more closely.)"
+"implementation `Markdown.pl` had followed it, it probably would have become "
+"the standard.  However, `Markdown.pl` allowed paragraphs and sublists to "
+"start with only two spaces indentation, at least on the outer level.  Worse,"
+" its behavior was inconsistent: a sublist of an outer-level list needed two "
+"spaces indentation, but a sublist of this sublist needed three spaces.  It "
+"is not surprising, then, that different implementations of Markdown have "
+"developed very different rules for determining what comes under a list item."
+"  (Pandoc and python-Markdown, for example, stuck with Gruber's syntax "
+"description and the four-space rule, while discount, redcarpet, marked, PHP "
+"Markdown, and others followed `Markdown.pl`'s behavior more closely.)"
 msgstr ""
 
 #: ../../spec.txt:4723
 msgid ""
-"Unfortunately, given the divergences between implementations, there is no"
-" way to give a spec for list items that will be guaranteed not to break "
-"any existing documents.  However, the spec given here should correctly "
-"handle lists formatted with either the four-space rule or the more "
-"forgiving `Markdown.pl` behavior, provided they are laid out in a way "
-"that is natural for a human to read."
+"Unfortunately, given the divergences between implementations, there is no "
+"way to give a spec for list items that will be guaranteed not to break any "
+"existing documents.  However, the spec given here should correctly handle "
+"lists formatted with either the four-space rule or the more forgiving "
+"`Markdown.pl` behavior, provided they are laid out in a way that is natural "
+"for a human to read."
 msgstr ""
 
 #: ../../spec.txt:4730
 msgid ""
 "The strategy here is to let the width and indentation of the list marker "
-"determine the indentation necessary for blocks to fall under the list "
-"item, rather than having a fixed and arbitrary number.  The writer can "
-"think of the body of the list item as a unit which gets indented to the "
-"right enough to fit the list marker (and any indentation on the list "
-"marker).  (The laziness rule, #5, then allows continuation lines to be "
-"unindented if needed.)"
+"determine the indentation necessary for blocks to fall under the list item, "
+"rather than having a fixed and arbitrary number.  The writer can think of "
+"the body of the list item as a unit which gets indented to the right enough "
+"to fit the list marker (and any indentation on the list marker).  (The "
+"laziness rule, #5, then allows continuation lines to be unindented if "
+"needed.)"
 msgstr ""
 
 #: ../../spec.txt:4738
 msgid ""
 "This rule is superior, we claim, to any rule requiring a fixed level of "
-"indentation from the margin.  The four-space rule is clear but unnatural."
-" It is quite unintuitive that"
+"indentation from the margin.  The four-space rule is clear but unnatural. It"
+" is quite unintuitive that"
 msgstr ""
 
 #: ../../spec.txt:4750
@@ -2223,17 +2207,16 @@ msgstr ""
 
 #: ../../spec.txt:4776
 msgid ""
-"The choice of four spaces is arbitrary.  It can be learned, but it is not"
-" likely to be guessed, and it trips up beginners regularly."
+"The choice of four spaces is arbitrary.  It can be learned, but it is not "
+"likely to be guessed, and it trips up beginners regularly."
 msgstr ""
 
 #: ../../spec.txt:4779
 msgid ""
-"Would it help to adopt a two-space rule?  The problem is that such a "
-"rule, together with the rule allowing 1--3 spaces indentation of the "
-"initial list marker, allows text that is indented *less than* the "
-"original list marker to be included in the list item. For example, "
-"`Markdown.pl` parses"
+"Would it help to adopt a two-space rule?  The problem is that such a rule, "
+"together with the rule allowing 1--3 spaces indentation of the initial list "
+"marker, allows text that is indented *less than* the original list marker to"
+" be included in the list item. For example, `Markdown.pl` parses"
 msgstr ""
 
 #: ../../spec.txt:4791
@@ -2256,38 +2239,36 @@ msgstr ""
 msgid ""
 "Rather than requiring a fixed indent from the margin, we could require a "
 "fixed indent (say, two spaces, or even one space) from the list marker "
-"(which may itself be indented).  This proposal would remove the last "
-"anomaly discussed.  Unlike the spec presented above, it would count the "
-"following as a list item with a subparagraph, even though the paragraph "
-"`bar` is not indented as far as the first paragraph `foo`:"
+"(which may itself be indented).  This proposal would remove the last anomaly"
+" discussed.  Unlike the spec presented above, it would count the following "
+"as a list item with a subparagraph, even though the paragraph `bar` is not "
+"indented as far as the first paragraph `foo`:"
 msgstr ""
 
 #: ../../spec.txt:4838
 msgid ""
-"Arguably this text does read like a list item with `bar` as a "
-"subparagraph, which may count in favor of the proposal.  However, on this"
-" proposal indented code would have to be indented six spaces after the "
-"list marker.  And this would break a lot of existing Markdown, which has "
-"the pattern:"
+"Arguably this text does read like a list item with `bar` as a subparagraph, "
+"which may count in favor of the proposal.  However, on this proposal "
+"indented code would have to be indented six spaces after the list marker.  "
+"And this would break a lot of existing Markdown, which has the pattern:"
 msgstr ""
 
 #: ../../spec.txt:4849
 msgid ""
-"where the code is indented eight spaces.  The spec above, by contrast, "
-"will parse this text as expected, since the code block's indentation is "
-"measured from the beginning of `foo`."
+"where the code is indented eight spaces.  The spec above, by contrast, will "
+"parse this text as expected, since the code block's indentation is measured "
+"from the beginning of `foo`."
 msgstr ""
 
 #: ../../spec.txt:4853
 msgid ""
-"The one case that needs special treatment is a list item that *starts* "
-"with indented code.  How much indentation is required in that case, since"
-" we don't have a \"first paragraph\" to measure from?  Rule #2 simply "
-"stipulates that in such cases, we require one space indentation from the "
-"list marker (and then the normal four spaces for the indented code).  "
-"This will match the four-space rule in cases where the list marker plus "
-"its initial indentation takes four spaces (a common case), but diverge in"
-" other cases."
+"The one case that needs special treatment is a list item that *starts* with "
+"indented code.  How much indentation is required in that case, since we "
+"don't have a \"first paragraph\" to measure from?  Rule #2 simply stipulates"
+" that in such cases, we require one space indentation from the list marker "
+"(and then the normal four spaces for the indented code).  This will match "
+"the four-space rule in cases where the list marker plus its initial "
+"indentation takes four spaces (a common case), but diverge in other cases."
 msgstr ""
 
 #: ../../spec.txt:4861
@@ -2296,41 +2277,39 @@ msgstr ""
 
 #: ../../spec.txt:4863
 msgid ""
-"A [list](@) is a sequence of one or more list items [of the same type].  "
-"The list items may be separated by any number of blank lines."
+"A [list](@) is a sequence of one or more list items [of the same type].  The"
+" list items may be separated by any number of blank lines."
 msgstr ""
 
 #: ../../spec.txt:4867
 msgid ""
-"Two list items are [of the same type](@) if they begin with a [list "
-"marker] of the same type. Two list markers are of the same type if (a) "
-"they are bullet list markers using the same character (`-`, `+`, or `*`) "
-"or (b) they are ordered list numbers with the same delimiter (either `.` "
-"or `)`)."
+"Two list items are [of the same type](@) if they begin with a [list marker] "
+"of the same type. Two list markers are of the same type if (a) they are "
+"bullet list markers using the same character (`-`, `+`, or `*`) or (b) they "
+"are ordered list numbers with the same delimiter (either `.` or `)`)."
 msgstr ""
 
 #: ../../spec.txt:4874
 msgid ""
 "A list is an [ordered list](@) if its constituent list items begin with "
-"[ordered list markers], and a [bullet list](@) if its constituent list "
-"items begin with [bullet list markers]."
+"[ordered list markers], and a [bullet list](@) if its constituent list items"
+" begin with [bullet list markers]."
 msgstr ""
 
 #: ../../spec.txt:4880
 msgid ""
-"The [start number](@) of an [ordered list] is determined by the list "
-"number of its initial list item.  The numbers of subsequent list items "
-"are disregarded."
+"The [start number](@) of an [ordered list] is determined by the list number "
+"of its initial list item.  The numbers of subsequent list items are "
+"disregarded."
 msgstr ""
 
 #: ../../spec.txt:4885
 msgid ""
-"A list is [loose](@) if any of its constituent list items are separated "
-"by blank lines, or if any of its constituent list items directly contain "
-"two block-level elements with a blank line between them.  Otherwise a "
-"list is [tight](@). (The difference in HTML output is that paragraphs in "
-"a loose list are wrapped in `<p>` tags, while paragraphs in a tight list "
-"are not.)"
+"A list is [loose](@) if any of its constituent list items are separated by "
+"blank lines, or if any of its constituent list items directly contain two "
+"block-level elements with a blank line between them.  Otherwise a list is "
+"[tight](@). (The difference in HTML output is that paragraphs in a loose "
+"list are wrapped in `<p>` tags, while paragraphs in a tight list are not.)"
 msgstr ""
 
 #: ../../spec.txt:4892
@@ -2339,14 +2318,14 @@ msgstr ""
 
 #: ../../spec.txt:4924
 msgid ""
-"In CommonMark, a list can interrupt a paragraph. That is, no blank line "
-"is needed to separate a paragraph from a following list:"
+"In CommonMark, a list can interrupt a paragraph. That is, no blank line is "
+"needed to separate a paragraph from a following list:"
 msgstr ""
 
 #: ../../spec.txt:4940
 msgid ""
-"`Markdown.pl` does not allow this, through fear of triggering a list via "
-"a numeral in a hard-wrapped line:"
+"`Markdown.pl` does not allow this, through fear of triggering a list via a "
+"numeral in a hard-wrapped line:"
 msgstr ""
 
 #: ../../spec.txt:4948
@@ -2357,9 +2336,9 @@ msgstr ""
 
 #: ../../spec.txt:4952
 msgid ""
-"In CommonMark, we do allow lists to interrupt paragraphs, for two "
-"reasons.  First, it is natural and not uncommon for people to start lists"
-" without blank lines:"
+"In CommonMark, we do allow lists to interrupt paragraphs, for two reasons.  "
+"First, it is natural and not uncommon for people to start lists without "
+"blank lines:"
 msgstr ""
 
 #: ../../spec.txt:4963
@@ -2368,9 +2347,9 @@ msgstr ""
 
 #: ../../spec.txt:4965
 msgid ""
-"[principle of uniformity](@): if a chunk of text has a certain meaning, "
-"it will continue to have the same meaning when put into a container block"
-" (such as a list item or blockquote)."
+"[principle of uniformity](@): if a chunk of text has a certain meaning, it "
+"will continue to have the same meaning when put into a container block (such"
+" as a list item or blockquote)."
 msgstr ""
 
 #: ../../spec.txt:4970
@@ -2381,9 +2360,9 @@ msgstr ""
 
 #: ../../spec.txt:4980
 msgid ""
-"is a list item containing a paragraph followed by a nested sublist, as "
-"all Markdown implementations agree it is (though the paragraph may be "
-"rendered without `<p>` tags, since the list is \"tight\"), then"
+"is a list item containing a paragraph followed by a nested sublist, as all "
+"Markdown implementations agree it is (though the paragraph may be rendered "
+"without `<p>` tags, since the list is \"tight\"), then"
 msgstr ""
 
 #: ../../spec.txt:4992
@@ -2392,9 +2371,9 @@ msgstr ""
 
 #: ../../spec.txt:4994
 msgid ""
-"Since it is well established Markdown practice to allow lists to "
-"interrupt paragraphs inside list items, the [principle of uniformity] "
-"requires us to allow this outside list items as well.  "
+"Since it is well established Markdown practice to allow lists to interrupt "
+"paragraphs inside list items, the [principle of uniformity] requires us to "
+"allow this outside list items as well.  "
 "([reStructuredText](http://docutils.sourceforge.net/rst.html) takes a "
 "different approach, requiring blank lines before lists even inside other "
 "list items.)"
@@ -2403,8 +2382,8 @@ msgstr ""
 #: ../../spec.txt:5001
 msgid ""
 "In order to solve of unwanted lists in paragraphs with hard-wrapped "
-"numerals, we allow only lists starting with `1` to interrupt paragraphs."
-"  Thus,"
+"numerals, we allow only lists starting with `1` to interrupt paragraphs.  "
+"Thus,"
 msgstr ""
 
 #: ../../spec.txt:5013
@@ -2421,23 +2400,23 @@ msgstr ""
 
 #: ../../spec.txt:5075
 msgid ""
-"To separate consecutive lists of the same type, or to separate a list "
-"from an indented code block that would otherwise be parsed as a "
-"subparagraph of the final list item, you can insert a blank HTML comment:"
+"To separate consecutive lists of the same type, or to separate a list from "
+"an indented code block that would otherwise be parsed as a subparagraph of "
+"the final list item, you can insert a blank HTML comment:"
 msgstr ""
 
 #: ../../spec.txt:5127
 msgid ""
-"List items need not be indented to the same level.  The following list "
-"items will be treated as items at the same list level, since none is "
-"indented enough to belong to the previous list item:"
+"List items need not be indented to the same level.  The following list items"
+" will be treated as items at the same list level, since none is indented "
+"enough to belong to the previous list item:"
 msgstr ""
 
 #: ../../spec.txt:5173
 msgid ""
-"Note, however, that list items may not be indented more than three "
-"spaces.  Here `- e` is treated as a paragraph continuation line, because "
-"it is indented more than three spaces:"
+"Note, however, that list items may not be indented more than three spaces.  "
+"Here `- e` is treated as a paragraph continuation line, because it is "
+"indented more than three spaces:"
 msgstr ""
 
 #: ../../spec.txt:5193
@@ -2448,8 +2427,8 @@ msgstr ""
 
 #: ../../spec.txt:5217
 msgid ""
-"This is a loose list, because there is a blank line between two of the "
-"list items:"
+"This is a loose list, because there is a blank line between two of the list "
+"items:"
 msgstr ""
 
 #: ../../spec.txt:5240
@@ -2459,8 +2438,8 @@ msgstr ""
 #: ../../spec.txt:5260
 msgid ""
 "These are loose lists, even though there is no space between the items, "
-"because one of the items directly contains two block-level elements with "
-"a blank line between them:"
+"because one of the items directly contains two block-level elements with a "
+"blank line between them:"
 msgstr ""
 
 #: ../../spec.txt:5307
@@ -2469,18 +2448,19 @@ msgstr ""
 
 #: ../../spec.txt:5331
 msgid ""
-"This is a tight list, because the blank line is between two paragraphs of"
-" a sublist.  So the sublist is loose while the outer list is tight:"
+"This is a tight list, because the blank line is between two paragraphs of a "
+"sublist.  So the sublist is loose while the outer list is tight:"
 msgstr ""
 
 #: ../../spec.txt:5356
-msgid "This is a tight list, because the blank line is inside the block quote:"
+msgid ""
+"This is a tight list, because the blank line is inside the block quote:"
 msgstr ""
 
 #: ../../spec.txt:5376
 msgid ""
-"This list is tight, because the consecutive block elements are not "
-"separated by blank lines:"
+"This list is tight, because the consecutive block elements are not separated"
+" by blank lines:"
 msgstr ""
 
 #: ../../spec.txt:5400
@@ -2489,8 +2469,8 @@ msgstr ""
 
 #: ../../spec.txt:5425
 msgid ""
-"This list is loose, because of the blank line between the two block "
-"elements in the list item:"
+"This list is loose, because of the blank line between the two block elements"
+" in the list item:"
 msgstr ""
 
 #: ../../spec.txt:5445
@@ -2503,9 +2483,9 @@ msgstr ""
 
 #: ../../spec.txt:5495
 msgid ""
-"Inlines are parsed sequentially from the beginning of the character "
-"stream to the end (left to right, in left-to-right languages). Thus, for "
-"example, in"
+"Inlines are parsed sequentially from the beginning of the character stream "
+"to the end (left to right, in left-to-right languages). Thus, for example, "
+"in"
 msgstr ""
 
 #: ../../spec.txt:5505
@@ -2523,13 +2503,14 @@ msgid "Any ASCII punctuation character may be backslash-escaped:"
 msgstr ""
 
 #: ../../spec.txt:5520
-msgid "Backslashes before other characters are treated as literal backslashes:"
+msgid ""
+"Backslashes before other characters are treated as literal backslashes:"
 msgstr ""
 
 #: ../../spec.txt:5530
 msgid ""
-"Escaped characters are treated as regular characters and do not have "
-"their usual Markdown meanings:"
+"Escaped characters are treated as regular characters and do not have their "
+"usual Markdown meanings:"
 msgstr ""
 
 #: ../../spec.txt:5556
@@ -2542,14 +2523,14 @@ msgstr ""
 
 #: ../../spec.txt:5576
 msgid ""
-"Backslash escapes do not work in code blocks, code spans, autolinks, or "
-"raw HTML:"
+"Backslash escapes do not work in code blocks, code spans, autolinks, or raw "
+"HTML:"
 msgstr ""
 
 #: ../../spec.txt:5618
 msgid ""
-"But they work in all other contexts, including URLs and link titles, link"
-" references, and [info strings] in [fenced code blocks]:"
+"But they work in all other contexts, including URLs and link titles, link "
+"references, and [info strings] in [fenced code blocks]:"
 msgstr ""
 
 #: ../../spec.txt:5648
@@ -2558,57 +2539,55 @@ msgstr ""
 
 #: ../../spec.txt:5650
 msgid ""
-"Valid HTML entity references and numeric character references can be used"
-" in place of the corresponding Unicode character, with the following "
+"Valid HTML entity references and numeric character references can be used in"
+" place of the corresponding Unicode character, with the following "
 "exceptions:"
 msgstr ""
 
 #: ../../spec.txt:5654
 msgid ""
-"Entity and character references are not recognized in code blocks and "
-"code spans."
+"Entity and character references are not recognized in code blocks and code "
+"spans."
 msgstr ""
 
 #: ../../spec.txt:5657
 msgid ""
-"Entity and character references cannot stand in place of special "
-"characters that define structural elements in CommonMark.  For example, "
-"although `&#42;` can be used in place of a literal `*` character, `&#42;`"
-" cannot replace `*` in emphasis delimiters, bullet list markers, or "
-"thematic breaks."
+"Entity and character references cannot stand in place of special characters "
+"that define structural elements in CommonMark.  For example, although "
+"`&#42;` can be used in place of a literal `*` character, `&#42;` cannot "
+"replace `*` in emphasis delimiters, bullet list markers, or thematic breaks."
 msgstr ""
 
 #: ../../spec.txt:5664
 msgid ""
 "Conforming CommonMark parsers need not store information about whether a "
-"particular character was represented in the source using a Unicode "
-"character or an entity reference."
+"particular character was represented in the source using a Unicode character"
+" or an entity reference."
 msgstr ""
 
 #: ../../spec.txt:5668
 msgid ""
-"[Entity references](@) consist of `&` + any of the valid HTML5 entity "
-"names + `;`. The document "
-"<https://html.spec.whatwg.org/multipage/entities.json> is used as an "
-"authoritative source for the valid entity references and their "
-"corresponding code points."
+"[Entity references](@) consist of `&` + any of the valid HTML5 entity names "
+"+ `;`. The document <https://html.spec.whatwg.org/multipage/entities.json> "
+"is used as an authoritative source for the valid entity references and their"
+" corresponding code points."
 msgstr ""
 
 #: ../../spec.txt:5685
 msgid ""
-"[Decimal numeric character references](@) consist of `&#` + a string of 1"
-"--7 arabic digits + `;`. A numeric character reference is parsed as the "
+"[Decimal numeric character references](@) consist of `&#` + a string of 1--7"
+" arabic digits + `;`. A numeric character reference is parsed as the "
 "corresponding Unicode character. Invalid Unicode code points will be "
-"replaced by the REPLACEMENT CHARACTER (`U+FFFD`).  For security reasons, "
-"the code point `U+0000` will also be replaced by `U+FFFD`."
+"replaced by the REPLACEMENT CHARACTER (`U+FFFD`).  For security reasons, the"
+" code point `U+0000` will also be replaced by `U+FFFD`."
 msgstr ""
 
 #: ../../spec.txt:5700
 msgid ""
-"[Hexadecimal numeric character references](@) consist of `&#` + either "
-"`X` or `x` + a string of 1-6 hexadecimal digits + `;`. They too are "
-"parsed as the corresponding Unicode character (this time specified with a"
-" hexadecimal numeral instead of decimal)."
+"[Hexadecimal numeric character references](@) consist of `&#` + either `X` "
+"or `x` + a string of 1-6 hexadecimal digits + `;`. They too are parsed as "
+"the corresponding Unicode character (this time specified with a hexadecimal "
+"numeral instead of decimal)."
 msgstr ""
 
 #: ../../spec.txt:5713
@@ -2618,14 +2597,14 @@ msgstr ""
 #: ../../spec.txt:5728
 msgid ""
 "Although HTML5 does accept some entity references without a trailing "
-"semicolon (such as `&copy`), these are not recognized here, because it "
-"makes the grammar too ambiguous:"
+"semicolon (such as `&copy`), these are not recognized here, because it makes"
+" the grammar too ambiguous:"
 msgstr ""
 
 #: ../../spec.txt:5739
 msgid ""
-"Strings that are not on the list of HTML5 named entities are not "
-"recognized as entity references either:"
+"Strings that are not on the list of HTML5 named entities are not recognized "
+"as entity references either:"
 msgstr ""
 
 #: ../../spec.txt:5749
@@ -2637,14 +2616,14 @@ msgstr ""
 
 #: ../../spec.txt:5786
 msgid ""
-"Entity and numeric character references are treated as literal text in "
-"code spans and code blocks:"
+"Entity and numeric character references are treated as literal text in code "
+"spans and code blocks:"
 msgstr ""
 
 #: ../../spec.txt:5804
 msgid ""
-"Entity and numeric character references cannot be used in place of "
-"symbols indicating structure in CommonMark documents."
+"Entity and numeric character references cannot be used in place of symbols "
+"indicating structure in CommonMark documents."
 msgstr ""
 
 #: ../../spec.txt:5849
@@ -2653,15 +2632,15 @@ msgstr ""
 
 #: ../../spec.txt:5851
 msgid ""
-"A [backtick string](@) is a string of one or more backtick characters (``"
-" ` ``) that is neither preceded nor followed by a backtick."
+"A [backtick string](@) is a string of one or more backtick characters (`` ` "
+"``) that is neither preceded nor followed by a backtick."
 msgstr ""
 
 #: ../../spec.txt:5855
 msgid ""
 "A [code span](@) begins with a backtick string and ends with a backtick "
-"string of equal length.  The contents of the code span are the characters"
-" between the two backtick strings, normalized in the following ways:"
+"string of equal length.  The contents of the code span are the characters "
+"between the two backtick strings, normalized in the following ways:"
 msgstr ""
 
 #: ../../spec.txt:5860
@@ -2670,11 +2649,11 @@ msgstr ""
 
 #: ../../spec.txt:5861
 msgid ""
-"If the resulting string both begins *and* ends with a [space] character, "
-"but does not consist entirely of [space] characters, a single [space] "
-"character is removed from the front and back.  This allows you to include"
-" code that begins or ends with backtick characters, which must be "
-"separated by whitespace from the opening or closing backtick strings."
+"If the resulting string both begins *and* ends with a [space] character, but"
+" does not consist entirely of [space] characters, a single [space] character"
+" is removed from the front and back.  This allows you to include code that "
+"begins or ends with backtick characters, which must be separated by "
+"whitespace from the opening or closing backtick strings."
 msgstr ""
 
 #: ../../spec.txt:5868
@@ -2684,14 +2663,12 @@ msgstr ""
 #: ../../spec.txt:5877
 msgid ""
 "Here two backticks are used, because the code contains a backtick. This "
-"example also illustrates stripping of a single leading and trailing "
-"space:"
+"example also illustrates stripping of a single leading and trailing space:"
 msgstr ""
 
 #: ../../spec.txt:5888
 msgid ""
-"This example shows the motivation for stripping leading and trailing "
-"spaces:"
+"This example shows the motivation for stripping leading and trailing spaces:"
 msgstr ""
 
 #: ../../spec.txt:5897
@@ -2699,13 +2676,14 @@ msgid "Note that only *one* space is stripped:"
 msgstr ""
 
 #: ../../spec.txt:5905
-msgid "The stripping only happens if the space is on both sides of the string:"
+msgid ""
+"The stripping only happens if the space is on both sides of the string:"
 msgstr ""
 
 #: ../../spec.txt:5914
 msgid ""
-"Only [spaces], and not [unicode whitespace] in general, are stripped in "
-"this way:"
+"Only [spaces], and not [unicode whitespace] in general, are stripped in this"
+" way:"
 msgstr ""
 
 #: ../../spec.txt:5923
@@ -2722,30 +2700,28 @@ msgstr ""
 
 #: ../../spec.txt:5964
 msgid ""
-"Note that browsers will typically collapse consecutive spaces when "
-"rendering `<code>` elements, so it is recommended that the following CSS "
-"be used:"
+"Note that browsers will typically collapse consecutive spaces when rendering"
+" `<code>` elements, so it is recommended that the following CSS be used:"
 msgstr ""
 
 #: ../../spec.txt:5971
 msgid ""
-"Note that backslash escapes do not work in code spans. All backslashes "
-"are treated literally:"
+"Note that backslash escapes do not work in code spans. All backslashes are "
+"treated literally:"
 msgstr ""
 
 #: ../../spec.txt:5981
 msgid ""
-"Backslash escapes are never needed, because one can always choose a "
-"string of *n* backtick characters as delimiters, where the code does not "
-"contain any strings of exactly *n* backtick characters."
+"Backslash escapes are never needed, because one can always choose a string "
+"of *n* backtick characters as delimiters, where the code does not contain "
+"any strings of exactly *n* backtick characters."
 msgstr ""
 
 #: ../../spec.txt:5998
 msgid ""
-"Code span backticks have higher precedence than any other inline "
-"constructs except HTML tags and autolinks.  Thus, for example, this is "
-"not parsed as emphasized text, since the second `*` is part of a code "
-"span:"
+"Code span backticks have higher precedence than any other inline constructs "
+"except HTML tags and autolinks.  Thus, for example, this is not parsed as "
+"emphasized text, since the second `*` is part of a code span:"
 msgstr ""
 
 #: ../../spec.txt:6010
@@ -2754,8 +2730,8 @@ msgstr ""
 
 #: ../../spec.txt:6019
 msgid ""
-"Code spans, HTML tags, and autolinks have the same precedence. Thus, this"
-" is code:"
+"Code spans, HTML tags, and autolinks have the same precedence. Thus, this is"
+" code:"
 msgstr ""
 
 #: ../../spec.txt:6029
@@ -2772,8 +2748,8 @@ msgstr ""
 
 #: ../../spec.txt:6056
 msgid ""
-"When a backtick string is not closed by a matching backtick string, we "
-"just have literal backticks:"
+"When a backtick string is not closed by a matching backtick string, we just "
+"have literal backticks:"
 msgstr ""
 
 #: ../../spec.txt:6072
@@ -2796,31 +2772,30 @@ msgstr ""
 msgid ""
 "Markdown treats asterisks (`*`) and underscores (`_`) as indicators of "
 "emphasis. Text wrapped with one `*` or `_` will be wrapped with an HTML "
-"`<em>` tag; double `*`'s or `_`'s will be wrapped with an HTML `<strong>`"
-" tag."
+"`<em>` tag; double `*`'s or `_`'s will be wrapped with an HTML `<strong>` "
+"tag."
 msgstr ""
 
 #: ../../spec.txt:6092
 msgid ""
 "This is enough for most users, but these rules leave much undecided, "
 "especially when it comes to nested emphasis.  The original `Markdown.pl` "
-"test suite makes it clear that triple `***` and `___` delimiters can be "
-"used for strong emphasis, and most implementations have also allowed the "
+"test suite makes it clear that triple `***` and `___` delimiters can be used"
+" for strong emphasis, and most implementations have also allowed the "
 "following patterns:"
 msgstr ""
 
 #: ../../spec.txt:6106
 msgid ""
-"The following patterns are less widely supported, but the intent is clear"
-" and they are useful (especially in contexts like bibliography entries):"
+"The following patterns are less widely supported, but the intent is clear "
+"and they are useful (especially in contexts like bibliography entries):"
 msgstr ""
 
 #: ../../spec.txt:6115
 msgid ""
 "Many implementations have also restricted intraword emphasis to the `*` "
-"forms, to avoid unwanted emphasis in words containing internal "
-"underscores.  (It is best practice to put these in code spans, but users "
-"often do not.)"
+"forms, to avoid unwanted emphasis in words containing internal underscores."
+"  (It is best practice to put these in code spans, but users often do not.)"
 msgstr ""
 
 #: ../../spec.txt:6125
@@ -2831,31 +2806,30 @@ msgstr ""
 
 #: ../../spec.txt:6128
 msgid ""
-"First, some definitions.  A [delimiter run](@) is either a sequence of "
-"one or more `*` characters that is not preceded or followed by a non-"
-"backslash-escaped `*` character, or a sequence of one or more `_` "
-"characters that is not preceded or followed by a non-backslash-escaped "
-"`_` character."
+"First, some definitions.  A [delimiter run](@) is either a sequence of one "
+"or more `*` characters that is not preceded or followed by a non-backslash-"
+"escaped `*` character, or a sequence of one or more `_` characters that is "
+"not preceded or followed by a non-backslash-escaped `_` character."
 msgstr ""
 
 #: ../../spec.txt:6134
 msgid ""
 "A [left-flanking delimiter run](@) is a [delimiter run] that is (1) not "
 "followed by [Unicode whitespace], and either (2a) not followed by a "
-"[punctuation character], or (2b) followed by a [punctuation character] "
-"and preceded by [Unicode whitespace] or a [punctuation character]. For "
-"purposes of this definition, the beginning and the end of the line count "
-"as Unicode whitespace."
+"[punctuation character], or (2b) followed by a [punctuation character] and "
+"preceded by [Unicode whitespace] or a [punctuation character]. For purposes "
+"of this definition, the beginning and the end of the line count as Unicode "
+"whitespace."
 msgstr ""
 
 #: ../../spec.txt:6142
 msgid ""
 "A [right-flanking delimiter run](@) is a [delimiter run] that is (1) not "
 "preceded by [Unicode whitespace], and either (2a) not preceded by a "
-"[punctuation character], or (2b) preceded by a [punctuation character] "
-"and followed by [Unicode whitespace] or a [punctuation character]. For "
-"purposes of this definition, the beginning and the end of the line count "
-"as Unicode whitespace."
+"[punctuation character], or (2b) preceded by a [punctuation character] and "
+"followed by [Unicode whitespace] or a [punctuation character]. For purposes "
+"of this definition, the beginning and the end of the line count as Unicode "
+"whitespace."
 msgstr ""
 
 #: ../../spec.txt:6150
@@ -2880,13 +2854,13 @@ msgstr ""
 
 #: ../../spec.txt:6184
 msgid ""
-"(The idea of distinguishing left-flanking and right-flanking delimiter "
-"runs based on the character before and the character after comes from "
-"Roopesh Chander's [vfmd](http://www.vfmd.org/vfmd-spec/specification"
-"/#procedure-for-identifying-emphasis-tags). vfmd uses the terminology "
-"\"emphasis indicator string\" instead of \"delimiter run,\" and its rules"
-" for distinguishing left- and right-flanking runs are a bit more complex "
-"than the ones given here.)"
+"(The idea of distinguishing left-flanking and right-flanking delimiter runs "
+"based on the character before and the character after comes from Roopesh "
+"Chander's [vfmd](http://www.vfmd.org/vfmd-spec/specification/#procedure-for-"
+"identifying-emphasis-tags). vfmd uses the terminology \"emphasis indicator "
+"string\" instead of \"delimiter run,\" and its rules for distinguishing "
+"left- and right-flanking runs are a bit more complex than the ones given "
+"here.)"
 msgstr ""
 
 #: ../../spec.txt:6192
@@ -2903,22 +2877,22 @@ msgstr ""
 msgid ""
 "A single `_` character [can open emphasis] iff it is part of a [left-"
 "flanking delimiter run] and either (a) not part of a [right-flanking "
-"delimiter run] or (b) part of a [right-flanking delimiter run] preceded "
-"by punctuation."
+"delimiter run] or (b) part of a [right-flanking delimiter run] preceded by "
+"punctuation."
 msgstr ""
 
 #: ../../spec.txt:6203
 msgid ""
-"A single `*` character [can close emphasis](@) iff it is part of a "
-"[right-flanking delimiter run]."
+"A single `*` character [can close emphasis](@) iff it is part of a [right-"
+"flanking delimiter run]."
 msgstr ""
 
 #: ../../spec.txt:6206
 msgid ""
 "A single `_` character [can close emphasis] iff it is part of a [right-"
 "flanking delimiter run] and either (a) not part of a [left-flanking "
-"delimiter run] or (b) part of a [left-flanking delimiter run] followed by"
-" punctuation."
+"delimiter run] or (b) part of a [left-flanking delimiter run] followed by "
+"punctuation."
 msgstr ""
 
 #: ../../spec.txt:6212
@@ -2929,10 +2903,9 @@ msgstr ""
 
 #: ../../spec.txt:6215
 msgid ""
-"A double `__` [can open strong emphasis] iff it is part of a [left-"
-"flanking delimiter run] and either (a) not part of a [right-flanking "
-"delimiter run] or (b) part of a [right-flanking delimiter run] preceded "
-"by punctuation."
+"A double `__` [can open strong emphasis] iff it is part of a [left-flanking "
+"delimiter run] and either (a) not part of a [right-flanking delimiter run] "
+"or (b) part of a [right-flanking delimiter run] preceded by punctuation."
 msgstr ""
 
 #: ../../spec.txt:6221
@@ -2945,31 +2918,30 @@ msgstr ""
 msgid ""
 "A double `__` [can close strong emphasis] iff it is part of a [right-"
 "flanking delimiter run] and either (a) not part of a [left-flanking "
-"delimiter run] or (b) part of a [left-flanking delimiter run] followed by"
-" punctuation."
+"delimiter run] or (b) part of a [left-flanking delimiter run] followed by "
+"punctuation."
 msgstr ""
 
 #: ../../spec.txt:6230
 msgid ""
-"Emphasis begins with a delimiter that [can open emphasis] and ends with a"
-" delimiter that [can close emphasis], and that uses the same character "
-"(`_` or `*`) as the opening delimiter.  The opening and closing "
-"delimiters must belong to separate [delimiter runs].  If one of the "
-"delimiters can both open and close emphasis, then the sum of the lengths "
-"of the delimiter runs containing the opening and closing delimiters must "
-"not be a multiple of 3 unless both lengths are multiples of 3."
+"Emphasis begins with a delimiter that [can open emphasis] and ends with a "
+"delimiter that [can close emphasis], and that uses the same character (`_` "
+"or `*`) as the opening delimiter.  The opening and closing delimiters must "
+"belong to separate [delimiter runs].  If one of the delimiters can both open"
+" and close emphasis, then the sum of the lengths of the delimiter runs "
+"containing the opening and closing delimiters must not be a multiple of 3 "
+"unless both lengths are multiples of 3."
 msgstr ""
 
 #: ../../spec.txt:6240
 msgid ""
-"Strong emphasis begins with a delimiter that [can open strong emphasis] "
-"and ends with a delimiter that [can close strong emphasis], and that uses"
-" the same character (`_` or `*`) as the opening delimiter.  The opening "
-"and closing delimiters must belong to separate [delimiter runs].  If one "
-"of the delimiters can both open and close strong emphasis, then the sum "
-"of the lengths of the delimiter runs containing the opening and closing "
-"delimiters must not be a multiple of 3 unless both lengths are multiples "
-"of 3."
+"Strong emphasis begins with a delimiter that [can open strong emphasis] and "
+"ends with a delimiter that [can close strong emphasis], and that uses the "
+"same character (`_` or `*`) as the opening delimiter.  The opening and "
+"closing delimiters must belong to separate [delimiter runs].  If one of the "
+"delimiters can both open and close strong emphasis, then the sum of the "
+"lengths of the delimiter runs containing the opening and closing delimiters "
+"must not be a multiple of 3 unless both lengths are multiples of 3."
 msgstr ""
 
 #: ../../spec.txt:6251
@@ -2988,8 +2960,8 @@ msgstr ""
 
 #: ../../spec.txt:6259
 msgid ""
-"Where rules 1--12 above are compatible with multiple parsings, the "
-"following principles resolve ambiguity:"
+"Where rules 1--12 above are compatible with multiple parsings, the following"
+" principles resolve ambiguity:"
 msgstr ""
 
 #: ../../spec.txt:6262
@@ -3007,16 +2979,16 @@ msgstr ""
 
 #: ../../spec.txt:6269
 msgid ""
-"When two potential emphasis or strong emphasis spans overlap, so that the"
-" second begins before the first ends and ends after the first ends, the "
-"first takes precedence. Thus, for example, `*foo _bar* baz_` is parsed as"
-" `<em>foo _bar</em> baz_` rather than `*foo <em>bar* baz</em>`."
+"When two potential emphasis or strong emphasis spans overlap, so that the "
+"second begins before the first ends and ends after the first ends, the first"
+" takes precedence. Thus, for example, `*foo _bar* baz_` is parsed as "
+"`<em>foo _bar</em> baz_` rather than `*foo <em>bar* baz</em>`."
 msgstr ""
 
 #: ../../spec.txt:6275
 msgid ""
-"When there are two potential emphasis or strong emphasis spans with the "
-"same closing delimiter, the shorter one (the one that opens later) takes "
+"When there are two potential emphasis or strong emphasis spans with the same"
+" closing delimiter, the shorter one (the one that opens later) takes "
 "precedence. Thus, for example, `**foo **bar baz**` is parsed as `**foo "
 "<strong>bar baz</strong>` rather than `<strong>foo **bar baz</strong>`."
 msgstr ""
@@ -3040,15 +3012,15 @@ msgstr ""
 
 #: ../../spec.txt:6299
 msgid ""
-"This is not emphasis, because the opening `*` is followed by whitespace, "
-"and hence not part of a [left-flanking delimiter run]:"
+"This is not emphasis, because the opening `*` is followed by whitespace, and"
+" hence not part of a [left-flanking delimiter run]:"
 msgstr ""
 
 #: ../../spec.txt:6309
 msgid ""
-"This is not emphasis, because the opening `*` is preceded by an "
-"alphanumeric and followed by punctuation, and hence not part of a [left-"
-"flanking delimiter run]:"
+"This is not emphasis, because the opening `*` is preceded by an alphanumeric"
+" and followed by punctuation, and hence not part of a [left-flanking "
+"delimiter run]:"
 msgstr ""
 
 #: ../../spec.txt:6320
@@ -3064,13 +3036,14 @@ msgid "Rule 2:"
 msgstr ""
 
 #: ../../spec.txt:6354
-msgid "This is not emphasis, because the opening `_` is followed by whitespace:"
+msgid ""
+"This is not emphasis, because the opening `_` is followed by whitespace:"
 msgstr ""
 
 #: ../../spec.txt:6364
 msgid ""
-"This is not emphasis, because the opening `_` is preceded by an "
-"alphanumeric and followed by punctuation:"
+"This is not emphasis, because the opening `_` is preceded by an alphanumeric"
+" and followed by punctuation:"
 msgstr ""
 
 #: ../../spec.txt:6374
@@ -3085,8 +3058,8 @@ msgstr ""
 
 #: ../../spec.txt:6407
 msgid ""
-"This is emphasis, even though the opening delimiter is both left- and "
-"right-flanking, because it is preceded by punctuation:"
+"This is emphasis, even though the opening delimiter is both left- and right-"
+"flanking, because it is preceded by punctuation:"
 msgstr ""
 
 #: ../../spec.txt:6418
@@ -3100,7 +3073,8 @@ msgid ""
 msgstr ""
 
 #: ../../spec.txt:6430
-msgid "This is not emphasis, because the closing `*` is preceded by whitespace:"
+msgid ""
+"This is not emphasis, because the closing `*` is preceded by whitespace:"
 msgstr ""
 
 #: ../../spec.txt:6440
@@ -3109,15 +3083,14 @@ msgstr ""
 
 #: ../../spec.txt:6451
 msgid ""
-"This is not emphasis, because the second `*` is preceded by punctuation "
-"and followed by an alphanumeric (hence it is not part of a [right-"
-"flanking delimiter run]:"
+"This is not emphasis, because the second `*` is preceded by punctuation and "
+"followed by an alphanumeric (hence it is not part of a [right-flanking "
+"delimiter run]:"
 msgstr ""
 
 #: ../../spec.txt:6462 ../../spec.txt:6749
 msgid ""
-"The point of this restriction is more easily appreciated with this "
-"example:"
+"The point of this restriction is more easily appreciated with this example:"
 msgstr ""
 
 #: ../../spec.txt:6472
@@ -3129,13 +3102,14 @@ msgid "Rule 4:"
 msgstr ""
 
 #: ../../spec.txt:6484
-msgid "This is not emphasis, because the closing `_` is preceded by whitespace:"
+msgid ""
+"This is not emphasis, because the closing `_` is preceded by whitespace:"
 msgstr ""
 
 #: ../../spec.txt:6494
 msgid ""
-"This is not emphasis, because the second `_` is preceded by punctuation "
-"and followed by an alphanumeric:"
+"This is not emphasis, because the second `_` is preceded by punctuation and "
+"followed by an alphanumeric:"
 msgstr ""
 
 #: ../../spec.txt:6504
@@ -3148,8 +3122,8 @@ msgstr ""
 
 #: ../../spec.txt:6536
 msgid ""
-"This is emphasis, even though the closing delimiter is both left- and "
-"right-flanking, because it is followed by punctuation:"
+"This is emphasis, even though the closing delimiter is both left- and right-"
+"flanking, because it is followed by punctuation:"
 msgstr ""
 
 #: ../../spec.txt:6547
@@ -3158,8 +3132,8 @@ msgstr ""
 
 #: ../../spec.txt:6556 ../../spec.txt:6595
 msgid ""
-"This is not strong emphasis, because the opening delimiter is followed by"
-" whitespace:"
+"This is not strong emphasis, because the opening delimiter is followed by "
+"whitespace:"
 msgstr ""
 
 #: ../../spec.txt:6566
@@ -3193,8 +3167,8 @@ msgstr ""
 
 #: ../../spec.txt:6655
 msgid ""
-"This is strong emphasis, even though the opening delimiter is both left- "
-"and right-flanking, because it is preceded by punctuation:"
+"This is strong emphasis, even though the opening delimiter is both left- and"
+" right-flanking, because it is preceded by punctuation:"
 msgstr ""
 
 #: ../../spec.txt:6667
@@ -3203,14 +3177,14 @@ msgstr ""
 
 #: ../../spec.txt:6669 ../../spec.txt:6729
 msgid ""
-"This is not strong emphasis, because the closing delimiter is preceded by"
-" whitespace:"
+"This is not strong emphasis, because the closing delimiter is preceded by "
+"whitespace:"
 msgstr ""
 
 #: ../../spec.txt:6679
 msgid ""
-"(Nor can it be interpreted as an emphasized `*foo bar *`, because of Rule"
-" 11.)"
+"(Nor can it be interpreted as an emphasized `*foo bar *`, because of Rule "
+"11.)"
 msgstr ""
 
 #: ../../spec.txt:6682
@@ -3241,8 +3215,8 @@ msgstr ""
 
 #: ../../spec.txt:6782
 msgid ""
-"This is strong emphasis, even though the closing delimiter is both left- "
-"and right-flanking, because it is followed by punctuation:"
+"This is strong emphasis, even though the closing delimiter is both left- and"
+" right-flanking, because it is followed by punctuation:"
 msgstr ""
 
 #: ../../spec.txt:6793
@@ -3256,7 +3230,8 @@ msgid ""
 msgstr ""
 
 #: ../../spec.txt:6814
-msgid "In particular, emphasis and strong emphasis can be nested inside emphasis:"
+msgid ""
+"In particular, emphasis and strong emphasis can be nested inside emphasis:"
 msgstr ""
 
 #: ../../spec.txt:6857
@@ -3265,23 +3240,22 @@ msgstr ""
 
 #: ../../spec.txt:6864
 msgid ""
-"is precluded by the condition that a delimiter that can both open and "
-"close (like the `*` after `foo`) cannot form emphasis if the sum of the "
-"lengths of the delimiter runs containing the opening and closing "
-"delimiters is a multiple of 3 unless both lengths are multiples of 3."
+"is precluded by the condition that a delimiter that can both open and close "
+"(like the `*` after `foo`) cannot form emphasis if the sum of the lengths of"
+" the delimiter runs containing the opening and closing delimiters is a "
+"multiple of 3 unless both lengths are multiples of 3."
 msgstr ""
 
 #: ../../spec.txt:6872
 msgid ""
-"For the same reason, we don't get two consecutive emphasis sections in "
-"this example:"
+"For the same reason, we don't get two consecutive emphasis sections in this "
+"example:"
 msgstr ""
 
 #: ../../spec.txt:6882
 msgid ""
-"The same condition ensures that the following cases are all strong "
-"emphasis nested inside emphasis, even when the interior spaces are "
-"omitted:"
+"The same condition ensures that the following cases are all strong emphasis "
+"nested inside emphasis, even when the interior spaces are omitted:"
 msgstr ""
 
 #: ../../spec.txt:6909
@@ -3304,8 +3278,8 @@ msgstr ""
 
 #: ../../spec.txt:6961
 msgid ""
-"Any nonempty sequence of inline elements can be the contents of an "
-"strongly emphasized span."
+"Any nonempty sequence of inline elements can be the contents of an strongly "
+"emphasized span."
 msgstr ""
 
 #: ../../spec.txt:6980
@@ -3320,9 +3294,9 @@ msgstr ""
 
 #: ../../spec.txt:7118
 msgid ""
-"Note that when delimiters do not match evenly, Rule 11 determines that "
-"the excess literal `*` characters will appear outside of the emphasis, "
-"rather than inside it:"
+"Note that when delimiters do not match evenly, Rule 11 determines that the "
+"excess literal `*` characters will appear outside of the emphasis, rather "
+"than inside it:"
 msgstr ""
 
 #: ../../spec.txt:7165
@@ -3331,15 +3305,15 @@ msgstr ""
 
 #: ../../spec.txt:7216
 msgid ""
-"Note that when delimiters do not match evenly, Rule 12 determines that "
-"the excess literal `_` characters will appear outside of the emphasis, "
-"rather than inside it:"
+"Note that when delimiters do not match evenly, Rule 12 determines that the "
+"excess literal `_` characters will appear outside of the emphasis, rather "
+"than inside it:"
 msgstr ""
 
 #: ../../spec.txt:7255
 msgid ""
-"Rule 13 implies that if you want emphasis nested directly inside "
-"emphasis, you must use different delimiters:"
+"Rule 13 implies that if you want emphasis nested directly inside emphasis, "
+"you must use different delimiters:"
 msgstr ""
 
 #: ../../spec.txt:7286
@@ -3374,12 +3348,11 @@ msgstr ""
 
 #: ../../spec.txt:7430
 msgid ""
-"A link contains [link text] (the visible text), a [link destination] (the"
-" URI that is the link destination), and optionally a [link title]. There "
-"are two basic kinds of links in Markdown.  In [inline links] the "
-"destination and title are given immediately after the link text.  In "
-"[reference links] the destination and title are defined elsewhere in the "
-"document."
+"A link contains [link text] (the visible text), a [link destination] (the "
+"URI that is the link destination), and optionally a [link title]. There are "
+"two basic kinds of links in Markdown.  In [inline links] the destination and"
+" title are given immediately after the link text.  In [reference links] the "
+"destination and title are defined elsewhere in the document."
 msgstr ""
 
 #: ../../spec.txt:7437
@@ -3391,8 +3364,8 @@ msgstr ""
 #: ../../spec.txt:7441
 msgid ""
 "Links may not contain other links, at any level of nesting. If multiple "
-"otherwise valid link definitions appear nested inside each other, the "
-"inner-most definition is used."
+"otherwise valid link definitions appear nested inside each other, the inner-"
+"most definition is used."
 msgstr ""
 
 #: ../../spec.txt:7445
@@ -3404,15 +3377,15 @@ msgstr ""
 
 #: ../../spec.txt:7450
 msgid ""
-"Backtick [code spans], [autolinks], and raw [HTML tags] bind more tightly"
-" than the brackets in link text.  Thus, for example, `` [foo`]` `` could "
-"not be a link text, since the second `]` is part of a code span."
+"Backtick [code spans], [autolinks], and raw [HTML tags] bind more tightly "
+"than the brackets in link text.  Thus, for example, `` [foo`]` `` could not "
+"be a link text, since the second `]` is part of a code span."
 msgstr ""
 
 #: ../../spec.txt:7455
 msgid ""
-"The brackets in link text bind more tightly than markers for [emphasis "
-"and strong emphasis]. Thus, for example, `*[foo*](url)` is a link."
+"The brackets in link text bind more tightly than markers for [emphasis and "
+"strong emphasis]. Thus, for example, `*[foo*](url)` is a link."
 msgstr ""
 
 #: ../../spec.txt:7458
@@ -3421,19 +3394,18 @@ msgstr ""
 
 #: ../../spec.txt:7460
 msgid ""
-"a sequence of zero or more characters between an opening `<` and a "
-"closing `>` that contains no line breaks or unescaped `<` or `>` "
-"characters, or"
+"a sequence of zero or more characters between an opening `<` and a closing "
+"`>` that contains no line breaks or unescaped `<` or `>` characters, or"
 msgstr ""
 
 #: ../../spec.txt:7464
 msgid ""
 "a nonempty sequence of characters that does not start with `<`, does not "
-"include ASCII space or control characters, and includes parentheses only "
-"if (a) they are backslash-escaped or (b) they are part of a balanced pair"
-" of unescaped parentheses. (Implementations may impose limits on "
-"parentheses nesting to avoid performance issues, but at least three "
-"levels of nesting should be supported.)"
+"include ASCII space or control characters, and includes parentheses only if "
+"(a) they are backslash-escaped or (b) they are part of a balanced pair of "
+"unescaped parentheses. (Implementations may impose limits on parentheses "
+"nesting to avoid performance issues, but at least three levels of nesting "
+"should be supported.)"
 msgstr ""
 
 #: ../../spec.txt:7472
@@ -3450,15 +3422,14 @@ msgstr ""
 #: ../../spec.txt:7478
 msgid ""
 "a sequence of zero or more characters between straight single-quote "
-"characters (`'`), including a `'` character only if it is backslash-"
-"escaped, or"
+"characters (`'`), including a `'` character only if it is backslash-escaped,"
+" or"
 msgstr ""
 
 #: ../../spec.txt:7482
 msgid ""
 "a sequence of zero or more characters between matching parentheses "
-"(`(...)`), including a `(` or `)` character only if it is backslash-"
-"escaped."
+"(`(...)`), including a `(` or `)` character only if it is backslash-escaped."
 msgstr ""
 
 #: ../../spec.txt:7486
@@ -3469,16 +3440,15 @@ msgstr ""
 
 #: ../../spec.txt:7489
 msgid ""
-"An [inline link](@) consists of a [link text] followed immediately by a "
-"left parenthesis `(`, optional [whitespace], an optional [link "
-"destination], an optional [link title] separated from the link "
-"destination by [whitespace], optional [whitespace], and a right "
-"parenthesis `)`. The link's text consists of the inlines contained in the"
-" [link text] (excluding the enclosing square brackets). The link's URI "
-"consists of the link destination, excluding enclosing `<...>` if present,"
-" with backslash-escapes in effect as described above.  The link's title "
-"consists of the link title, excluding its enclosing delimiters, with "
-"backslash-escapes in effect as described above."
+"An [inline link](@) consists of a [link text] followed immediately by a left"
+" parenthesis `(`, optional [whitespace], an optional [link destination], an "
+"optional [link title] separated from the link destination by [whitespace], "
+"optional [whitespace], and a right parenthesis `)`. The link's text consists"
+" of the inlines contained in the [link text] (excluding the enclosing square"
+" brackets). The link's URI consists of the link destination, excluding "
+"enclosing `<...>` if present, with backslash-escapes in effect as described "
+"above.  The link's title consists of the link title, excluding its enclosing"
+" delimiters, with backslash-escapes in effect as described above."
 msgstr ""
 
 #: ../../spec.txt:7501
@@ -3521,18 +3491,19 @@ msgstr ""
 
 #: ../../spec.txt:7606
 msgid ""
-"Any number of parentheses are allowed without escaping, as long as they "
-"are balanced:"
+"Any number of parentheses are allowed without escaping, as long as they are "
+"balanced:"
 msgstr ""
 
 #: ../../spec.txt:7615
 msgid ""
-"However, if you have unbalanced parentheses, you need to escape or use "
-"the `<...>` form:"
+"However, if you have unbalanced parentheses, you need to escape or use the "
+"`<...>` form:"
 msgstr ""
 
 #: ../../spec.txt:7632
-msgid "Parentheses and other symbols can also be escaped, as usual in Markdown:"
+msgid ""
+"Parentheses and other symbols can also be escaped, as usual in Markdown:"
 msgstr ""
 
 #: ../../spec.txt:7642
@@ -3541,27 +3512,24 @@ msgstr ""
 
 #: ../../spec.txt:7657
 msgid ""
-"Note that a backslash before a non-escapable character is just a "
-"backslash:"
+"Note that a backslash before a non-escapable character is just a backslash:"
 msgstr ""
 
 #: ../../spec.txt:7667
 msgid ""
-"URL-escaping should be left alone inside the destination, as all URL-"
-"escaped characters are also valid URL characters. Entity and numerical "
-"character references in the destination will be parsed into the "
-"corresponding Unicode code points, as usual.  These may be optionally "
-"URL-escaped when written as HTML, but this spec does not enforce any "
-"particular policy for rendering URLs in HTML or other formats.  Renderers"
-" may make different decisions about how to escape or normalize URLs in "
-"the output."
+"URL-escaping should be left alone inside the destination, as all URL-escaped"
+" characters are also valid URL characters. Entity and numerical character "
+"references in the destination will be parsed into the corresponding Unicode "
+"code points, as usual.  These may be optionally URL-escaped when written as "
+"HTML, but this spec does not enforce any particular policy for rendering "
+"URLs in HTML or other formats.  Renderers may make different decisions about"
+" how to escape or normalize URLs in the output."
 msgstr ""
 
 #: ../../spec.txt:7683
 msgid ""
-"Note that, because titles can often be parsed as destinations, if you try"
-" to omit the destination and keep the title, you'll get unexpected "
-"results:"
+"Note that, because titles can often be parsed as destinations, if you try to"
+" omit the destination and keep the title, you'll get unexpected results:"
 msgstr ""
 
 #: ../../spec.txt:7694
@@ -3570,14 +3538,14 @@ msgstr ""
 
 #: ../../spec.txt:7707
 msgid ""
-"Backslash escapes and entity and numeric character references may be used"
-" in titles:"
+"Backslash escapes and entity and numeric character references may be used in"
+" titles:"
 msgstr ""
 
 #: ../../spec.txt:7717
 msgid ""
-"Titles must be separated from the link using a [whitespace]. Other "
-"[Unicode whitespace] like non-breaking space doesn't work."
+"Titles must be separated from the link using a [whitespace]. Other [Unicode "
+"whitespace] like non-breaking space doesn't work."
 msgstr ""
 
 #: ../../spec.txt:7727
@@ -3590,19 +3558,19 @@ msgstr ""
 
 #: ../../spec.txt:7745
 msgid ""
-"(Note:  `Markdown.pl` did allow double quotes inside a double-quoted "
-"title, and its test suite included a test demonstrating this. But it is "
-"hard to see a good rationale for the extra complexity this brings, since "
-"there are already many ways---backslash escaping, entity and numeric "
-"character references, or using a different quote type for the enclosing "
-"title---to write titles containing double quotes.  `Markdown.pl`'s "
-"handling of titles has a number of other strange features.  For example, "
-"it allows single-quoted titles in inline links, but not reference links."
-"  And, in reference links but not inline links, it allows a title to "
-"begin with `\"` and end with `)`.  `Markdown.pl` 1.0.1 even allows titles"
-" with no closing quotation mark, though 1.0.2b8 does not. It seems "
-"preferable to adopt a simple, rational rule that works the same way in "
-"inline links and link reference definitions.)"
+"(Note:  `Markdown.pl` did allow double quotes inside a double-quoted title, "
+"and its test suite included a test demonstrating this. But it is hard to see"
+" a good rationale for the extra complexity this brings, since there are "
+"already many ways---backslash escaping, entity and numeric character "
+"references, or using a different quote type for the enclosing title---to "
+"write titles containing double quotes.  `Markdown.pl`'s handling of titles "
+"has a number of other strange features.  For example, it allows single-"
+"quoted titles in inline links, but not reference links.  And, in reference "
+"links but not inline links, it allows a title to begin with `\"` and end "
+"with `)`.  `Markdown.pl` 1.0.1 even allows titles with no closing quotation "
+"mark, though 1.0.2b8 does not. It seems preferable to adopt a simple, "
+"rational rule that works the same way in inline links and link reference "
+"definitions.)"
 msgstr ""
 
 #: ../../spec.txt:7760
@@ -3610,13 +3578,14 @@ msgid "[Whitespace] is allowed around the destination and title:"
 msgstr ""
 
 #: ../../spec.txt:7770
-msgid "But it is not allowed between the link text and the following parenthesis:"
+msgid ""
+"But it is not allowed between the link text and the following parenthesis:"
 msgstr ""
 
 #: ../../spec.txt:7780 ../../spec.txt:7944
 msgid ""
-"The link text may contain balanced brackets, but not unbalanced ones, "
-"unless they are escaped:"
+"The link text may contain balanced brackets, but not unbalanced ones, unless"
+" they are escaped:"
 msgstr ""
 
 #: ../../spec.txt:7811 ../../spec.txt:7965
@@ -3629,8 +3598,8 @@ msgstr ""
 
 #: ../../spec.txt:7850
 msgid ""
-"These cases illustrate the precedence of link text grouping over emphasis"
-" grouping:"
+"These cases illustrate the precedence of link text grouping over emphasis "
+"grouping:"
 msgstr ""
 
 #: ../../spec.txt:7867
@@ -3645,54 +3614,54 @@ msgstr ""
 
 #: ../../spec.txt:7901
 msgid ""
-"There are three kinds of [reference link](@)s: [full](#full-reference-"
-"link), [collapsed](#collapsed-reference-link), and [shortcut](#shortcut-"
-"reference-link)."
+"There are three kinds of [reference link](@)s: [full](#full-reference-link),"
+" [collapsed](#collapsed-reference-link), and [shortcut](#shortcut-reference-"
+"link)."
 msgstr ""
 
 #: ../../spec.txt:7905
 msgid ""
-"A [full reference link](@) consists of a [link text] immediately followed"
-" by a [link label] that [matches] a [link reference definition] elsewhere"
-" in the document."
+"A [full reference link](@) consists of a [link text] immediately followed by"
+" a [link label] that [matches] a [link reference definition] elsewhere in "
+"the document."
 msgstr ""
 
 #: ../../spec.txt:7909
 msgid ""
-"A [link label](@)  begins with a left bracket (`[`) and ends with the "
-"first right bracket (`]`) that is not backslash-escaped. Between these "
-"brackets there must be at least one [non-whitespace character]. Unescaped"
-" square bracket characters are not allowed inside the opening and closing"
-" square brackets of [link labels].  A link label can have at most 999 "
-"characters inside the square brackets."
+"A [link label](@)  begins with a left bracket (`[`) and ends with the first "
+"right bracket (`]`) that is not backslash-escaped. Between these brackets "
+"there must be at least one [non-whitespace character]. Unescaped square "
+"bracket characters are not allowed inside the opening and closing square "
+"brackets of [link labels].  A link label can have at most 999 characters "
+"inside the square brackets."
 msgstr ""
 
 #: ../../spec.txt:7917
 msgid ""
 "One label [matches](@) another just in case their normalized forms are "
-"equal.  To normalize a label, strip off the opening and closing brackets,"
-" perform the *Unicode case fold*, strip leading and trailing [whitespace]"
-" and collapse consecutive internal [whitespace] to a single space.  If "
-"there are multiple matching reference link definitions, the one that "
-"comes first in the document is used.  (It is desirable in such cases to "
-"emit a warning.)"
+"equal.  To normalize a label, strip off the opening and closing brackets, "
+"perform the *Unicode case fold*, strip leading and trailing [whitespace] and"
+" collapse consecutive internal [whitespace] to a single space.  If there are"
+" multiple matching reference link definitions, the one that comes first in "
+"the document is used.  (It is desirable in such cases to emit a warning.)"
 msgstr ""
 
 #: ../../spec.txt:7926
 msgid ""
-"The contents of the first link label are parsed as inlines, which are "
-"used as the link's text.  The link's URI and title are provided by the "
-"matching [link reference definition]."
+"The contents of the first link label are parsed as inlines, which are used "
+"as the link's text.  The link's URI and title are provided by the matching "
+"[link reference definition]."
 msgstr ""
 
 #: ../../spec.txt:7941
-msgid "The rules for the [link text] are the same as with [inline links].  Thus:"
+msgid ""
+"The rules for the [link text] are the same as with [inline links].  Thus:"
 msgstr ""
 
 #: ../../spec.txt:8005
 msgid ""
-"(In the examples above, we have two [shortcut reference links] instead of"
-" one [full reference link].)"
+"(In the examples above, we have two [shortcut reference links] instead of "
+"one [full reference link].)"
 msgstr ""
 
 #: ../../spec.txt:8008
@@ -3711,41 +3680,41 @@ msgstr ""
 
 #: ../../spec.txt:8081
 msgid ""
-"Consecutive internal [whitespace] is treated as one space for purposes of"
-" determining matching:"
+"Consecutive internal [whitespace] is treated as one space for purposes of "
+"determining matching:"
 msgstr ""
 
 #: ../../spec.txt:8094
-msgid "No [whitespace] is allowed between the [link text] and the [link label]:"
+msgid ""
+"No [whitespace] is allowed between the [link text] and the [link label]:"
 msgstr ""
 
 #: ../../spec.txt:8117
 msgid ""
-"This is a departure from John Gruber's original Markdown syntax "
-"description, which explicitly allows whitespace between the link text and"
-" the link label.  It brings reference links in line with [inline links], "
-"which (according to both original Markdown and this spec) cannot have "
-"whitespace after the link text.  More importantly, it prevents "
-"inadvertent capture of consecutive [shortcut reference links]. If "
-"whitespace is allowed between the link text and the link label, then in "
-"the following we will have a single reference link, not two shortcut "
-"reference links, as intended:"
+"This is a departure from John Gruber's original Markdown syntax description,"
+" which explicitly allows whitespace between the link text and the link "
+"label.  It brings reference links in line with [inline links], which "
+"(according to both original Markdown and this spec) cannot have whitespace "
+"after the link text.  More importantly, it prevents inadvertent capture of "
+"consecutive [shortcut reference links]. If whitespace is allowed between the"
+" link text and the link label, then in the following we will have a single "
+"reference link, not two shortcut reference links, as intended:"
 msgstr ""
 
 #: ../../spec.txt:8136
 msgid ""
-"(Note that [shortcut reference links] were introduced by Gruber himself "
-"in a beta version of `Markdown.pl`, but never included in the official "
-"syntax description.  Without shortcut reference links, it is harmless to "
-"allow space between the link text and link label; but once shortcut "
-"references are introduced, it is too dangerous to allow this, as it "
-"frequently leads to unintended results.)"
+"(Note that [shortcut reference links] were introduced by Gruber himself in a"
+" beta version of `Markdown.pl`, but never included in the official syntax "
+"description.  Without shortcut reference links, it is harmless to allow "
+"space between the link text and link label; but once shortcut references are"
+" introduced, it is too dangerous to allow this, as it frequently leads to "
+"unintended results.)"
 msgstr ""
 
 #: ../../spec.txt:8144
 msgid ""
-"When there are multiple matching [link reference definitions], the first "
-"is used:"
+"When there are multiple matching [link reference definitions], the first is "
+"used:"
 msgstr ""
 
 #: ../../spec.txt:8158
@@ -3756,7 +3725,8 @@ msgid ""
 msgstr ""
 
 #: ../../spec.txt:8171
-msgid "[Link labels] cannot contain brackets, unless they are backslash-escaped:"
+msgid ""
+"[Link labels] cannot contain brackets, unless they are backslash-escaped:"
 msgstr ""
 
 #: ../../spec.txt:8213
@@ -3769,12 +3739,12 @@ msgstr ""
 
 #: ../../spec.txt:8250
 msgid ""
-"A [collapsed reference link](@) consists of a [link label] that [matches]"
-" a [link reference definition] elsewhere in the document, followed by the"
-" string `[]`. The contents of the first link label are parsed as inlines,"
-" which are used as the link's text.  The link's URI and title are "
-"provided by the matching reference link definition.  Thus, `[foo][]` is "
-"equivalent to `[foo][foo]`."
+"A [collapsed reference link](@) consists of a [link label] that [matches] a "
+"[link reference definition] elsewhere in the document, followed by the "
+"string `[]`. The contents of the first link label are parsed as inlines, "
+"which are used as the link's text.  The link's URI and title are provided by"
+" the matching reference link definition.  Thus, `[foo][]` is equivalent to "
+"`[foo][foo]`."
 msgstr ""
 
 #: ../../spec.txt:8277 ../../spec.txt:8348 ../../spec.txt:8663
@@ -3783,18 +3753,18 @@ msgstr ""
 
 #: ../../spec.txt:8289
 msgid ""
-"As with full reference links, [whitespace] is not allowed between the two"
-" sets of brackets:"
+"As with full reference links, [whitespace] is not allowed between the two "
+"sets of brackets:"
 msgstr ""
 
 #: ../../spec.txt:8303
 msgid ""
-"A [shortcut reference link](@) consists of a [link label] that [matches] "
-"a [link reference definition] elsewhere in the document and is not "
-"followed by `[]` or a link label. The contents of the first link label "
-"are parsed as inlines, which are used as the link's text.  The link's URI"
-" and title are provided by the matching link reference definition. Thus, "
-"`[foo]` is equivalent to `[foo][]`."
+"A [shortcut reference link](@) consists of a [link label] that [matches] a "
+"[link reference definition] elsewhere in the document and is not followed by"
+" `[]` or a link label. The contents of the first link label are parsed as "
+"inlines, which are used as the link's text.  The link's URI and title are "
+"provided by the matching link reference definition. Thus, `[foo]` is "
+"equivalent to `[foo][]`."
 msgstr ""
 
 #: ../../spec.txt:8359
@@ -3809,8 +3779,8 @@ msgstr ""
 
 #: ../../spec.txt:8382
 msgid ""
-"Note that this is a link, because a link label ends with the first "
-"following closing bracket:"
+"Note that this is a link, because a link label ends with the first following"
+" closing bracket:"
 msgstr ""
 
 #: ../../spec.txt:8394
@@ -3835,8 +3805,8 @@ msgstr ""
 
 #: ../../spec.txt:8457
 msgid ""
-"Here `[foo]` is not parsed as a shortcut reference, because it is "
-"followed by a link label (even though `[bar]` is not defined):"
+"Here `[foo]` is not parsed as a shortcut reference, because it is followed "
+"by a link label (even though `[bar]` is not defined):"
 msgstr ""
 
 #: ../../spec.txt:8471
@@ -3845,23 +3815,21 @@ msgstr ""
 
 #: ../../spec.txt:8473
 msgid ""
-"Syntax for images is like the syntax for links, with one difference. "
-"Instead of [link text], we have an [image description](@).  The rules for"
-" this are the same as for [link text], except that (a) an image "
-"description starts with `![` rather than `[`, and (b) an image "
-"description may contain links. An image description has inline elements "
-"as its contents.  When an image is rendered to HTML, this is standardly "
-"used as the image's `alt` attribute."
+"Syntax for images is like the syntax for links, with one difference. Instead"
+" of [link text], we have an [image description](@).  The rules for this are "
+"the same as for [link text], except that (a) an image description starts "
+"with `![` rather than `[`, and (b) an image description may contain links. "
+"An image description has inline elements as its contents.  When an image is "
+"rendered to HTML, this is standardly used as the image's `alt` attribute."
 msgstr ""
 
 #: ../../spec.txt:8513
 msgid ""
-"Though this spec is concerned with parsing, not rendering, it is "
-"recommended that in rendering to HTML, only the plain string content of "
-"the [image description] be used.  Note that in the above example, the alt"
-" attribute's value is `foo bar`, not `foo [bar](/url)` or `foo <a "
-"href=\"/url\">bar</a>`.  Only the plain string content is rendered, "
-"without formatting."
+"Though this spec is concerned with parsing, not rendering, it is recommended"
+" that in rendering to HTML, only the plain string content of the [image "
+"description] be used.  Note that in the above example, the alt attribute's "
+"value is `foo bar`, not `foo [bar](/url)` or `foo <a href=\"/url\">bar</a>`."
+"  Only the plain string content is rendered, without formatting."
 msgstr ""
 
 #: ../../spec.txt:8566
@@ -3878,8 +3846,8 @@ msgstr ""
 
 #: ../../spec.txt:8617
 msgid ""
-"As with reference links, [whitespace] is not allowed between the two sets"
-" of brackets:"
+"As with reference links, [whitespace] is not allowed between the two sets of"
+" brackets:"
 msgstr ""
 
 #: ../../spec.txt:8631
@@ -3907,31 +3875,30 @@ msgstr ""
 #: ../../spec.txt:8700
 msgid ""
 "[Autolink](@)s are absolute URIs and email addresses inside `<` and `>`. "
-"They are parsed as links, with the URL or email address as the link "
-"label."
+"They are parsed as links, with the URL or email address as the link label."
 msgstr ""
 
 #: ../../spec.txt:8704
 msgid ""
-"A [URI autolink](@) consists of `<`, followed by an [absolute URI] "
-"followed by `>`.  It is parsed as a link to the URI, with the URI as the "
-"link's label."
+"A [URI autolink](@) consists of `<`, followed by an [absolute URI] followed "
+"by `>`.  It is parsed as a link to the URI, with the URI as the link's "
+"label."
 msgstr ""
 
 #: ../../spec.txt:8708
 msgid ""
-"An [absolute URI](@), for these purposes, consists of a [scheme] followed"
-" by a colon (`:`) followed by zero or more characters other than ASCII "
+"An [absolute URI](@), for these purposes, consists of a [scheme] followed by"
+" a colon (`:`) followed by zero or more characters other than ASCII "
 "[whitespace] and control characters, `<`, and `>`.  If the URI includes "
 "these characters, they must be percent-encoded (e.g. `%20` for a space)."
 msgstr ""
 
 #: ../../spec.txt:8715
 msgid ""
-"For purposes of this spec, a [scheme](@) is any sequence of 2--32 "
-"characters beginning with an ASCII letter and followed by any combination"
-" of ASCII letters, digits, or the symbols plus (\"+\"), period (\".\"), "
-"or hyphen (\"-\")."
+"For purposes of this spec, a [scheme](@) is any sequence of 2--32 characters"
+" beginning with an ASCII letter and followed by any combination of ASCII "
+"letters, digits, or the symbols plus (\"+\"), period (\".\"), or hyphen "
+"(\"-\")."
 msgstr ""
 
 #: ../../spec.txt:8720
@@ -3944,9 +3911,9 @@ msgstr ""
 
 #: ../../spec.txt:8752
 msgid ""
-"Note that many strings that count as [absolute URIs] for purposes of this"
-" spec are not valid URIs, because their schemes are not registered or "
-"because of other problems with their syntax:"
+"Note that many strings that count as [absolute URIs] for purposes of this "
+"spec are not valid URIs, because their schemes are not registered or because"
+" of other problems with their syntax:"
 msgstr ""
 
 #: ../../spec.txt:8785
@@ -3990,10 +3957,10 @@ msgstr ""
 
 #: ../../spec.txt:8887
 msgid ""
-"Text between `<` and `>` that looks like an HTML tag is parsed as a raw "
-"HTML tag and will be rendered in HTML without escaping. Tag and attribute"
-" names are not limited to current HTML tags, so custom tags (and even, "
-"say, DocBook tags) may be used."
+"Text between `<` and `>` that looks like an HTML tag is parsed as a raw HTML"
+" tag and will be rendered in HTML without escaping. Tag and attribute names "
+"are not limited to current HTML tags, so custom tags (and even, say, DocBook"
+" tags) may be used."
 msgstr ""
 
 #: ../../spec.txt:8892
@@ -4002,8 +3969,8 @@ msgstr ""
 
 #: ../../spec.txt:8894
 msgid ""
-"A [tag name](@) consists of an ASCII letter followed by zero or more "
-"ASCII letters, digits, or hyphens (`-`)."
+"A [tag name](@) consists of an ASCII letter followed by zero or more ASCII "
+"letters, digits, or hyphens (`-`)."
 msgstr ""
 
 #: ../../spec.txt:8898
@@ -4014,15 +3981,15 @@ msgstr ""
 
 #: ../../spec.txt:8902
 msgid ""
-"An [attribute name](@) consists of an ASCII letter, `_`, or `:`, followed"
-" by zero or more ASCII letters, digits, `_`, `.`, `:`, or `-`.  (Note:  "
-"This is the XML specification restricted to ASCII.  HTML5 is laxer.)"
+"An [attribute name](@) consists of an ASCII letter, `_`, or `:`, followed by"
+" zero or more ASCII letters, digits, `_`, `.`, `:`, or `-`.  (Note:  This is"
+" the XML specification restricted to ASCII.  HTML5 is laxer.)"
 msgstr ""
 
 #: ../../spec.txt:8907
 msgid ""
-"An [attribute value specification](@) consists of optional [whitespace], "
-"a `=` character, optional [whitespace], and an [attribute value]."
+"An [attribute value specification](@) consists of optional [whitespace], a "
+"`=` character, optional [whitespace], and an [attribute value]."
 msgstr ""
 
 #: ../../spec.txt:8912
@@ -4052,8 +4019,8 @@ msgstr ""
 #: ../../spec.txt:8928
 msgid ""
 "An [open tag](@) consists of a `<` character, a [tag name], zero or more "
-"[attributes], optional [whitespace], an optional `/` character, and a `>`"
-" character."
+"[attributes], optional [whitespace], an optional `/` character, and a `>` "
+"character."
 msgstr ""
 
 #: ../../spec.txt:8932
@@ -4064,9 +4031,9 @@ msgstr ""
 
 #: ../../spec.txt:8935
 msgid ""
-"An [HTML comment](@) consists of `<!--` + *text* + `-->`, where *text* "
-"does not start with `>` or `->`, does not end with `-`, and does not "
-"contain `--`.  (See the [HTML5 "
+"An [HTML comment](@) consists of `<!--` + *text* + `-->`, where *text* does "
+"not start with `>` or `->`, does not end with `-`, and does not contain "
+"`--`.  (See the [HTML5 "
 "spec](http://www.w3.org/TR/html5/syntax.html#comments).)"
 msgstr ""
 
@@ -4078,9 +4045,9 @@ msgstr ""
 
 #: ../../spec.txt:8945
 msgid ""
-"A [declaration](@) consists of the string `<!`, a name consisting of one "
-"or more uppercase ASCII letters, [whitespace], a string of characters not"
-" including the character `>`, and the character `>`."
+"A [declaration](@) consists of the string `<!`, a name consisting of one or "
+"more uppercase ASCII letters, [whitespace], a string of characters not "
+"including the character `>`, and the character `>`."
 msgstr ""
 
 #: ../../spec.txt:8950
@@ -4092,8 +4059,7 @@ msgstr ""
 #: ../../spec.txt:8954
 msgid ""
 "An [HTML tag](@) consists of an [open tag], a [closing tag], an [HTML "
-"comment], a [processing instruction], a [declaration], or a [CDATA "
-"section]."
+"comment], a [processing instruction], a [declaration], or a [CDATA section]."
 msgstr ""
 
 #: ../../spec.txt:8958
@@ -4165,7 +4131,8 @@ msgid "CDATA sections:"
 msgstr ""
 
 #: ../../spec.txt:9133
-msgid "Entity and numeric character references are preserved in HTML attributes:"
+msgid ""
+"Entity and numeric character references are preserved in HTML attributes:"
 msgstr ""
 
 #: ../../spec.txt:9143
@@ -4179,14 +4146,14 @@ msgstr ""
 #: ../../spec.txt:9161
 msgid ""
 "A line break (not in a code span or HTML tag) that is preceded by two or "
-"more spaces and does not occur at the end of a block is parsed as a [hard"
-" line break](@) (rendered in HTML as a `<br />` tag):"
+"more spaces and does not occur at the end of a block is parsed as a [hard "
+"line break](@) (rendered in HTML as a `<br />` tag):"
 msgstr ""
 
 #: ../../spec.txt:9175
 msgid ""
-"For a more visible alternative, a backslash before the [line ending] may "
-"be used instead of two spaces:"
+"For a more visible alternative, a backslash before the [line ending] may be "
+"used instead of two spaces:"
 msgstr ""
 
 #: ../../spec.txt:9187
@@ -4213,9 +4180,9 @@ msgstr ""
 
 #: ../../spec.txt:9277
 msgid ""
-"Hard line breaks are for separating inline content within a block. "
-"Neither syntax for hard line breaks works at the end of a paragraph or "
-"other block element:"
+"Hard line breaks are for separating inline content within a block. Neither "
+"syntax for hard line breaks works at the end of a paragraph or other block "
+"element:"
 msgstr ""
 
 #: ../../spec.txt:9309
@@ -4224,21 +4191,22 @@ msgstr ""
 
 #: ../../spec.txt:9311
 msgid ""
-"A regular line break (not in a code span or HTML tag) that is not "
-"preceded by two or more spaces or a backslash is parsed as a "
-"[softbreak](@).  (A softbreak may be rendered in HTML either as a [line "
-"ending] or as a space. The result will be the same in browsers. In the "
-"examples here, a [line ending] will be used.)"
+"A regular line break (not in a code span or HTML tag) that is not preceded "
+"by two or more spaces or a backslash is parsed as a [softbreak](@).  (A "
+"softbreak may be rendered in HTML either as a [line ending] or as a space. "
+"The result will be the same in browsers. In the examples here, a [line "
+"ending] will be used.)"
 msgstr ""
 
 #: ../../spec.txt:9326
-msgid "Spaces at the end of the line and beginning of the next line are removed:"
+msgid ""
+"Spaces at the end of the line and beginning of the next line are removed:"
 msgstr ""
 
 #: ../../spec.txt:9338
 msgid ""
-"A conforming parser may render a soft line break in HTML either as a line"
-" break or as a space."
+"A conforming parser may render a soft line break in HTML either as a line "
+"break or as a space."
 msgstr ""
 
 #: ../../spec.txt:9341
@@ -4253,8 +4221,8 @@ msgstr ""
 
 #: ../../spec.txt:9346
 msgid ""
-"Any characters not given an interpretation by the above rules will be "
-"parsed as plain textual content."
+"Any characters not given an interpretation by the above rules will be parsed"
+" as plain textual content."
 msgstr ""
 
 #: ../../spec.txt:9363
@@ -4267,8 +4235,8 @@ msgstr ""
 
 #: ../../spec.txt:9376
 msgid ""
-"In this appendix we describe some features of the parsing strategy used "
-"in the CommonMark reference implementations."
+"In this appendix we describe some features of the parsing strategy used in "
+"the CommonMark reference implementations."
 msgstr ""
 
 #: ../../spec.txt:9379
@@ -4281,31 +4249,29 @@ msgstr ""
 
 #: ../../spec.txt:9383
 msgid ""
-"In the first phase, lines of input are consumed and the block structure "
-"of the document---its division into paragraphs, block quotes, list items,"
-" and so on---is constructed.  Text is assigned to these blocks but not "
-"parsed. Link reference definitions are parsed and a map of links is "
-"constructed."
+"In the first phase, lines of input are consumed and the block structure of "
+"the document---its division into paragraphs, block quotes, list items, and "
+"so on---is constructed.  Text is assigned to these blocks but not parsed. "
+"Link reference definitions are parsed and a map of links is constructed."
 msgstr ""
 
 #: ../../spec.txt:9389
 msgid ""
-"In the second phase, the raw text contents of paragraphs and headings are"
-" parsed into sequences of Markdown inline elements (strings, code spans, "
-"links, emphasis, and so on), using the map of link references constructed"
-" in phase 1."
+"In the second phase, the raw text contents of paragraphs and headings are "
+"parsed into sequences of Markdown inline elements (strings, code spans, "
+"links, emphasis, and so on), using the map of link references constructed in"
+" phase 1."
 msgstr ""
 
 #: ../../spec.txt:9394
 msgid ""
 "At each point in processing, the document is represented as a tree of "
-"**blocks**.  The root of the tree is a `document` block.  The `document` "
-"may have any number of other blocks as **children**.  These children may,"
-" in turn, have other blocks as children.  The last child of a block is "
-"normally considered **open**, meaning that subsequent lines of input can "
-"alter its contents.  (Blocks that are not open are **closed**.) Here, for"
-" example, is a possible document tree, with the open blocks marked by "
-"arrows:"
+"**blocks**.  The root of the tree is a `document` block.  The `document` may"
+" have any number of other blocks as **children**.  These children may, in "
+"turn, have other blocks as children.  The last child of a block is normally "
+"considered **open**, meaning that subsequent lines of input can alter its "
+"contents.  (Blocks that are not open are **closed**.) Here, for example, is "
+"a possible document tree, with the open blocks marked by arrows:"
 msgstr ""
 
 #: ../../spec.txt:9417
@@ -4315,8 +4281,8 @@ msgstr ""
 #: ../../spec.txt:9419
 msgid ""
 "Each line that is processed has an effect on this tree.  The line is "
-"analyzed and, depending on its contents, the document may be altered in "
-"one or more of the following ways:"
+"analyzed and, depending on its contents, the document may be altered in one "
+"or more of the following ways:"
 msgstr ""
 
 #: ../../spec.txt:9423
@@ -4324,11 +4290,13 @@ msgid "One or more open blocks may be closed."
 msgstr ""
 
 #: ../../spec.txt:9424
-msgid "One or more new blocks may be created as children of the last open block."
+msgid ""
+"One or more new blocks may be created as children of the last open block."
 msgstr ""
 
 #: ../../spec.txt:9426
-msgid "Text may be added to the last (deepest) open block remaining on the tree."
+msgid ""
+"Text may be added to the last (deepest) open block remaining on the tree."
 msgstr ""
 
 #: ../../spec.txt:9429
@@ -4343,29 +4311,29 @@ msgstr ""
 
 #: ../../spec.txt:9434
 msgid ""
-"First we iterate through the open blocks, starting with the root "
-"document, and descending through last children down to the last open "
-"block.  Each block imposes a condition that the line must satisfy if the "
-"block is to remain open.  For example, a block quote requires a `>` "
-"character.  A paragraph requires a non-blank line. In this phase we may "
-"match all or just some of the open blocks.  But we cannot close unmatched"
-" blocks yet, because we may have a [lazy continuation line]."
+"First we iterate through the open blocks, starting with the root document, "
+"and descending through last children down to the last open block.  Each "
+"block imposes a condition that the line must satisfy if the block is to "
+"remain open.  For example, a block quote requires a `>` character.  A "
+"paragraph requires a non-blank line. In this phase we may match all or just "
+"some of the open blocks.  But we cannot close unmatched blocks yet, because "
+"we may have a [lazy continuation line]."
 msgstr ""
 
 #: ../../spec.txt:9443
 msgid ""
-"Next, after consuming the continuation markers for existing blocks, we "
-"look for new block starts (e.g. `>` for a block quote). If we encounter a"
-" new block start, we close any blocks unmatched in step 1 before creating"
-" the new block as a child of the last matched block."
+"Next, after consuming the continuation markers for existing blocks, we look "
+"for new block starts (e.g. `>` for a block quote). If we encounter a new "
+"block start, we close any blocks unmatched in step 1 before creating the new"
+" block as a child of the last matched block."
 msgstr ""
 
 #: ../../spec.txt:9449
 msgid ""
-"Finally, we look at the remainder of the line (after block markers like "
-"`>`, list markers, and indentation have been consumed). This is text that"
-" can be incorporated into the last open block (a paragraph, code block, "
-"heading, or raw HTML)."
+"Finally, we look at the remainder of the line (after block markers like `>`,"
+" list markers, and indentation have been consumed). This is text that can be"
+" incorporated into the last open block (a paragraph, code block, heading, or"
+" raw HTML)."
 msgstr ""
 
 #: ../../spec.txt:9454
@@ -4383,8 +4351,8 @@ msgstr ""
 
 #: ../../spec.txt:9462
 msgid ""
-"We can see how this works by considering how the tree above is generated "
-"by four lines of Markdown:"
+"We can see how this works by considering how the tree above is generated by "
+"four lines of Markdown:"
 msgstr ""
 
 #: ../../spec.txt:9472
@@ -4397,10 +4365,9 @@ msgstr ""
 
 #: ../../spec.txt:9484
 msgid ""
-"causes a `block_quote` block to be created as a child of our open "
-"`document` block, and a `paragraph` block as a child of the "
-"`block_quote`.  Then the text is added to the last open block, the "
-"`paragraph`:"
+"causes a `block_quote` block to be created as a child of our open `document`"
+" block, and a `paragraph` block as a child of the `block_quote`.  Then the "
+"text is added to the last open block, the `paragraph`:"
 msgstr ""
 
 #: ../../spec.txt:9496
@@ -4409,8 +4376,8 @@ msgstr ""
 
 #: ../../spec.txt:9502
 msgid ""
-"is a \"lazy continuation\" of the open `paragraph`, so it gets added to "
-"the paragraph's text:"
+"is a \"lazy continuation\" of the open `paragraph`, so it gets added to the "
+"paragraph's text:"
 msgstr ""
 
 #: ../../spec.txt:9512
@@ -4419,10 +4386,10 @@ msgstr ""
 
 #: ../../spec.txt:9518
 msgid ""
-"causes the `paragraph` block to be closed, and a new `list` block opened "
-"as a child of the `block_quote`.  A `list_item` is also added as a child "
-"of the `list`, and a `paragraph` as a child of the `list_item`.  The text"
-" is then added to the new `paragraph`:"
+"causes the `paragraph` block to be closed, and a new `list` block opened as "
+"a child of the `block_quote`.  A `list_item` is also added as a child of the"
+" `list`, and a `paragraph` as a child of the `list_item`.  The text is then "
+"added to the new `paragraph`:"
 msgstr ""
 
 #: ../../spec.txt:9534
@@ -4431,10 +4398,10 @@ msgstr ""
 
 #: ../../spec.txt:9540
 msgid ""
-"causes the `list_item` (and its child the `paragraph`) to be closed, and "
-"a new `list_item` opened up as child of the `list`.  A `paragraph` is "
-"added as a child of the new `list_item`, to contain the text. We thus "
-"obtain the final tree:"
+"causes the `list_item` (and its child the `paragraph`) to be closed, and a "
+"new `list_item` opened up as child of the `list`.  A `paragraph` is added as"
+" a child of the new `list_item`, to contain the text. We thus obtain the "
+"final tree:"
 msgstr ""
 
 #: ../../spec.txt:9559
@@ -4448,16 +4415,15 @@ msgstr ""
 #: ../../spec.txt:9563
 msgid ""
 "We then \"walk the tree,\" visiting every node, and parse raw string "
-"contents of paragraphs and headings as inlines.  At this point we have "
-"seen all the link reference definitions, so we can resolve reference "
-"links as we go."
+"contents of paragraphs and headings as inlines.  At this point we have seen "
+"all the link reference definitions, so we can resolve reference links as we "
+"go."
 msgstr ""
 
 #: ../../spec.txt:9586
 msgid ""
 "Notice how the [line ending] in the first paragraph has been parsed as a "
-"`softbreak`, and the asterisks in the first list item have become an "
-"`emph`."
+"`softbreak`, and the asterisks in the first list item have become an `emph`."
 msgstr ""
 
 #: ../../spec.txt:9590
@@ -4484,8 +4450,8 @@ msgstr ""
 
 #: ../../spec.txt:9601
 msgid ""
-"we insert a text node with these symbols as its literal content, and we "
-"add a pointer to this text node to the [delimiter stack](@)."
+"we insert a text node with these symbols as its literal content, and we add "
+"a pointer to this text node to the [delimiter stack](@)."
 msgstr ""
 
 #: ../../spec.txt:9604
@@ -4515,14 +4481,14 @@ msgstr ""
 
 #: ../../spec.txt:9614
 msgid ""
-"When we hit a `]` character, we call the *look for link or image* "
-"procedure (see below)."
+"When we hit a `]` character, we call the *look for link or image* procedure "
+"(see below)."
 msgstr ""
 
 #: ../../spec.txt:9617
 msgid ""
-"When we hit the end of the input, we call the *process emphasis* "
-"procedure (see below), with `stack_bottom` = NULL."
+"When we hit the end of the input, we call the *process emphasis* procedure "
+"(see below), with `stack_bottom` = NULL."
 msgstr ""
 
 #: ../../spec.txt:9620
@@ -4531,8 +4497,8 @@ msgstr ""
 
 #: ../../spec.txt:9622
 msgid ""
-"Starting at the top of the delimiter stack, we look backwards through the"
-" stack for an opening `[` or `![` delimiter."
+"Starting at the top of the delimiter stack, we look backwards through the "
+"stack for an opening `[` or `![` delimiter."
 msgstr ""
 
 #: ../../spec.txt:9625
@@ -4541,21 +4507,21 @@ msgstr ""
 
 #: ../../spec.txt:9627
 msgid ""
-"If we do find one, but it's not *active*, we remove the inactive "
-"delimiter from the stack, and return a literal text node `]`."
+"If we do find one, but it's not *active*, we remove the inactive delimiter "
+"from the stack, and return a literal text node `]`."
 msgstr ""
 
 #: ../../spec.txt:9630
 msgid ""
 "If we find one and it's active, then we parse ahead to see if we have an "
-"inline link/image, reference link/image, compact reference link/image, or"
-" shortcut reference link/image."
+"inline link/image, reference link/image, compact reference link/image, or "
+"shortcut reference link/image."
 msgstr ""
 
 #: ../../spec.txt:9634
 msgid ""
-"If we don't, then we remove the opening delimiter from the delimiter "
-"stack and return a literal text node `]`."
+"If we don't, then we remove the opening delimiter from the delimiter stack "
+"and return a literal text node `]`."
 msgstr ""
 
 #: ../../spec.txt:9637
@@ -4564,8 +4530,8 @@ msgstr ""
 
 #: ../../spec.txt:9639
 msgid ""
-"We return a link or image node whose children are the inlines after the "
-"text node pointed to by the opening delimiter."
+"We return a link or image node whose children are the inlines after the text"
+" node pointed to by the opening delimiter."
 msgstr ""
 
 #: ../../spec.txt:9642
@@ -4580,9 +4546,9 @@ msgstr ""
 
 #: ../../spec.txt:9647
 msgid ""
-"If we have a link (and not an image), we also set all `[` delimiters "
-"before the opening delimiter to *inactive*.  (This will prevent us from "
-"getting links within links.)"
+"If we have a link (and not an image), we also set all `[` delimiters before "
+"the opening delimiter to *inactive*.  (This will prevent us from getting "
+"links within links.)"
 msgstr ""
 
 #: ../../spec.txt:9651
@@ -4598,15 +4564,15 @@ msgstr ""
 
 #: ../../spec.txt:9658
 msgid ""
-"Let `current_position` point to the element on the [delimiter stack] just"
-" above `stack_bottom` (or the first element if `stack_bottom` is NULL)."
+"Let `current_position` point to the element on the [delimiter stack] just "
+"above `stack_bottom` (or the first element if `stack_bottom` is NULL)."
 msgstr ""
 
 #: ../../spec.txt:9662
 msgid ""
-"We keep track of the `openers_bottom` for each delimiter type (`*`, `_`) "
-"and each length of the closing delimiter run (modulo 3).  Initialize this"
-" to `stack_bottom`."
+"We keep track of the `openers_bottom` for each delimiter type (`*`, `_`) and"
+" each length of the closing delimiter run (modulo 3).  Initialize this to "
+"`stack_bottom`."
 msgstr ""
 
 #: ../../spec.txt:9666
@@ -4615,17 +4581,17 @@ msgstr ""
 
 #: ../../spec.txt:9669
 msgid ""
-"Move `current_position` forward in the delimiter stack (if needed) until "
-"we find the first potential closer with delimiter `*` or `_`. (This will "
-"be the potential closer closest to the beginning of the input -- the "
-"first one in parse order.)"
+"Move `current_position` forward in the delimiter stack (if needed) until we "
+"find the first potential closer with delimiter `*` or `_`. (This will be the"
+" potential closer closest to the beginning of the input -- the first one in "
+"parse order.)"
 msgstr ""
 
 #: ../../spec.txt:9674
 msgid ""
 "Now, look back in the stack (staying above `stack_bottom` and the "
-"`openers_bottom` for this delimiter type) for the first matching "
-"potential opener (\"matching\" means same delimiter)."
+"`openers_bottom` for this delimiter type) for the first matching potential "
+"opener (\"matching\" means same delimiter)."
 msgstr ""
 
 #: ../../spec.txt:9678
@@ -4634,8 +4600,8 @@ msgstr ""
 
 #: ../../spec.txt:9680
 msgid ""
-"Figure out whether we have emphasis or strong emphasis: if both closer "
-"and opener spans have length >= 2, we have strong, otherwise regular."
+"Figure out whether we have emphasis or strong emphasis: if both closer and "
+"opener spans have length >= 2, we have strong, otherwise regular."
 msgstr ""
 
 #: ../../spec.txt:9684
@@ -4653,10 +4619,10 @@ msgstr ""
 #: ../../spec.txt:9690
 msgid ""
 "Remove 1 (for regular emph) or 2 (for strong emph) delimiters from the "
-"opening and closing text nodes.  If they become empty as a result, remove"
-" them and remove the corresponding element of the delimiter stack.  If "
-"the closing node is removed, reset `current_position` to the next element"
-" in the stack."
+"opening and closing text nodes.  If they become empty as a result, remove "
+"them and remove the corresponding element of the delimiter stack.  If the "
+"closing node is removed, reset `current_position` to the next element in the"
+" stack."
 msgstr ""
 
 #: ../../spec.txt:9696
@@ -4665,9 +4631,9 @@ msgstr ""
 
 #: ../../spec.txt:9698
 msgid ""
-"Set `openers_bottom` to the element before `current_position`. (We know "
-"that there are no openers for this kind of closer up to and including "
-"this point, so this puts a lower bound on future searches.)"
+"Set `openers_bottom` to the element before `current_position`. (We know that"
+" there are no openers for this kind of closer up to and including this "
+"point, so this puts a lower bound on future searches.)"
 msgstr ""
 
 #: ../../spec.txt:9702
@@ -4685,4 +4651,3 @@ msgid ""
 "After we're done, we remove all delimiters above `stack_bottom` from the "
 "delimiter stack."
 msgstr ""
-

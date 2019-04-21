@@ -1,0 +1,17 @@
+[main]
+host = https://www.transifex.com
+
+[commonmark-ja.index-pot]
+file_filter = locales/<lang>/LC_MESSAGES/index.po
+minimum_perc = 0
+source_file = _build/locales/index.pot
+source_lang = en
+type = PO
+
+[commonmark-ja.spec-pot]
+file_filter = locales/<lang>/LC_MESSAGES/spec.po
+minimum_perc = 0
+source_file = _build/locales/spec.pot
+source_lang = en
+type = PO
+

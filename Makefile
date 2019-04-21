@@ -6,6 +6,7 @@ SPECVERSION=$(shell perl -ne 'print $$1 if /^version: *([0-9.]+)/' spec.txt)
 all: spec.html # spec.pdf spec.md
 
 html:
+	tx pull -l ja
 	sphinx-build -b html -d _build/doctrees . _build/html
 
 gettext:
