@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the CommonMark package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Takeshi KOMIYA <i.tkomiya@gmail.com>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,7 +13,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-21 19:45+0900\n"
 "PO-Revision-Date: 2019-04-21 10:52+0000\n"
-"Language-Team: Japanese (https://www.transifex.com/blockdiag/teams/98354/ja/)\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>, 2020\n"
+"Language-Team: Japanese (https://www.transifex.com/commonmark-ja/teams/98434/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,14 +27,16 @@ msgid ""
 "'2019-04-06' license: '[CC-BY-SA 4.0](http://creativecommons.org/licenses"
 "/by-sa/4.0/)' ..."
 msgstr ""
+"タイトル: CommonMark Spec 著者: John MacFarlane バージョン: 0.29 日付: '2019-04-06' "
+"ライセンス: '[CC-BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)' ..."
 
 #: ../../spec.txt:9
 msgid "Introduction"
-msgstr ""
+msgstr "イントロダクション"
 
 #: ../../spec.txt:11
 msgid "What is Markdown?"
-msgstr ""
+msgstr "What is Markdown?"
 
 #: ../../spec.txt:13
 msgid ""
@@ -48,12 +54,15 @@ msgid ""
 "beyond the web, to author books, articles, slide shows, letters, and lecture"
 " notes."
 msgstr ""
+"Markdownは、電子メールおよび usenet への投稿などで使われていた書式の慣習をベースにした、構造化文書を記述するためのテキスト形式です。MarkdownはJohn Gruberによって(Aaron Swartzの手助けを受けながら)、2004年に [文法定義](http://daringfireball.net/projects/markdown/syntax)とHTMLへの変換スクリプト(`Markdown.pl`)としてリリースされました。\n"
+"その後の10年間で、多くのプログラミング言語でMarkdownの処理系が数多く開発されました。いくつかの処理系では、オリジナルのMarkdown文法に脚注やテーブルなどの記法が追加されました。 また、いくつかの処理系では、Markdown文書からHTML以外の形式への変換に対応しました。 RedditやStackOverflow、GitHubなどのウェブサイトでは、Markdownは数百万のユーザに使われています。そして、Markdownはウェブだけでなく、書籍や記事、スライド、手紙、講義ノートなどのさまざまな用途に使われはじめています。"
 
 #: ../../spec.txt:28
 msgid ""
 "What distinguishes Markdown from many other lightweight markup syntaxes, "
 "which are often easier to write, is its readability. As Gruber writes:"
 msgstr ""
+"Markdownと他の多くの軽量マークアップ言語との違いは、読みやすさにあります。この点について、Gruberは次のようにコメントしています:"
 
 #: ../../spec.txt:32
 msgid ""
@@ -63,6 +72,8 @@ msgid ""
 "up with tags or formatting instructions. "
 "(<http://daringfireball.net/projects/markdown/>)"
 msgstr ""
+"Markdown記法のもっとも重要な設計目標は、ドキュメントをできるかぎり読みやすくすることです。そのため、Markdown形式のドキュメントはタグや書籍の指定などでマークアップされているように見えなくても、プレーンテキストとしてそのまま公開可能であることを目指しています。"
+" （<http://daringfireball.net/projects/markdown/>）"
 
 #: ../../spec.txt:39
 msgid ""
@@ -70,10 +81,12 @@ msgid ""
 "[AsciiDoc](http://www.methods.co.nz/asciidoc/) with an equivalent sample of "
 "Markdown.  Here is a sample of AsciiDoc from the AsciiDoc manual:"
 msgstr ""
+"この点は "
+"[AsciiDoc](http://www.methods.co.nz/asciidoc/)のドキュメントとMarkdownのドキュメントを比較することで説明できます。以下はAsciiDocのマニュアルに掲載されているAsciiDocのサンプルです:"
 
 #: ../../spec.txt:73
 msgid "And here is the equivalent in Markdown:"
-msgstr ""
+msgstr "そして、こちらは同じ内容をMarkdownで記述したものです:"
 
 #: ../../spec.txt:98
 msgid ""
@@ -82,10 +95,11 @@ msgid ""
 "nesting of list items is apparent to the eye in the source, not just in the "
 "processed document."
 msgstr ""
+"AsciiDocバージョンは、間違いなく書くのが簡単です。インデントについて気にしなくて済みます。一方、Markdownバージョンはとても読みやすくなっています。多段リストは、変換されたドキュメントだけでなく、ソースのままでも読みやすいです。"
 
 #: ../../spec.txt:103
 msgid "Why is a spec needed?"
-msgstr ""
+msgstr "なぜ仕様が必要なのか?"
 
 #: ../../spec.txt:105
 msgid ""
@@ -94,6 +108,8 @@ msgid ""
 " the syntax unambiguously.  Here are some examples of questions it does not "
 "answer:"
 msgstr ""
+"John "
+"Gruberの[Markdownの文法の標準的な説明](http://daringfireball.net/projects/markdown/syntax)は、その文法を明確に規定していません。以下にその疑問点を挙げます。"
 
 #: ../../spec.txt:110
 msgid ""
@@ -106,6 +122,11 @@ msgid ""
 "comment by John "
 "Gruber](http://article.gmane.org/gmane.text.markdown.general/1997).)"
 msgstr ""
+"サブリストを作るにはいくつインデントするのか。仕様では段落を継続するには4スペース分のインデントが必要だと説明されていますが、サブリストについては明示的ではありません。段落と同様に、サブリストも4スペース分のインデントが必要と考えるのが自然ですが、`Markdown.pl`"
+" "
+"はそのように実装されていません。この問題は、Markdown処理系によって動作に差異があるため、実際のドキュメントを処理する際にユーザが驚くことになります。(参考"
+" [John Gruber "
+"のコメント](http://article.gmane.org/gmane.text.markdown.general/1997))"
 
 #: ../../spec.txt:119
 msgid ""
@@ -116,6 +137,9 @@ msgid ""
 "not). (John Gruber has also spoken [in favor of requiring the blank "
 "lines](http://article.gmane.org/gmane.text.markdown.general/2146).)"
 msgstr ""
+"引用ブロックや見出しの直前に空行が必要かどうか。多くの処理系では空行を必要としません。しかし、その動作はハードラップされたテキストにおいて予期せぬ結果をもたらし、解析における曖昧さに繋がる可能性があります(ある処理系は見出しを引用ブロックの内側に置くが、別の処理系ではそうではない)。(John"
+" Gruberも "
+"[空行を必要とすることに賛成しました](http://article.gmane.org/gmane.text.markdown.general/2146))"
 
 #: ../../spec.txt:127
 msgid ""
@@ -123,6 +147,8 @@ msgid ""
 "requires it, but this is not mentioned in the documentation, and some "
 "implementations do not require it.)"
 msgstr ""
+"インデントコードブロックの直前に空行が必要かどうか。(`Markdown.pl` "
+"は空行を必要としますが、仕様には言及がありません。また、いくつかの処理系は空行を必要としません。)"
 
 #: ../../spec.txt:136
 msgid ""
@@ -130,27 +156,32 @@ msgid ""
 "tags?  Can a list be partially \"loose\" and partially \"tight\"?  What "
 "should we do with a list like this?"
 msgstr ""
+"リストの項目が `<p>` "
+"タグで囲われるかどうかがどのように決まるのか。リストの一部だけをゆるめて(loose)、一部をきつくする(tight)ことはできるのか。次のようなリストをどのように扱えばよいのか。"
 
 #: ../../spec.txt:147
 msgid "Or this?"
-msgstr ""
+msgstr "また、次のようなリストはどうでしょうか。"
 
 #: ../../spec.txt:157
 msgid ""
 "(There are some relevant comments by John Gruber "
 "[here](http://article.gmane.org/gmane.text.markdown.general/2554).)"
 msgstr ""
+"(参考: John Gruber による関連コメントは "
+"[こちら](http://article.gmane.org/gmane.text.markdown.general/2554))"
 
 #: ../../spec.txt:160
 msgid ""
 "Can list markers be indented?  Can ordered list markers be right-aligned?"
-msgstr ""
+msgstr "リスト記号はインデントできるのでしょうか。また、番号付きリストの番号は右寄せできるのでしょうか。"
 
 #: ../../spec.txt:168
 msgid ""
 "Is this one list with a thematic break in its second item, or two lists "
 "separated by a thematic break?"
 msgstr ""
+"次の例は二番目のリスト要素に段落区切りをもつリストと解釈されるのでしょうか。それとも段落区切りで分割されたふたつのリストと解釈されるのでしょうか。"
 
 #: ../../spec.txt:177
 msgid ""
@@ -158,6 +189,8 @@ msgid ""
 "one?  (The Markdown syntax description suggests two, but the perl scripts "
 "and many other implementations produce one.)"
 msgstr ""
+"箇条書きのマーカーがリストの途中で番号からバレットに変わった場合、いくつの箇条書きとして解釈すべきでしょうか。ひとつ？それともふたつ？(Markdown"
+" の文法ではふたつと定義されていますが、Markdown.pl や多くの実装はひとつのリストと解釈します)"
 
 #: ../../spec.txt:188
 msgid ""
@@ -165,38 +198,41 @@ msgid ""
 "example, is the following a valid link, or does the code span take "
 "precedence ?"
 msgstr ""
+"インライン構造のマーカーの優先順位はどうでしょうか。たとえば、以下の例は有効なリンクでしょうか。それともコードスパンが優先されるべきでしょうか。"
 
 #: ../../spec.txt:196
 msgid ""
 "What are the precedence rules for markers of emphasis and strong emphasis?  "
 "For example, how should the following be parsed?"
-msgstr ""
+msgstr "強調および強い強調のマーカーの優先順位はどうでしょうか。たとえば、以下の例はどのように解釈されるべきでしょうか。"
 
 #: ../../spec.txt:203
 msgid ""
 "What are the precedence rules between block-level and inline-level "
 "structure?  For example, how should the following be parsed?"
-msgstr ""
+msgstr "ブロックレベルの構造とインラインレベルの構造における優先順位はどうでしょうか。たとえば、以下の例はどのように解釈されるべきでしょうか。"
 
 #: ../../spec.txt:211
 msgid ""
 "Can list items include section headings?  (`Markdown.pl` does not allow "
 "this, but does allow blockquotes to include headings.)"
 msgstr ""
+"箇条書きに見出しを含めることはできるのでしょうか。 (`Markdown.pl` "
+"では含めることはできません。しかし、ブロック引用に見出しを含めることはできます。)"
 
 #: ../../spec.txt:218
 msgid "Can list items be empty?"
-msgstr ""
+msgstr "空の箇条書き要素は認められるべきでしょうか。"
 
 #: ../../spec.txt:226
 msgid "Can link references be defined inside block quotes or list items?"
-msgstr ""
+msgstr "リンク参照はブロック引用や箇条書きに含めることはできるのでしょうか。"
 
 #: ../../spec.txt:234
 msgid ""
 "If there are multiple definitions for the same reference, which takes "
 "precedence?"
-msgstr ""
+msgstr "同じ参照に対して複数の定義がある場合、どちらが優先されるのでしょうか。"
 
 #: ../../spec.txt:244
 msgid ""
@@ -205,6 +241,8 @@ msgid ""
 "manifestly bad results in many cases, so it was not a satisfactory "
 "replacement for a spec."
 msgstr ""
+"仕様が存在しないため、初期の実装者はこうしたあいまいさを解決するために `Markdown.pl` を参考にしました。しかし、 "
+"`Markdown.pl` はとてもバグが多く、また多くの場合に悪い結果をもたらしたため、仕様の代わりにはなりませんでした。"
 
 #: ../../spec.txt:249
 msgid ""
@@ -215,10 +253,14 @@ msgid ""
 "matters worse, because nothing in Markdown counts as a \"syntax error,\" the"
 " divergence often isn't discovered right away."
 msgstr ""
+"こうして、明確な仕様が存在しないことによって実装は大きく分岐しました。その結果、あるシステム(たとえば GitHub "
+"wiki)でレンダリングされたドキュメントと別のシステム(たとえば pandoc で docbook "
+"に変換した場合)でレンダリングされたものが異なるのをよく見かけます。残念なことに、Markdown "
+"は構文エラーを発生させないため、こうした差異はすぐには発見されませんことがほとんどです。"
 
 #: ../../spec.txt:256
 msgid "About this document"
-msgstr ""
+msgstr "この文書について"
 
 #: ../../spec.txt:258
 msgid ""
@@ -227,6 +269,8 @@ msgid ""
 "double as conformance tests.  An accompanying script `spec_tests.py` can be "
 "used to run the tests against any Markdown program:"
 msgstr ""
+"このドキュメントではMarkdownの文法を明確に規定しようとしています。また、このドキュメントにはMarkdownの例とHTMLへの変換結果を並べています。これらは適合テストを兼ねることを目的としています。付属する"
+" `spec_test.py` を利用すると、任意のMarkdownプログラムに対してテストを実行できます。"
 
 #: ../../spec.txt:266
 msgid ""
@@ -237,6 +281,8 @@ msgid ""
 "tests makes it possible to run the tests against an implementation without "
 "writing an abstract syntax tree renderer."
 msgstr ""
+"このドキュメントではMarkdownを抽象構文木に変換する方法を説明しているため、HTMLのかわりに構文木の抽象表現を利用するのが理にかなっています。しかし、HTMLは構造上の違いを表現でき、またテスト用に抽象構文木のレンダラーを書くことなくテストが実行できることから、HTML"
+" を採用しています。"
 
 #: ../../spec.txt:273
 msgid ""
@@ -245,22 +291,23 @@ msgid ""
 "`tools/makespec.py` can be used to convert `spec.txt` into HTML or "
 "CommonMark (which can then be converted into other formats)."
 msgstr ""
+"このドキュメントは`spec.txt`というMarkdownファイルから生成されています。変換スクリプトにはサイドバイサイドテスト用の拡張が含まれています。`tools/makespec.py`は`spec.txt`をHTMLや(他の形式に変換可能な)CommonMarkに変換できます。"
 
 #: ../../spec.txt:278
 msgid "In the examples, the `→` character is used to represent tabs."
-msgstr ""
+msgstr "本ドキュメントのサンプルでは、タブ文字を表現するのに`→`を用います。"
 
 #: ../../spec.txt:280
 msgid "Preliminaries"
-msgstr ""
+msgstr "まえがき"
 
 #: ../../spec.txt:282
 msgid "Characters and lines"
-msgstr ""
+msgstr "文字と行"
 
 #: ../../spec.txt:284
 msgid "Any sequence of [characters] is a valid CommonMark document."
-msgstr ""
+msgstr "任意の[文字列]の並びは有効なCommonMarkドキュメントです。"
 
 #: ../../spec.txt:287
 msgid ""
@@ -268,6 +315,7 @@ msgid ""
 "example, combining accents) do not correspond to characters in an intuitive "
 "sense, all code points count as characters for purposes of this spec."
 msgstr ""
+"[文字](@)はユニコードのコードポイントです。一部のコードポイント(たとえばアクセントの組み合わせなど)は、直感的な意味での文字には対応していませんが、本仕様ではすべてのコードポイントは文字として扱われます。"
 
 #: ../../spec.txt:292
 msgid ""
@@ -275,6 +323,7 @@ msgid ""
 "[characters] rather than bytes.  A conforming parser may be limited to a "
 "certain encoding."
 msgstr ""
+"本仕様では文字エンコーディングについては指定しません。行はバイトではなく[文字]で構成されているとみなされます。適合するパーサーは対応する文字エンコーディングを限定してもよい。"
 
 #: ../../spec.txt:296
 msgid ""
@@ -282,23 +331,25 @@ msgid ""
 "(`U+000A`) or carriage return (`U+000D`), followed by a [line ending] or by "
 "the end of file."
 msgstr ""
+"[行](@)はニューライン(`U+000A`)もしくはキャリッジリターン(`U+000D`)以外の[文字]の0個以上のシーケンスで、その後に[行末]もしくはファイルの末尾が続くものを指します。"
 
 #: ../../spec.txt:300
 msgid ""
 "A [line ending](@) is a newline (`U+000A`), a carriage return (`U+000D`) not"
 " followed by a newline, or a carriage return and a following newline."
 msgstr ""
+"[行末](@)はニューライン(`U+000A`)、ニューラインの直後以外のキャリッジリターン(`U+000D`)、キャリッジリターンに続くニューラインを指します。"
 
 #: ../../spec.txt:304
 msgid ""
 "A line containing no characters, or a line containing only spaces (`U+0020`)"
 " or tabs (`U+0009`), is called a [blank line](@)."
-msgstr ""
+msgstr "文字列を含まない行や空白文字(`U+0020`)やタブ文字(`U+0009`)のみを含む行を[空行](@)と呼びます。"
 
 #: ../../spec.txt:307
 msgid ""
 "The following definitions of character classes will be used in this spec:"
-msgstr ""
+msgstr "本仕様では以下の文字クラスを利用します。"
 
 #: ../../spec.txt:309
 msgid ""
@@ -306,10 +357,11 @@ msgid ""
 "(`U+000A`), line tabulation (`U+000B`), form feed (`U+000C`), or carriage "
 "return (`U+000D`)."
 msgstr ""
+"[空白文字](@)はスペース(`U+0020`)、タブ(`U+0009`)、ニューライン(`U+000A`)、垂直タブ(`U+000B`)、ラインフィード(`U+000C`)、キャリッジリターン(`U+000D`)を指します。"
 
 #: ../../spec.txt:313
 msgid "[Whitespace](@) is a sequence of one or more [whitespace characters]."
-msgstr ""
+msgstr "[空白](@)は1文字以上の[空白文字]のシーケンスです。"
 
 #: ../../spec.txt:316
 msgid ""
@@ -317,22 +369,24 @@ msgid ""
 "general category, or a tab (`U+0009`), carriage return (`U+000D`), newline "
 "(`U+000A`), or form feed (`U+000C`)."
 msgstr ""
+"[ユニコード空白文字](@)はUnicodeの一般カテゴリで "
+"`Zs`に分類されているコードポイントとタブ(`U+0009`)、キャリッジリターン(`U+000D`)、ニューライン(`U+000A`)、ラインフィード(`U+000C`)を指します。"
 
 #: ../../spec.txt:321
 msgid ""
 "[Unicode whitespace](@) is a sequence of one or more [Unicode whitespace "
 "characters]."
-msgstr ""
+msgstr "[ユニコード空白](@)は1文字以上の[ユニコード空白文字]のシーケンスです。"
 
 #: ../../spec.txt:324
 msgid "A [space](@) is `U+0020`."
-msgstr ""
+msgstr "[スペース](@)は`U+0020`を指します。"
 
 #: ../../spec.txt:326
 msgid ""
 "A [non-whitespace character](@) is any character that is not a [whitespace "
 "character]."
-msgstr ""
+msgstr "[非空白文字](@)は[空白文字]以外の任意の文字を指します。"
 
 #: ../../spec.txt:329
 msgid ""
@@ -341,6 +395,10 @@ msgid ""
 "`>`, `?`, `@` (U+003A–0040), `[`, `\\`, `]`, `^`, `_`, `` ` `` "
 "(U+005B–0060),  `{`, `|`, `}`, or `~` (U+007B–007E)."
 msgstr ""
+"[ASCII記号文字](@) は `!`, `\"`, `#`, `$`, `%`, `&`, `'`, `(`, `)`, `*`, `+`, "
+"`,`, `-`, `.`, `/` (U+0021–2F), `:`, `;`, `<`, `=`, `>`, `?`, `@` "
+"(U+003A–0040), `[`, `\\`, `]`, `^`, `_`, `` ` `` (U+005B–0060), `{`, `|`, "
+"`}`, or `~` (U+007B–007E) を指します。"
 
 #: ../../spec.txt:336
 msgid ""
@@ -348,10 +406,12 @@ msgid ""
 " in the general Unicode categories  `Pc`, `Pd`, `Pe`, `Pf`, `Pi`, `Po`, or "
 "`Ps`."
 msgstr ""
+"[記号文字](@)は[ASCII記号文字]もしくはUnicodeの一般カテゴリで `Pc`, `Pd`, `Pe`, `Pf`, `Pi`, `Po`,"
+" or `Ps` に分類されているコードポイントを指します。"
 
 #: ../../spec.txt:340
 msgid "Tabs"
-msgstr ""
+msgstr "タブ"
 
 #: ../../spec.txt:342
 msgid ""
@@ -359,6 +419,7 @@ msgid ""
 "whitespace helps to define block structure, tabs behave as if they were "
 "replaced by spaces with a tab stop of 4 characters."
 msgstr ""
+"行内のタブは[スペース]には展開されません。ただし、空白がブロック構造の定義に役立つ場合は、タブは4文字のタブストップで展開されたスペースとして扱われます。"
 
 #: ../../spec.txt:347
 msgid ""
@@ -366,13 +427,14 @@ msgid ""
 "code block.  (Note, however, that internal tabs are passed through as "
 "literal tabs, not expanded to spaces.)"
 msgstr ""
+"したがって、インデントコードブロックで4つのスペースの代わりにタブを利用できます。(ただし、行内のタブはスペースに展開されないことに注意してください。)"
 
 #: ../../spec.txt:375
 msgid ""
 "In the following example, a continuation paragraph of a list item is "
 "indented with a tab; this has exactly the same effect as indentation with "
 "four spaces would:"
-msgstr ""
+msgstr "次の例では、箇条書き内の継続段落がタブでインデントされています。これは4つのスペースでインデントされた場合と同じ効果があります。"
 
 #: ../../spec.txt:406
 msgid ""
@@ -383,16 +445,18 @@ msgid ""
 "`foo` is considered to be indented six spaces inside the block quote "
 "context, so we get an indented code block starting with two spaces."
 msgstr ""
+"通常、ブロック引用を開始する`>`の後にはオプションでスペースを続けることができますが、その場合はこのスペースはコンテンツの一部とはみなされません。以下のように`>`の後にタブが続いた場合、このタブは3つのスペースとして扱われます。これらのスペースの1つは区切り文字区切り文字の一部とみなされるため、文字列`foo`はブロック引用内で6つのスペースでインデントされているものと解釈され、2つのスペースで始まるインデントコードブロックに変換されます。"
 
 #: ../../spec.txt:476
 msgid "Insecure characters"
-msgstr ""
+msgstr "安全でない文字"
 
 #: ../../spec.txt:478
 msgid ""
 "For security reasons, the Unicode character `U+0000` must be replaced with "
 "the REPLACEMENT CHARACTER (`U+FFFD`)."
 msgstr ""
+"セキュリティ上の理由により、ユニコード文字 `U+0000` は REPLACEMENT CHARACTER (`U+FFFD`)に変換されます。"
 
 #: ../../spec.txt:481
 msgid "Blocks and inlines"
