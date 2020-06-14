@@ -460,7 +460,7 @@ msgstr ""
 
 #: ../../spec.txt:481
 msgid "Blocks and inlines"
-msgstr ""
+msgstr "ブロックとインライン"
 
 #: ../../spec.txt:483
 msgid ""
@@ -470,10 +470,12 @@ msgid ""
 "blocks; others (like headings and paragraphs) contain [inline](@) content---"
 "text, links, emphasized text, images, code spans, and so on."
 msgstr ""
+"ドキュメントは[ブロック](@)のシーケンスと考えることができます。ここでいうブロックとは段落、ブロック引用、リスト、見出し、罫線、コードブロックなどの構造要素を指します。ブロック引用やリストなどのブロックは他のブロック要素を含めることができます。また、見出しや段落などのブロックは[インライン](@)コンテンツを含めることができます。\n"
+"インラインにはテキスト、リンク、強調されたテキスト、画像、コードスパンなどがあります。"
 
 #: ../../spec.txt:490
 msgid "Precedence"
-msgstr ""
+msgstr "優先順位"
 
 #: ../../spec.txt:492
 msgid ""
@@ -481,6 +483,7 @@ msgid ""
 "inline structure.  So, for example, the following is a list with two items, "
 "not a list with one item containing a code span:"
 msgstr ""
+"ブロック構造のインジケータは常にインライン構造のインジケータよりも優先されます。そのため、次の例はコードスパンを含む1項目の箇条書きではなく、2項目の箇条書きと扱われます。"
 
 #: ../../spec.txt:507
 msgid ""
@@ -493,30 +496,32 @@ msgid ""
 "can be parallelized, since the inline parsing of one block element does not "
 "affect the inline parsing of any other."
 msgstr ""
+"これは解析が2つのステップで進められることを意味します。最初のステップではドキュメントのブロック構造を識別し、次のステップでは段落や見出しなどのブロック要素内のテキストからインライン要素を解析します。2番目のステップでは、最初のステップの最後に得られるリンク参照定義の情報を必要とします。なお、最初のステップは各行を順番に処理していく必要がありますが、各ブロック要素のインライン解析はお互いに影響を与えないため、2番目のステップは並列化できます。"
 
 #: ../../spec.txt:516
 msgid "Container blocks and leaf blocks"
-msgstr ""
+msgstr "コンテナブロックとリーフブロック"
 
 #: ../../spec.txt:518
 msgid ""
 "We can divide blocks into two types: [container blocks](@), which can "
 "contain other blocks, and [leaf blocks](@), which cannot."
 msgstr ""
+"ブロックは他のブロックを含むことのできる[コンテナブロック](@)と、ブロックを含むことのできない[リーフブロック](@)のふたつに分類できます。"
 
 #: ../../spec.txt:523
 msgid "Leaf blocks"
-msgstr ""
+msgstr "リーフブロック"
 
 #: ../../spec.txt:525
 msgid ""
 "This section describes the different kinds of leaf block that make up a "
 "Markdown document."
-msgstr ""
+msgstr "本章ではMarkdownドキュメントを構成するさまざまな種類のリーフブロックについて説明します。"
 
 #: ../../spec.txt:528
 msgid "Thematic breaks"
-msgstr ""
+msgstr "主題分割"
 
 #: ../../spec.txt:530
 msgid ""
@@ -524,52 +529,54 @@ msgid ""
 "three or more matching `-`, `_`, or `*` characters, each followed optionally"
 " by any number of spaces or tabs, forms a [thematic break](@)."
 msgstr ""
+"0-3個のスペースでインデントされた3つ以上の `-`, `_` もしくは `*` のシーケンスは[主題分割](@)(thematic "
+"break)を形成します。主題分割の後には任意の数のスペースやタブを続けても構いません。"
 
 #: ../../spec.txt:546
 msgid "Wrong characters:"
-msgstr ""
+msgstr "不適切な文字"
 
 #: ../../spec.txt:562
 msgid "Not enough characters:"
-msgstr ""
+msgstr "文字数が足りない場合"
 
 #: ../../spec.txt:575
 msgid "One to three spaces indent are allowed:"
-msgstr ""
+msgstr "3スペースまでのインデントは許可されます。"
 
 #: ../../spec.txt:588
 msgid "Four spaces is too many:"
-msgstr ""
+msgstr "しかし、4スペースは許可されません。"
 
 #: ../../spec.txt:607
 msgid "More than three characters may be used:"
-msgstr ""
+msgstr "3つ以上の記号を書いてもよいです。"
 
 #: ../../spec.txt:616
 msgid "Spaces are allowed between the characters:"
-msgstr ""
+msgstr "記号の間にスペースを書くこともできます。"
 
 #: ../../spec.txt:639
 msgid "Spaces are allowed at the end:"
-msgstr ""
+msgstr "行末にスペースを書くこともできます。"
 
 #: ../../spec.txt:648
 msgid "However, no other characters may occur in the line:"
-msgstr ""
+msgstr "しかし、それ以外の文字は使用できません。"
 
 #: ../../spec.txt:663
 msgid ""
 "It is required that all of the [non-whitespace characters] be the same. So, "
 "this is not a thematic break:"
-msgstr ""
+msgstr "行内の[非空白文字]はすべて同じ文字である必要があります。そのため、以下は主題分割とはみなされません。"
 
 #: ../../spec.txt:673
 msgid "Thematic breaks do not need blank lines before or after:"
-msgstr ""
+msgstr "主題分割の前後に空白は必要ありません。"
 
 #: ../../spec.txt:690
 msgid "Thematic breaks can interrupt a paragraph:"
-msgstr ""
+msgstr "主題分割は段落を中断することができます。"
 
 #: ../../spec.txt:703
 msgid ""
@@ -578,20 +585,22 @@ msgid ""
 "interpretation as a [setext heading] takes precedence. Thus, for example, "
 "this is a setext heading, not a paragraph followed by a thematic break:"
 msgstr ""
+"主題分割となる条件を満たすダッシュの行が "
+"[setext見出し]の下線としても解釈できる場合、[setext見出し]としての解釈が優先されます。したがって、以下の例はsetext見出しであり、段落と主題分割とはみなされません。"
 
 #: ../../spec.txt:719
 msgid ""
 "When both a thematic break and a list item are possible interpretations of a"
 " line, the thematic break takes precedence:"
-msgstr ""
+msgstr "ある行が主題分割とも箇条書きとも解釈できる場合、主題分割の解釈が優先されます。"
 
 #: ../../spec.txt:737
 msgid "If you want a thematic break in a list item, use a different bullet:"
-msgstr ""
+msgstr "箇条書きの中に主題分割を配置したい場合、箇条書きとは異なる要素を使用してください。"
 
 #: ../../spec.txt:752
 msgid "ATX headings"
-msgstr ""
+msgstr "ATX見出し"
 
 #: ../../spec.txt:754
 msgid ""
@@ -606,14 +615,15 @@ msgid ""
 "heading level is equal to the number of `#` characters in the opening "
 "sequence."
 msgstr ""
+"[ATX見出し](@)は1-6個のエスケープされていない`#`文字からなる開始シーケンス、インラインコンテンツとして解析可能な文字列、任意の長さのエスケープされていない`#`文字から構成されるオプションの開始シーケンスから構成されます。開始シーケンスの後には[スペース]もしくは行末が続かなくてはなりません。終了シーケンスの前には[スペース]を挟む必要があり、終了シーケンスの後にはスペースを続けることができます。また、開始シーケンスは0-3スペースでインデント可能です。見出しコンテンツをインラインコンテンツとして解析する前に、先頭と末尾のスペースは削除されます。見出しレベルは開始シーケンスの`#`の数と同じです。"
 
 #: ../../spec.txt:766
 msgid "Simple headings:"
-msgstr ""
+msgstr "シンプルな見出しの例です。"
 
 #: ../../spec.txt:785
 msgid "More than six `#` characters is not a heading:"
-msgstr ""
+msgstr "7つ以上の`#`記号は見出しになりません。"
 
 #: ../../spec.txt:794
 msgid ""
@@ -623,69 +633,70 @@ msgid ""
 "[original ATX implementation](http://www.aaronsw.com/2002/atx/atx.py), and "
 "it helps prevent things like the following from being parsed as headings:"
 msgstr ""
+"見出しが空でない場合、`#`文字と見出しのコンテンツの間にはすくなくとも1つのスペースが必要です。多くの実装ではスペースが必須ではありません。しかし、[オリジナルのATX実装](http://www.aaronsw.com/2002/atx/atx.py)ではスペースは必須とされており、この仕様は次のような文字列を見出しとみなさないため有用です。"
 
 #: ../../spec.txt:812
 msgid "This is not a heading, because the first `#` is escaped:"
-msgstr ""
+msgstr "先頭の `#` がエスケープされているため、見出しにはなりません:"
 
 #: ../../spec.txt:821
 msgid "Contents are parsed as inlines:"
-msgstr ""
+msgstr "見出しのコンテンツはインラインとして解釈されます。"
 
 #: ../../spec.txt:830
 msgid ""
 "Leading and trailing [whitespace] is ignored in parsing inline content:"
-msgstr ""
+msgstr "先頭と末尾の[空白]はインライン要素の解釈時に無視されます。"
 
 #: ../../spec.txt:839
 msgid "One to three spaces indentation are allowed:"
-msgstr ""
+msgstr "1-3文字のインデントは許容されます。"
 
 #: ../../spec.txt:852
 msgid "Four spaces are too much:"
-msgstr ""
+msgstr "4つ以上のスペースでインデントした場合は見出しとみなされません。"
 
 #: ../../spec.txt:871
 msgid "A closing sequence of `#` characters is optional:"
-msgstr ""
+msgstr "終了シーケンスとして末尾に`#`文字をつけても構いません。"
 
 #: ../../spec.txt:882
 msgid "It need not be the same length as the opening sequence:"
-msgstr ""
+msgstr "先頭と末尾の`#`の数は一致しなくても構いません。"
 
 #: ../../spec.txt:893
 msgid "Spaces are allowed after the closing sequence:"
-msgstr ""
+msgstr "終了シーケンスの後にスペースを入れても構いません。"
 
 #: ../../spec.txt:902
 msgid ""
 "A sequence of `#` characters with anything but [spaces] following it is not "
 "a closing sequence, but counts as part of the contents of the heading:"
-msgstr ""
+msgstr "`#`の後に[空白]以外の文字がある場合、`#`は終了シーケンスではなく見出しコンテンツの一部とみなされます。"
 
 #: ../../spec.txt:913
 msgid "The closing sequence must be preceded by a space:"
-msgstr ""
+msgstr "終了シーケンスの前にはスペースが必要です。"
 
 #: ../../spec.txt:922
 msgid ""
 "Backslash-escaped `#` characters do not count as part of the closing "
 "sequence:"
-msgstr ""
+msgstr "バックスラッシュでエスケープされた`#`文字は終了シーケンスの一部とみなされません。"
 
 #: ../../spec.txt:936
 msgid ""
 "ATX headings need not be separated from surrounding content by blank lines, "
 "and they can interrupt paragraphs:"
-msgstr ""
+msgstr "ATX見出しは周囲のコンテンツと空行で区切られている必要はありません。また、ATX見出しは段落を中断することができます。"
 
 #: ../../spec.txt:961
 msgid "ATX headings can be empty:"
-msgstr ""
+msgstr "ATX見出しのコンテンツは空でも構いません。"
 
 #: ../../spec.txt:974
 msgid "Setext headings"
-msgstr ""
+msgstr "Setext見出し"
 
 #: ../../spec.txt:976
 msgid ""
@@ -698,6 +709,7 @@ msgid ""
 "[thematic break][thematic breaks], [list item][list items], or [HTML "
 "block][HTML blocks]."
 msgstr ""
+"[setext見出し](@)は1つ以上の[非空白文字]を含み、なおかつ4スペース以上のインデントを持たない1行以上のテキストと、それに続く[setext見出し下線]から構成されます。テキスト部分はsetext見出し下線がない場合に、段落として解釈されるようなものでなければなりません。つまり、[コードフェンス]、[ATX見出し]、[引用ブロック]、[主題分割]、[箇条書き]、[HTMLブロック]と解釈できません。"
 
 #: ../../spec.txt:986
 msgid ""
@@ -707,6 +719,7 @@ msgid ""
 "interpreted as an empty [list items], it should be interpreted this way and "
 "not as a [setext heading underline]."
 msgstr ""
+"[setext見出し下線](@)は`=`のシーケンスもしくは`-`のシーケンスです。3スペースまでのインデントと末尾のスペースを許容します。もし`-`が1つだけの場合、[setext見出し下線]ではなく空の箇条書きとして解釈されます。"
 
 #: ../../spec.txt:993
 msgid ""
@@ -715,6 +728,7 @@ msgid ""
 "contents of the heading are the result of parsing the preceding lines of "
 "text as CommonMark inline content."
 msgstr ""
+"見出しのレベルは[setext見出し下線]に利用されている文字の種類で決まります。`=`が使用されている場合はレベル1、`-`が使用されている場合はレベル2の見出しとしてそれぞれ扱われます。また、見出し文にはテキスト部をインラインコンテンツとして解釈したものが適用されます。"
 
 #: ../../spec.txt:999
 msgid ""
@@ -722,57 +736,58 @@ msgid ""
 "line.  However, it cannot interrupt a paragraph, so when a setext heading "
 "comes after a paragraph, a blank line is needed between them."
 msgstr ""
+"一般にsetext見出しの前後に空行を置く必要はありません。しかし、setext見出しは段落を中断することができないため、段落の後にsetext見出しを置く場合には空行を挟む必要があります。"
 
 #: ../../spec.txt:1004
 msgid "Simple examples:"
-msgstr ""
+msgstr "シンプルな見出しの例です。"
 
 #: ../../spec.txt:1018
 msgid "The content of the header may span more than one line:"
-msgstr ""
+msgstr "見出し文は複数行にわたる場合があります。"
 
 #: ../../spec.txt:1029
 msgid ""
 "The contents are the result of parsing the headings's raw content as "
 "inlines.  The heading's raw content is formed by concatenating the lines and"
 " removing initial and final [whitespace]."
-msgstr ""
+msgstr "見出し文は見出しの生テキストをインラインとして解釈したものです。見出しの生テキストは各行を連結し、先頭と末尾の[空白]を除去したものです。"
 
 #: ../../spec.txt:1044
 msgid "The underlining can be any length:"
-msgstr ""
+msgstr "setext見出し下線は任意の長さをとります。"
 
 #: ../../spec.txt:1058
 msgid ""
 "The heading content can be indented up to three spaces, and need not line up"
 " with the underlining:"
-msgstr ""
+msgstr "見出し文は3つまでインデントできます。また、下線に合わせる必要はありません。"
 
 #: ../../spec.txt:1077
 msgid "Four spaces indent is too much:"
-msgstr ""
+msgstr "4つ以上のスペースでインデントした場合は見出しとみなされません。"
 
 #: ../../spec.txt:1095
 msgid ""
 "The setext heading underline can be indented up to three spaces, and may "
 "have trailing spaces:"
-msgstr ""
+msgstr "setext見出し下線は3つまでインデントできます。また、末尾のスペースを許容します。"
 
 #: ../../spec.txt:1106
 msgid "Four spaces is too much:"
-msgstr ""
+msgstr "4つ以上のスペースでインデントした場合は見出しとみなされません。"
 
 #: ../../spec.txt:1117
 msgid "The setext heading underline cannot contain internal spaces:"
-msgstr ""
+msgstr "setext見出し下線の途中にスペースを含めることはできません。"
 
 #: ../../spec.txt:1133
 msgid "Trailing spaces in the content line do not cause a line break:"
-msgstr ""
+msgstr "見出し文の末尾にスペースを入れても改行されません。"
 
 #: ../../spec.txt:1143
 msgid "Nor does a backslash at the end:"
-msgstr ""
+msgstr "行末にバックスラッシュをおいても改行されません。"
 
 #: ../../spec.txt:1153
 msgid ""
