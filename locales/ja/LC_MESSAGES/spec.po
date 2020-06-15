@@ -793,28 +793,28 @@ msgstr "行末にバックスラッシュをおいても改行されません。
 msgid ""
 "Since indicators of block structure take precedence over indicators of "
 "inline structure, the following are setext headings:"
-msgstr ""
+msgstr "ブロック構造のインジケータはインライン構造のインジケータより優先されるため、以下の例はsetext見出しとして解釈されます。"
 
 #: ../../spec.txt:1172
 msgid ""
 "The setext heading underline cannot be a [lazy continuation line] in a list "
 "item or block quote:"
-msgstr ""
+msgstr "setext見出し下線は箇条書きやブロック引用の[怠惰継続行]になることはできません。"
 
 #: ../../spec.txt:1210
 msgid ""
 "A blank line is needed between a paragraph and a following setext heading, "
 "since otherwise the paragraph becomes part of the heading's content:"
-msgstr ""
+msgstr "段落とsetext見出しの間には空白行が必要です。さもなければ段落は見出し文の一部として扱われます。"
 
 #: ../../spec.txt:1224
 msgid ""
 "But in general a blank line is not required before or after setext headings:"
-msgstr ""
+msgstr "しかし、一般的にはsetext見出しの前後に空行は必要ありません。"
 
 #: ../../spec.txt:1242
 msgid "Setext headings cannot be empty:"
-msgstr ""
+msgstr "空のsetext見出しを作ることはできません。"
 
 #: ../../spec.txt:1252
 msgid ""
@@ -822,12 +822,13 @@ msgid ""
 "other than paragraphs.  So, the line of dashes in these examples gets "
 "interpreted as a thematic break:"
 msgstr ""
+"setext見出しのテキスト部は段落以外のブロック構造として解釈可能であってはなりません。そのため、以下の例ではsetext見出し下線ではなく主題分割として解釈されます。"
 
 #: ../../spec.txt:1297
 msgid ""
 "If you want a heading with `> foo` as its literal text, you can use "
 "backslash escapes:"
-msgstr ""
+msgstr "見出し文を`> foo`としたい場合は、バックスラッシュを使ってエスケープしてください。"
 
 #: ../../spec.txt:1308
 msgid ""
@@ -835,26 +836,28 @@ msgid ""
 " the text of setext headings to span multiple lines. But there is no "
 "consensus about how to interpret"
 msgstr ""
+"**互換性に関する注意**: "
+"多くのMarkdown処理系はsetext見出しが複数行にまたがることができません。しかし、解釈方法について合意はありません。"
 
 #: ../../spec.txt:1319
 msgid "One can find four different interpretations:"
-msgstr ""
+msgstr "4種類の解釈があります。"
 
 #: ../../spec.txt:1321
 msgid "paragraph \"Foo\", heading \"bar\", paragraph \"baz\""
-msgstr ""
+msgstr "段落 \"Foo\" と見出し \"bar\"、段落 \"baz\""
 
 #: ../../spec.txt:1322
 msgid "paragraph \"Foo bar\", thematic break, paragraph \"baz\""
-msgstr ""
+msgstr "段落 \"Foo bar\"、主題分割、段落 \"baz\""
 
 #: ../../spec.txt:1323
 msgid "paragraph \"Foo bar --- baz\""
-msgstr ""
+msgstr "段落 \"Foo bar --- baz\""
 
 #: ../../spec.txt:1324
 msgid "heading \"Foo bar\", paragraph \"baz\""
-msgstr ""
+msgstr "見出し \"Foo bar\"、段落 \"baz\""
 
 #: ../../spec.txt:1326
 msgid ""
@@ -862,26 +865,28 @@ msgid ""
 "expressive power of CommonMark, by allowing multiline headings.  Authors who"
 " want interpretation 1 can put a blank line after the first paragraph:"
 msgstr ""
+"我々は解釈4 "
+"がもっとも自然で、複数行の見出しによってCommonMarkの表現力が高まると考えました。著者は最初の段落の後に空行を入れることで、解釈1を表現できます。"
 
 #: ../../spec.txt:1344
 msgid ""
 "Authors who want interpretation 2 can put blank lines around the thematic "
 "break,"
-msgstr ""
+msgstr "解釈2を表現したい場合は、主題分割の前後に空行を入れます。"
 
 #: ../../spec.txt:1362
 msgid ""
 "or use a thematic break that cannot count as a [setext heading underline], "
 "such as"
-msgstr ""
+msgstr "もしくは[setext見出し下線]として扱われない主題分割の記法を用います。"
 
 #: ../../spec.txt:1378
 msgid "Authors who want interpretation 3 can use backslash escapes:"
-msgstr ""
+msgstr "解釈3を表現したい場合は、バックスラッシュによるエスケープが可能です。"
 
 #: ../../spec.txt:1393
 msgid "Indented code blocks"
-msgstr ""
+msgstr "インデントコードブロック"
 
 #: ../../spec.txt:1395
 msgid ""
@@ -891,6 +896,7 @@ msgid ""
 " the literal contents of the lines, including trailing [line endings], minus"
 " four spaces of indentation. An indented code block has no [info string]."
 msgstr ""
+"[インデントコードブロック](@)は空行によって分割された1行以上の[インデントチャンク]から構成されます。[インデントチャンク](@)は非空白行のシーケンスで、各行は4文字以上のスペースでインデントしたものです。コードブロックの本文は各行の[行末]を含んだ内容から4スペース分のインデントを差し引いたものです。インデントコードブロックは[情報文字列]を持ちません。"
 
 #: ../../spec.txt:1403
 msgid ""
@@ -899,35 +905,36 @@ msgid ""
 " line is not needed, however, between a code block and a following "
 "paragraph.)"
 msgstr ""
+"インデントコードブロックは段落を中断できないため、段落の直後に配置する場合は空行を挟む必要があります。(コードブロックに段落が続く場合は空行は必要ありません。)"
 
 #: ../../spec.txt:1418
 msgid ""
 "If there is any ambiguity between an interpretation of indentation as a code"
 " block and as indicating that material belongs to a [list item][list items],"
 " the list item interpretation takes precedence:"
-msgstr ""
+msgstr "インデントがコードブロックとも[箇条書き]のコンテンツとも解釈できる場合、箇条書きの解釈が優先されます。"
 
 #: ../../spec.txt:1453
 msgid ""
 "The contents of a code block are literal text, and do not get parsed as "
 "Markdown:"
-msgstr ""
+msgstr "コードブロックの本文はMarkdownとして解釈されません。"
 
 #: ../../spec.txt:1470
 msgid "Here we have three chunks separated by blank lines:"
-msgstr ""
+msgstr "空行によって分割された3つのチャンクの例です。"
 
 #: ../../spec.txt:1492
 msgid ""
 "Any initial spaces beyond four will be included in the content, even in "
 "interior blank lines:"
-msgstr ""
+msgstr "4文字を超えるスペースはたとえ空行内であってもコードブロックの本文とみなされます。"
 
 #: ../../spec.txt:1507
 msgid ""
 "An indented code block cannot interrupt a paragraph.  (This allows hanging "
 "indents and the like.)"
-msgstr ""
+msgstr "インデントコードブロックは段落を中断できません。(これによりインデントをぶら下げることができます。)"
 
 #: ../../spec.txt:1520
 msgid ""
@@ -935,30 +942,31 @@ msgid ""
 "code block immediately.  So a paragraph may occur immediately after indented"
 " code:"
 msgstr ""
+"ただし、先頭のスペースが 4つ未満の空白以外の行はコードブロックをすぐに終了させます。そのため、コードブロックの直後に段落が発生する可能性があります。"
 
 #: ../../spec.txt:1534
 msgid ""
 "And indented code can occur immediately before and after other kinds of "
 "blocks:"
-msgstr ""
+msgstr "インデントコードブロックは他のブロック構造の前もしくは後に登場する可能性があります。"
 
 #: ../../spec.txt:1555
 msgid "The first line can be indented more than four spaces:"
-msgstr ""
+msgstr "コードブロックの先頭行を4つ以上インデントすることもできます。"
 
 #: ../../spec.txt:1567
 msgid ""
 "Blank lines preceding or following an indented code block are not included "
 "in it:"
-msgstr ""
+msgstr "インデントコードブロックの先頭もしくは末尾の空白行は本文には含まれません。"
 
 #: ../../spec.txt:1582
 msgid "Trailing spaces are included in the code block's content:"
-msgstr ""
+msgstr "行末のスペースはコードブロックの本文に含まれます。"
 
 #: ../../spec.txt:1593
 msgid "Fenced code blocks"
-msgstr ""
+msgstr "フェンスドコードブロック"
 
 #: ../../spec.txt:1595
 msgid ""
@@ -967,6 +975,9 @@ msgid ""
 "mixed.) A [fenced code block](@) begins with a code fence, indented no more "
 "than three spaces."
 msgstr ""
+"[コードフェンス](@)は3つ以上の連続したバックチック(`` ` "
+"``)もしくはチルダ(`~`)のシーケンスです。(チルダとバックチックを混在させることはできません。) "
+"[フェンスドコードブロック](@)は3つ以下のスペースでインデントされたコードフェンスで始まります。"
 
 #: ../../spec.txt:1601
 msgid ""
@@ -977,6 +988,7 @@ msgid ""
 " this restriction is that otherwise some inline code would be incorrectly "
 "interpreted as the beginning of a fenced code block.)"
 msgstr ""
+"開始コードフェンスの行にはオプションで[情報文字列](@)を書くことができます。情報文字列の前後の空白は削除されます。開始コードフェンスがバックチックの場合、[情報文字列]にはバックチックを含んでいない可能性があります。(この制限の理由は、さもなければ、インラインコードがフェンスドコードブロックの開始として誤って解釈されるためです。)"
 
 #: ../../spec.txt:1609
 msgid ""
@@ -1005,7 +1017,7 @@ msgstr ""
 msgid ""
 "A fenced code block may interrupt a paragraph, and does not require a blank "
 "line either before or after."
-msgstr ""
+msgstr "フェンスドコードブロックは段落を中断する可能性があり、前後に空白を必要としません。"
 
 #: ../../spec.txt:1631
 msgid ""
@@ -1015,51 +1027,53 @@ msgid ""
 "the `code` tag.  However, this spec does not mandate any particular "
 "treatment of the [info string]."
 msgstr ""
+"フェンスドコードブロックの本文はインラインとして解釈されません。[情報文字列]の最初の単語は通常、コードサンプルの言語を指定するために使用され、`code`タグの`class`属性としてレンダリングされます。しかし、本仕様では[情報文字列]の特定の扱いは指定されません。"
 
 #: ../../spec.txt:1637
 msgid "Here is a simple example with backticks:"
-msgstr ""
+msgstr "バックチックを使ったシンプルな例です。"
 
 #: ../../spec.txt:1651
 msgid "With tildes:"
-msgstr ""
+msgstr "チルダの例です。"
 
 #: ../../spec.txt:1664
 msgid "Fewer than three backticks is not enough:"
-msgstr ""
+msgstr "バックチックが不足している例です。"
 
 #: ../../spec.txt:1674
 msgid ""
 "The closing code fence must use the same character as the opening fence:"
-msgstr ""
+msgstr "終了コードフェンスは開始コードフェンスと同じ文字を使わなくてはなりません。"
 
 #: ../../spec.txt:1701
 msgid "The closing code fence must be at least as long as the opening fence:"
-msgstr ""
+msgstr "終了コードフェンスは少なくとも開始コードフェンスと同じ長さでなくてはなりません。"
 
 #: ../../spec.txt:1727
 msgid ""
 "Unclosed code blocks are closed by the end of the document (or the enclosing"
 " [block quote][block quotes] or [list item][list items]):"
 msgstr ""
+"閉じられていないコードブロックはドキュメントの末尾で閉じられます。(もしくは囲んでいる[ブロック引用]または[箇条書き]の終了で閉じられます。)"
 
 #: ../../spec.txt:1764
 msgid "A code block can have all empty lines as its content:"
-msgstr ""
+msgstr "コードブロックはすべて空行でも構いません。"
 
 #: ../../spec.txt:1778
 msgid "A code block can be empty:"
-msgstr ""
+msgstr "コードブロックは空でも構いません。"
 
 #: ../../spec.txt:1788
 msgid ""
 "Fences can be indented.  If the opening fence is indented, content lines "
 "will have equivalent opening indentation removed, if present:"
-msgstr ""
+msgstr "フェンスはインデントできます。開始フェンスがインデントされており、本文から同数のインデントが削除されます。"
 
 #: ../../spec.txt:1832
 msgid "Four spaces indentation produces an indented code block:"
-msgstr ""
+msgstr "4つのスペースでインデントされている場合はインデントコードブロックと解釈されます。"
 
 #: ../../spec.txt:1846
 msgid ""
